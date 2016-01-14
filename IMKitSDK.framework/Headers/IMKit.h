@@ -8,7 +8,7 @@
 #import <JSONModel/JSONModel.h>
 #import <IMKitSDK/IMDataModels.h>
 
-typedef enum : int {
+typedef NS_ENUM(int,IMKitConnectStatus) {
     IMKitConnectStatusConnected,
     IMKitConnectStatusDisconnect,
     IMKitConnectStatusError,
@@ -16,7 +16,7 @@ typedef enum : int {
     IMKitConnectStatusReconnectAttempt,
     IMKitConnectStatusReconnecting,
     IMKitConnectStatusReconnectfailed,
-} IMKitConnectStatus;
+};
 
 #define IMKitInstance [IMKit shareInstance]
 
