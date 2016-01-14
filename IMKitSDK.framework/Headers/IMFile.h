@@ -1,0 +1,17 @@
+//
+//  IMFile.h
+//  demoapp
+//
+//  Created by Kuo-HsunShih on 2015/11/11.
+//  Copyright © 2015年 Funtek. All rights reserved.
+//
+
+#import <IMKitSDK/IMObject.h>
+
+@interface IMFile : IMObject
+@property (strong, nonatomic) NSString *fileName;
+@property (strong, nonatomic) NSString *type;
+@property (assign, nonatomic) NSUInteger size;
+@property (assign, nonatomic) BOOL isPublic;
+@property (strong, nonatomic) NSString *room;
+@end
