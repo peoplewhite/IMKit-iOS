@@ -7,7 +7,7 @@
 //
 
 #import <GVUserDefaults/GVUserDefaults.h>
-#import <IMKitSDK/IMDataModels.h>
+#import "IMDataModels.h"
 
 #define IMUserDefault [GVUserDefaults standardUserDefaults]
 

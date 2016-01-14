@@ -6,7 +6,7 @@
 //
 #import <UIKit/UIKit.h>
 #import <JSONModel/JSONModel.h>
-#import <IMKitSDK/IMDataModels.h>
+#import "IMDataModels.h"
 
 typedef NS_ENUM(int,IMKitConnectStatus) {
     IMKitConnectStatusConnected,

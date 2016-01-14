@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <IMKitSDK/IMKit.h>
-//#import <IMKitSDK/IMDataModels.h>
+#import "IMKit.h"
 
 //! Project version number for IMKitSDK.
 FOUNDATION_EXPORT double IMKitSDKVersionNumber;
@@ -16,4 +15,4 @@ FOUNDATION_EXPORT double IMKitSDKVersionNumber;
 //! Project version string for IMKitSDK.
 FOUNDATION_EXPORT const unsigned char IMKitSDKVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <IMKitSDK/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import "PublicHeader.h>

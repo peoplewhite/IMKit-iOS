@@ -6,7 +6,7 @@
 //  Copyright © 2015年 Funtek. All rights reserved.
 //
 
-#import <IMKitSDK/IMObject.h>
+#import "IMObject.h"
 
 @interface IMClient : IMObject
 @property (strong, nonatomic) NSString *clientID;

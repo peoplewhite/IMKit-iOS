@@ -6,10 +6,10 @@
 //  Copyright © 2015年 Funtek. All rights reserved.
 //
 
-#import <IMKitSDK/IMObject.h>
-#import <IMKitSDK/IMInstallation.h>
-#import <IMKitSDK/IMClient.h>
-#import <IMKitSDK/IMRoom.h>
-#import <IMKitSDK/IMMessage.h>
-#import <IMKitSDK/IMFile.h>
-#import <IMKitSDK/GVUserDefaults+defaults.h>
+#import "IMObject.h"
+#import "IMInstallation.h"
+#import "IMClient.h"
+#import "IMRoom.h"
+#import "IMMessage.h"
+#import "IMFile.h"
+#import "GVUserDefaults+defaults.h"

@@ -6,35 +6,35 @@
 	<dict>
 		<key>Headers/GVUserDefaults+defaults.h</key>
 		<data>
-		9zynY1j3NCKmsRy5MJmoRDxKxdk=
+		K3M31iqMxlVhfF6xXCN1+5KYwzA=
 		</data>
 		<key>Headers/IMClient.h</key>
 		<data>
-		mtiRP2ZEhSRJK7lz5Svd0nLITyk=
+		uqxom+gt/CPWRdbVX+debSC9VwQ=
 		</data>
 		<key>Headers/IMDataModels.h</key>
 		<data>
-		rODHgSCmWjcMeS7Yiv7czEs/Msk=
+		kv6jyREZjz+PkYykGc6bBCfmBtA=
 		</data>
 		<key>Headers/IMFile.h</key>
 		<data>
-		8DcT2LP6t9V4tDDvZ2MPpNj1G6E=
+		rY8pcuYdCADuf+cLIOpIcT6vrWM=
 		</data>
 		<key>Headers/IMInstallation.h</key>
 		<data>
-		r45kYm2Nhy/iHcNsLLIoyUYivUg=
+		GW4g56wHni8/1PLJ6vqe0T256+o=
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		+IeS0OqxoqGDf0Y6fJxHvWjZS8c=
+		aE4UXu8m7HeCQ0qFtfkeMB8EE/Q=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
-		LOVZ2Yjn0BSmBE5RCh5jCHBfhlE=
+		PW7b/qkP89UjS9PySC9datQWYXY=
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		jjALoo78i1OKDJJtZSNQLeK5YR8=
+		p1hWoxA0ZPaLHVpQKReDY+K0j8Q=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/IMRoom.h</key>
 		<data>
-		BkFxcsqfdqellXlxtGoElGqg31s=
+		29hf5S2rIAYEF39FhQCq18O9UL0=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -57,35 +57,35 @@
 	<dict>
 		<key>Headers/GVUserDefaults+defaults.h</key>
 		<data>
-		9zynY1j3NCKmsRy5MJmoRDxKxdk=
+		K3M31iqMxlVhfF6xXCN1+5KYwzA=
 		</data>
 		<key>Headers/IMClient.h</key>
 		<data>
-		mtiRP2ZEhSRJK7lz5Svd0nLITyk=
+		uqxom+gt/CPWRdbVX+debSC9VwQ=
 		</data>
 		<key>Headers/IMDataModels.h</key>
 		<data>
-		rODHgSCmWjcMeS7Yiv7czEs/Msk=
+		kv6jyREZjz+PkYykGc6bBCfmBtA=
 		</data>
 		<key>Headers/IMFile.h</key>
 		<data>
-		8DcT2LP6t9V4tDDvZ2MPpNj1G6E=
+		rY8pcuYdCADuf+cLIOpIcT6vrWM=
 		</data>
 		<key>Headers/IMInstallation.h</key>
 		<data>
-		r45kYm2Nhy/iHcNsLLIoyUYivUg=
+		GW4g56wHni8/1PLJ6vqe0T256+o=
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		+IeS0OqxoqGDf0Y6fJxHvWjZS8c=
+		aE4UXu8m7HeCQ0qFtfkeMB8EE/Q=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
-		LOVZ2Yjn0BSmBE5RCh5jCHBfhlE=
+		PW7b/qkP89UjS9PySC9datQWYXY=
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		jjALoo78i1OKDJJtZSNQLeK5YR8=
+		p1hWoxA0ZPaLHVpQKReDY+K0j8Q=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
@@ -93,7 +93,7 @@
 		</data>
 		<key>Headers/IMRoom.h</key>
 		<data>
-		BkFxcsqfdqellXlxtGoElGqg31s=
+		29hf5S2rIAYEF39FhQCq18O9UL0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
