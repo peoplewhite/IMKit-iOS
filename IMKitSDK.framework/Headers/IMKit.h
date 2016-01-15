@@ -97,6 +97,7 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
 /*
  * notifications
  *
+ * IMKitDidChatIn
  * IMKitDidUpdateReadTimeWithRoom
  * IMKitDidJoinedWithRoom
  * IMKitDidReceiveMessage
