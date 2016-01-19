@@ -88,7 +88,7 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
 - (void)getFileWithName:(NSString *)filename complete:(void (^)(NSError *err, NSData *data))complete;
 
 
-- (void)uploadFileWith:(UIImage*)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure ;
+- (void)uploadFileWithImage:(UIImage*)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure ;
 - (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure ;
 
 @end
@@ -120,6 +120,6 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
 
 - (void)IMKit:(IMKit *)model didJoinedWithRoom:(IMRoom *)room;
 - (void)IMKit:(IMKit *)model didChangeConnectStatus:(IMKitConnectStatus)status WithMessage:(NSString *)message;
-- (void)IMKit:(IMKit *)model didUploadWithProgress:(NSProgress *)progress;
+//- (void)IMKit:(IMKit *)model didUploadWithProgress:(NSProgress *)progress;
 
 @end
