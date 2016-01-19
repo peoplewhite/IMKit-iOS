@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'IMKitSDK.framework'
   s.framework     = 'UIKit'
 
-  s.dependency 'AFNetworking', '~> 3.0.4'
   s.dependency 'Socket.IO-Client-Swift','~> 4.0.4'
   s.dependency 'JSONModel','~> 1.1.2'
   s.dependency 'GVUserDefaults','~> 1.0.1'
