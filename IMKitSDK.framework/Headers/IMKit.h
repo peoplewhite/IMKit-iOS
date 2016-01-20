@@ -60,6 +60,9 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
 //stop receive room messages
 - (void)chatOutSuccess:(void (^)(void))success failure:(void (^)(NSError *err))failure;
 - (void)logout;
+
+#pragma mark - badge
+- (void)badgeSuccess:(void (^)(IMBadge* badge))success failure:(void (^)(NSError *err))failure;
 #pragma mark - room
 
 - (void)createRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
