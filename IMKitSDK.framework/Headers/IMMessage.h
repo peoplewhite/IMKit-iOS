@@ -16,6 +16,16 @@
 #define kMessageTypeSticker @"sticker"
 #define kMessageTypeOther @"other"
 
+typedef NS_ENUM (int, IMKitMessageType) {
+    IMKitMessageTypeText,
+    IMKitMessageTypeImage,
+    IMKitMessageTypeAudio,
+    IMKitMessageTypeVideo,
+    IMKitMessageTypeGEO,
+    IMKitMessageTypeSticker,
+    IMKitMessageTypeOther,
+};
+
 @class IMRoom;
 @class IMClient;
 @interface IMMessage : IMObject
@@ -26,5 +36,7 @@
 @property (strong, nonatomic) IMClient *sender;
 
 - (instancetype)initWithRoom:(IMRoom *)room;
+
+- (void)setMessageWithType:(IMKitMessageType)messageType;
 
 @end
