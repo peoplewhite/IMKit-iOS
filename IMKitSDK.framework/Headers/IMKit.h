@@ -120,6 +120,7 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
 - (void)IMKit:(IMKit *)model didUpdateReadTimeWithRoom:(IMRoom *)room;
 
 - (void)IMKit:(IMKit *)model didUpdateRooms:(NSMutableArray <IMRoom *> *)rooms;
+- (void)IMKit:(IMKit *)model didUpdateRoom:(IMRoom*)room;
 - (void)IMKit:(IMKit *)model didUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
 
 - (void)IMKit:(IMKit *)model didJoinedWithRoom:(IMRoom *)room;
