@@ -8,7 +8,7 @@
 #import <JSONModel/JSONModel.h>
 #import "IMDataModels.h"
 
-typedef NS_ENUM(int,IMKitConnectStatus) {
+typedef NS_ENUM (int, IMKitConnectStatus) {
     IMKitConnectStatusConnected,
     IMKitConnectStatusDisconnect,
     IMKitConnectStatusError,
@@ -62,7 +62,7 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
 - (void)logout;
 
 #pragma mark - badge
-- (void)badgeSuccess:(void (^)(IMBadge* badge))success failure:(void (^)(NSError *err))failure;
+- (void)badgeSuccess:(void (^)(IMBadge *badge))success failure:(void (^)(NSError *err))failure;
 #pragma mark - room
 
 - (void)createRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
@@ -90,10 +90,9 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
  */
 - (void)getFileWithName:(NSString *)filename complete:(void (^)(NSError *err, NSData *data))complete;
 
-
-- (void)uploadFileWithImage:(UIImage*)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure ;
-- (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure ;
-
+- (void)uploadFileWithImage:(UIImage *)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+- (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+- (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic progress:(void (^)(CGFloat progress))progress Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 @end
 
 @protocol IMKitDelegate <NSObject>
@@ -117,14 +116,17 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
 - (void)IMKit:(IMKit *)model didEndLoadingMessageWithRoom:(IMRoom *)room;
 
 - (void)IMKit:(IMKit *)model didReceiveMessage:(IMMessage *)message;
+- (void)IMKit:(IMKit *)model didReceiveMessageFromOthers:(IMMessage *)message;
+- (void)IMKit:(IMKit *)model didSendMessageSuccess:(IMMessage *)message;
+- (void)IMKit:(IMKit *)model messageSendingTypeDidChanged:(IMMessage *)message;
+
 - (void)IMKit:(IMKit *)model didUpdateReadTimeWithRoom:(IMRoom *)room;
 
 - (void)IMKit:(IMKit *)model didUpdateRooms:(NSMutableArray <IMRoom *> *)rooms;
-- (void)IMKit:(IMKit *)model didUpdateRoom:(IMRoom*)room;
+- (void)IMKit:(IMKit *)model didUpdateRoom:(IMRoom *)room;
 - (void)IMKit:(IMKit *)model didUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
 
 - (void)IMKit:(IMKit *)model didJoinedWithRoom:(IMRoom *)room;
 - (void)IMKit:(IMKit *)model didChangeConnectStatus:(IMKitConnectStatus)status WithMessage:(NSString *)message;
-//- (void)IMKit:(IMKit *)model didUploadWithProgress:(NSProgress *)progress;
 
 @end
