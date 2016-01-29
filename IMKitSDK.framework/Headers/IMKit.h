@@ -110,23 +110,51 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  * IMKitDidChangeConnectStatus
  *
  */
+
+
 - (void)IMKitDidChatIn:(IMKit *)model;
 
 - (BOOL)IMKit:(IMKit *)model willStartLoadingMessageWithRoom:(IMRoom *)room;
 - (void)IMKit:(IMKit *)model didEndLoadingMessageWithRoom:(IMRoom *)room;
 
+/**
+ *  called when receive message , include send from self
+ */
 - (void)IMKit:(IMKit *)model didReceiveMessage:(IMMessage *)message;
+/**
+ *  called when receive message witch send from other device
+ */
 - (void)IMKit:(IMKit *)model didReceiveMessageFromOthers:(IMMessage *)message;
-- (void)IMKit:(IMKit *)model didSendMessageSuccess:(IMMessage *)message;
-- (void)IMKit:(IMKit *)model messageSendingTypeDidChanged:(IMMessage *)message;
 
+/**
+ *  called when sending message changes type
+ */
+- (void)IMKit:(IMKit *)model didChangeMessageSendingType:(IMMessage *)message;
+
+/**
+ *  called when other device update read time in room
+ */
 - (void)IMKit:(IMKit *)model didUpdateReadTimeWithRoom:(IMRoom *)room;
 
+/**
+ *  called when room updated, example for got new message.
+ */
 - (void)IMKit:(IMKit *)model didUpdateRooms:(NSMutableArray <IMRoom *> *)rooms;
 - (void)IMKit:(IMKit *)model didUpdateRoom:(IMRoom *)room;
-- (void)IMKit:(IMKit *)model didUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
 
+/**
+ *  TODO
+ */
+//- (void)IMKit:(IMKit *)model didUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
+
+/**
+ *  called when joined a room
+ */
 - (void)IMKit:(IMKit *)model didJoinedWithRoom:(IMRoom *)room;
+
+/**
+ *  called when connect status changed
+ */
 - (void)IMKit:(IMKit *)model didChangeConnectStatus:(IMKitConnectStatus)status WithMessage:(NSString *)message;
 
 @end
