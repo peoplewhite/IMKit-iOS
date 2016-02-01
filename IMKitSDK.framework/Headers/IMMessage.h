@@ -67,6 +67,11 @@ typedef NS_ENUM(NSUInteger, IMKitMessageSendingType) {
  */
 @property (assign, nonatomic) IMKitMessageSendingType sendingType;
 
+/**
+ *  any object for temp store in message,won't be send to backend
+ */
+@property (strong, nonatomic) id<Ignore>temp;
+
 
 - (instancetype)initWithRoom:(IMRoom *)room;
 
