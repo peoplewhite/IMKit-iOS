@@ -73,12 +73,30 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)roomListSuccess:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
 
 #pragma mark - message
-//send message to room
+/**
+ *  send message to room
+ */
 - (void)sendMessage:(IMMessage *)message Success:(void (^)(IMMessage *messages))success failure:(void (^)(NSError *err))failure;
-//tell backend message received
+/**
+ * tell backend message received
+ */
 - (void)updateReadTimeWithRoom:(IMRoom *)room;
 
 #pragma mark - file
+
+/**
+ *  get file with name , will download file everytime called
+ */
+- (void)getFileWithName:(NSString *)filename complete:(void (^)(NSError *err, NSData *data))complete;
+
+/**
+ *  get file with name
+ *  @param fromCache : Force download and override cache by "fromCache = NO" , Or check if exists in cache .
+ */
+- (void)getFileWithName:(NSString *)filename fromCache:(BOOL)fromCache Success:(void (^)(NSData *data))success failure:(void (^)(NSError *err))failure;
+
+
+- (void)uploadFileWithImage:(UIImage *)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 /**
  *  uploadFileWithData
  *
@@ -88,9 +106,6 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  @param success  response success
  *  @param failure  response fail
  */
-- (void)getFileWithName:(NSString *)filename complete:(void (^)(NSError *err, NSData *data))complete;
-
-- (void)uploadFileWithImage:(UIImage *)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 - (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 - (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic progress:(void (^)(CGFloat progress))progress Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 @end
@@ -110,7 +125,6 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  * IMKitDidChangeConnectStatus
  *
  */
-
 
 - (void)IMKitDidChatIn:(IMKit *)model;
 
