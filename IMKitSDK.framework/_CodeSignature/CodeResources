@@ -8,13 +8,17 @@
 		<data>
 		K3M31iqMxlVhfF6xXCN1+5KYwzA=
 		</data>
+		<key>Headers/IMBadge.h</key>
+		<data>
+		m+Y4Jauii4lJ+TeOZzwqWz4zHpA=
+		</data>
 		<key>Headers/IMClient.h</key>
 		<data>
-		uqxom+gt/CPWRdbVX+debSC9VwQ=
+		/V6U5mlz6+rlDgWFihg9mOHIcRM=
 		</data>
 		<key>Headers/IMDataModels.h</key>
 		<data>
-		kv6jyREZjz+PkYykGc6bBCfmBtA=
+		328SbH+uSLlXd5klAt+Tyw9qU/M=
 		</data>
 		<key>Headers/IMFile.h</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		Zm7hem3JGnzDPq+nKh1nB1uE7uY=
+		PVgZtOn8tJr8ItJwdlAp/wO6cBE=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
@@ -34,7 +38,7 @@
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		p1hWoxA0ZPaLHVpQKReDY+K0j8Q=
+		zfoLutXhMzqi8h2BMPPwlUqJgp8=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
@@ -42,11 +46,11 @@
 		</data>
 		<key>Headers/IMRoom.h</key>
 		<data>
-		29hf5S2rIAYEF39FhQCq18O9UL0=
+		KJddtRF/IATIG7tH4pWKBJgd87c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		h1aVU3espD+aJMz0jZptLkUjkGQ=
+		6L9Ek9nN9bDEXP51OgbNYcyZ+4k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,13 +63,17 @@
 		<data>
 		K3M31iqMxlVhfF6xXCN1+5KYwzA=
 		</data>
+		<key>Headers/IMBadge.h</key>
+		<data>
+		m+Y4Jauii4lJ+TeOZzwqWz4zHpA=
+		</data>
 		<key>Headers/IMClient.h</key>
 		<data>
-		uqxom+gt/CPWRdbVX+debSC9VwQ=
+		/V6U5mlz6+rlDgWFihg9mOHIcRM=
 		</data>
 		<key>Headers/IMDataModels.h</key>
 		<data>
-		kv6jyREZjz+PkYykGc6bBCfmBtA=
+		328SbH+uSLlXd5klAt+Tyw9qU/M=
 		</data>
 		<key>Headers/IMFile.h</key>
 		<data>
@@ -77,7 +85,7 @@
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		Zm7hem3JGnzDPq+nKh1nB1uE7uY=
+		PVgZtOn8tJr8ItJwdlAp/wO6cBE=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
@@ -85,7 +93,7 @@
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		p1hWoxA0ZPaLHVpQKReDY+K0j8Q=
+		zfoLutXhMzqi8h2BMPPwlUqJgp8=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
@@ -93,7 +101,7 @@
 		</data>
 		<key>Headers/IMRoom.h</key>
 		<data>
-		29hf5S2rIAYEF39FhQCq18O9UL0=
+		KJddtRF/IATIG7tH4pWKBJgd87c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

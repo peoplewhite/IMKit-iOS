@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSArray *roomIDs;
 @property (strong, nonatomic) NSString *username;
 
+@property (strong, nonatomic) NSString *chatinAt;
 @property (strong, nonatomic) NSArray *room;
 
 + (IMClient *)currentClient;

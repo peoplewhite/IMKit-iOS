@@ -20,4 +20,6 @@
 @property (strong, nonatomic) NSString *lastMessageTime;
 @property (strong, nonatomic) IMClient *sender;
 @property (assign, nonatomic) int badge;
+
+@property (strong, nonatomic,readonly) IMClient *anyOtherClient;
 @end

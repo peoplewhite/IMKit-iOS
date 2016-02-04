@@ -12,4 +12,5 @@
 #import "IMRoom.h"
 #import "IMMessage.h"
 #import "IMFile.h"
+#import "IMBadge.h"
 #import "GVUserDefaults+defaults.h"

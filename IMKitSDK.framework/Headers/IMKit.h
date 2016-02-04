@@ -8,7 +8,7 @@
 #import <JSONModel/JSONModel.h>
 #import "IMDataModels.h"
 
-typedef NS_ENUM(int,IMKitConnectStatus) {
+typedef NS_ENUM (int, IMKitConnectStatus) {
     IMKitConnectStatusConnected,
     IMKitConnectStatusDisconnect,
     IMKitConnectStatusError,
@@ -60,6 +60,9 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
 //stop receive room messages
 - (void)chatOutSuccess:(void (^)(void))success failure:(void (^)(NSError *err))failure;
 - (void)logout;
+
+#pragma mark - badge
+- (void)badgeSuccess:(void (^)(IMBadge *badge))success failure:(void (^)(NSError *err))failure;
 #pragma mark - room
 
 - (void)createRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
@@ -70,12 +73,30 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
 - (void)roomListSuccess:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
 
 #pragma mark - message
-//send message to room
+/**
+ *  send message to room
+ */
 - (void)sendMessage:(IMMessage *)message Success:(void (^)(IMMessage *messages))success failure:(void (^)(NSError *err))failure;
-//tell backend message received
+/**
+ * tell backend message received
+ */
 - (void)updateReadTimeWithRoom:(IMRoom *)room;
 
 #pragma mark - file
+
+/**
+ *  get file with name , will download file everytime called
+ */
+- (void)getFileWithName:(NSString *)filename complete:(void (^)(NSError *err, NSData *data))complete;
+
+/**
+ *  get file with name
+ *  @param fromCache : Force download and override cache by "fromCache = NO" , Or check if exists in cache .
+ */
+- (void)getFileWithName:(NSString *)filename fromCache:(BOOL)fromCache Success:(void (^)(NSData *data))success failure:(void (^)(NSError *err))failure;
+
+
+- (void)uploadFileWithImage:(UIImage *)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 /**
  *  uploadFileWithData
  *
@@ -85,9 +106,8 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
  *  @param success  response success
  *  @param failure  response fail
  */
-- (void)uploadFileWithFileURL:(NSURL *)url type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
-- (void)getFileWithName:(NSString *)filename complete:(void (^)(NSError *err, NSData *data))complete;
-
+- (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+- (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic progress:(void (^)(CGFloat progress))progress Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 @end
 
 @protocol IMKitDelegate <NSObject>
@@ -98,25 +118,57 @@ typedef NS_ENUM(int,IMKitConnectStatus) {
  * notifications
  *
  * IMKitDidChatIn
+ * IMKitDidUpdateRooms
  * IMKitDidUpdateReadTimeWithRoom
  * IMKitDidJoinedWithRoom
  * IMKitDidReceiveMessage
  * IMKitDidChangeConnectStatus
  *
  */
+
 - (void)IMKitDidChatIn:(IMKit *)model;
 
 - (BOOL)IMKit:(IMKit *)model willStartLoadingMessageWithRoom:(IMRoom *)room;
 - (void)IMKit:(IMKit *)model didEndLoadingMessageWithRoom:(IMRoom *)room;
 
+/**
+ *  called when receive message , include send from self
+ */
 - (void)IMKit:(IMKit *)model didReceiveMessage:(IMMessage *)message;
+/**
+ *  called when receive message witch send from other device
+ */
+- (void)IMKit:(IMKit *)model didReceiveMessageFromOthers:(IMMessage *)message;
+
+/**
+ *  called when sending message changes type
+ */
+- (void)IMKit:(IMKit *)model didChangeMessageSendingType:(IMMessage *)message;
+
+/**
+ *  called when other device update read time in room
+ */
 - (void)IMKit:(IMKit *)model didUpdateReadTimeWithRoom:(IMRoom *)room;
 
+/**
+ *  called when room updated, example for got new message.
+ */
 - (void)IMKit:(IMKit *)model didUpdateRooms:(NSMutableArray <IMRoom *> *)rooms;
-- (void)IMKit:(IMKit *)model didUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
+- (void)IMKit:(IMKit *)model didUpdateRoom:(IMRoom *)room;
 
+/**
+ *  TODO
+ */
+//- (void)IMKit:(IMKit *)model didUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
+
+/**
+ *  called when joined a room
+ */
 - (void)IMKit:(IMKit *)model didJoinedWithRoom:(IMRoom *)room;
+
+/**
+ *  called when connect status changed
+ */
 - (void)IMKit:(IMKit *)model didChangeConnectStatus:(IMKitConnectStatus)status WithMessage:(NSString *)message;
-- (void)IMKit:(IMKit *)model didUploadWithProgress:(NSProgress *)progress;
 
 @end
