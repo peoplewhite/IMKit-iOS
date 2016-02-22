@@ -25,12 +25,9 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 @property (assign, nonatomic) IMKitConnectStatus connectStatus;
 
 @property (weak, nonatomic) id <IMKitDelegate> delegate;
-
 @property (strong, nonatomic, readonly) NSString *token;
 @property (strong, nonatomic) NSString *deviceToken;
-
 @property (weak, nonatomic, readonly) NSString *clientID;
-
 @property (assign, nonatomic, readonly) BOOL firstTimeLaunch;
 
 //request timeout , default to 5 second
@@ -53,12 +50,18 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 //list all clients
 - (void)clientsListWithOffset:(int)offset Success:(void (^)(NSArray <IMClient *> *clients))success failure:(void (^)(NSError *err))failure;
 
-- (void)signUpWithClientID:(IMClient *)client Success:(void (^)(IMClient *client))success failure:(void (^)(NSError *err))failure;
-
+- (void)signUpWithClientID:(IMClient *)client Success:(void (^)(IMClient *client))success failure:(void (^)(NSError *err))failure DEPRECATED_MSG_ATTRIBUTE("signUpWithClient:Success:failure: instead");
+- (void)signUpWithClient:(IMClient *)client Success:(void (^)(IMClient *client))success failure:(void (^)(NSError *err))failure;
 //to receive room messages
 - (void)chatinSuccess:(void (^)(IMClient *client))success failure:(void (^)(NSError *err))failure;
 //stop receive room messages
 - (void)chatOutSuccess:(void (^)(void))success failure:(void (^)(NSError *err))failure;
+
+/**
+ *  update token if possiable, or auto update at signup instead
+ */
+- (void)updateDeviceTokenIfPossiable:(NSData *)deviceToken;
+
 - (void)logout;
 
 #pragma mark - badge
@@ -79,8 +82,18 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)sendMessage:(IMMessage *)message Success:(void (^)(IMMessage *messages))success failure:(void (^)(NSError *err))failure;
 /**
  * tell backend message received
+ * and rezero badge to room at the same time
+ *
  */
-- (void)updateReadTimeWithRoom:(IMRoom *)room;
+- (void)updateReadTimeWithRoom:(IMRoom *)room DEPRECATED_MSG_ATTRIBUTE("updateReadTimeWithRoom:echoToRoom: instead");
+
+/**
+ *  tell backend message received
+ *  and rezero badge to room at the same time
+ *
+ *  @param echo : if echo to others that current client's read time refreshed
+ */
+- (void)updateReadTimeWithRoom:(IMRoom *)room echoToRoom:(BOOL)echo;
 
 #pragma mark - file
 
@@ -94,7 +107,6 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  @param fromCache : Force download and override cache by "fromCache = NO" , Or check if exists in cache .
  */
 - (void)getFileWithName:(NSString *)filename fromCache:(BOOL)fromCache Success:(void (^)(NSData *data))success failure:(void (^)(NSError *err))failure;
-
 
 - (void)uploadFileWithImage:(UIImage *)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 /**
@@ -115,7 +127,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 @optional
 
 /*
- * notifications
+ * NSNotifications
  *
  * IMKitDidChatIn
  * IMKitDidUpdateRooms
@@ -126,49 +138,49 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *
  */
 
-- (void)IMKitDidChatIn:(IMKit *)model;
+- (void)IMKitDidChatIn;
 
-- (BOOL)IMKit:(IMKit *)model willStartLoadingMessageWithRoom:(IMRoom *)room;
-- (void)IMKit:(IMKit *)model didEndLoadingMessageWithRoom:(IMRoom *)room;
+- (BOOL)IMKitWillStartLoadingMessageWithRoom:(IMRoom *)room;
+- (void)IMKitDidEndLoadingMessageWithRoom:(IMRoom *)room;
 
 /**
  *  called when receive message , include send from self
  */
-- (void)IMKit:(IMKit *)model didReceiveMessage:(IMMessage *)message;
+- (void)IMKitDidReceiveMessage:(IMMessage *)message;
 /**
  *  called when receive message witch send from other device
  */
-- (void)IMKit:(IMKit *)model didReceiveMessageFromOthers:(IMMessage *)message;
+- (void)IMKitDidReceiveMessageFromOthers:(IMMessage *)message;
 
 /**
  *  called when sending message changes type
  */
-- (void)IMKit:(IMKit *)model didChangeMessageSendingType:(IMMessage *)message;
+- (void)IMKitDidChangeMessageSendingType:(IMMessage *)message;
 
 /**
  *  called when other device update read time in room
  */
-- (void)IMKit:(IMKit *)model didUpdateReadTimeWithRoom:(IMRoom *)room;
+- (void)IMKitDidUpdateReadTimeWithRoom:(IMRoom *)room;
 
 /**
  *  called when room updated, example for got new message.
  */
-- (void)IMKit:(IMKit *)model didUpdateRooms:(NSMutableArray <IMRoom *> *)rooms;
-- (void)IMKit:(IMKit *)model didUpdateRoom:(IMRoom *)room;
+- (void)IMKitDidUpdateRooms:(NSMutableArray <IMRoom *> *)rooms;
+- (void)IMKitDidUpdateRoom:(IMRoom *)room;
 
 /**
  *  TODO
  */
-//- (void)IMKit:(IMKit *)model didUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
+//- (void)IMKitDidUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
 
 /**
  *  called when joined a room
  */
-- (void)IMKit:(IMKit *)model didJoinedWithRoom:(IMRoom *)room;
+- (void)IMKitDidJoinedWithRoom:(IMRoom *)room;
 
 /**
  *  called when connect status changed
  */
-- (void)IMKit:(IMKit *)model didChangeConnectStatus:(IMKitConnectStatus)status WithMessage:(NSString *)message;
+- (void)IMKitDidChangeConnectStatus:(IMKitConnectStatus)status WithMessage:(NSString *)message;
 
 @end

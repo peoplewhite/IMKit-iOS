@@ -26,7 +26,7 @@ typedef NS_ENUM (int, IMKitMessageType) {
     IMKitMessageTypeOther,
 };
 
-typedef NS_ENUM(NSUInteger, IMKitMessageSendingType) {
+typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
     IMKitMessageSendingTypeNomal,
     IMKitMessageSendingTypeSending,
     IMKitMessageSendingTypeError,
@@ -34,8 +34,8 @@ typedef NS_ENUM(NSUInteger, IMKitMessageSendingType) {
 
 @class IMRoom;
 @class IMClient;
+@class IMMessageOption;
 @interface IMMessage : IMObject
-
 
 /**
  *  message content
@@ -70,13 +70,37 @@ typedef NS_ENUM(NSUInteger, IMKitMessageSendingType) {
 /**
  *  any object for temp store in message,won't be send to backend
  */
-@property (strong, nonatomic) id<Ignore>temp;
+@property (strong, nonatomic) id <Ignore> temp;
 
+@property (strong, nonatomic) IMMessageOption *option;
 
 - (instancetype)initWithRoom:(IMRoom *)room;
 
 - (void)setMessageWithType:(IMKitMessageType)messageType;
 
+- (void)copyPropertiesFromMessage:(IMMessage *)message;
+@end
 
-- (void)copyPropertiesFromMessage:(IMMessage*)message;
+
+
+
+
+
+
+@interface IMMessageOption : JSONModel
+
+/**
+ *  default to message.message
+ */
+@property (strong, nonatomic) NSString <Optional> *pushMessage;
+
+/**
+ *  default to YES
+ */
+@property (assign, nonatomic) BOOL needToPush;
+
+/**
+ *  default to system sound
+ */
+@property (strong, nonatomic) NSString <Optional> *pushSound;
 @end
