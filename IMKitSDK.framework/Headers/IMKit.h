@@ -50,8 +50,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 //list all clients
 - (void)clientsListWithOffset:(int)offset Success:(void (^)(NSArray <IMClient *> *clients))success failure:(void (^)(NSError *err))failure;
 
-- (void)signUpWithClientID:(IMClient *)client Success:(void (^)(IMClient *client))success failure:(void (^)(NSError *err))failure DEPRECATED_MSG_ATTRIBUTE("signUpWithClient:Success:failure: instead");
-- (void)signUpWithClient:(IMClient *)client Success:(void (^)(IMClient *client))success failure:(void (^)(NSError *err))failure;
+- (void)signWithClient:(IMClient *)client Success:(void (^)(IMClient *client))success failure:(void (^)(NSError *err))failure;
 //to receive room messages
 - (void)chatinSuccess:(void (^)(IMClient *client))success failure:(void (^)(NSError *err))failure;
 //stop receive room messages
@@ -80,12 +79,6 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  send message to room
  */
 - (void)sendMessage:(IMMessage *)message Success:(void (^)(IMMessage *messages))success failure:(void (^)(NSError *err))failure;
-/**
- * tell backend message received
- * and rezero badge to room at the same time
- *
- */
-- (void)updateReadTimeWithRoom:(IMRoom *)room DEPRECATED_MSG_ATTRIBUTE("updateReadTimeWithRoom:echoToRoom: instead");
 
 /**
  *  tell backend message received
