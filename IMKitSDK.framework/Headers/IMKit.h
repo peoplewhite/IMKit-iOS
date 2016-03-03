@@ -84,24 +84,34 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  tell backend message received
  *  and rezero badge to room at the same time
  *
- *  @param echo : if echo to others that current client's read time refreshed
+ *  @param echo : set NO to just update badge with room
  */
 - (void)updateReadTimeWithRoom:(IMRoom *)room echoToRoom:(BOOL)echo;
-
 #pragma mark - file
 
 /**
  *  get file with name , will download file everytime called
  */
-- (void)getFileWithName:(NSString *)filename complete:(void (^)(NSError *err, NSData *data))complete;
-
+- (void)getFileWithName:(NSString *)filename complete:(void (^)(NSError *err, NSData *data))complete DEPRECATED_MSG_ATTRIBUTE("plz use getFileWithName:progress:success:failure:");
 /**
  *  get file with name
  *  @param fromCache : Force download and override cache by "fromCache = NO" , Or check if exists in cache .
  */
-- (void)getFileWithName:(NSString *)filename fromCache:(BOOL)fromCache Success:(void (^)(NSData *data))success failure:(void (^)(NSError *err))failure;
+- (void)getFileWithName:(NSString *)filename fromCache:(BOOL)fromCache success:(void (^)(NSData *data))success failure:(void (^)(NSError *err))failure DEPRECATED_MSG_ATTRIBUTE("plz use getFileWithName:progress:success:failure:");
 
-- (void)uploadFileWithImage:(UIImage *)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+/**
+ *  get file with name , fromCache default to @YES
+ */
+- (void)getFileWithName:(NSString *)filename progress:(void (^)(CGFloat progress))progress success:(void (^)(NSData *data))success failure:(void (^)(NSError *err))failure;
+/**
+ *  get file with name ,
+ *  @param fromCache : Force download and override cache by "fromCache = NO" , Or check if exists in cache .
+ */
+- (void)getFileWithName:(NSString *)filename fromCache:(BOOL)fromCache progress:(void (^)(CGFloat progress))progress success:(void (^)(NSData *data))success failure:(void (^)(NSError *err))failure;
+
+
+
+- (NSURLSessionDataTask*)uploadFileWithImage:(UIImage *)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 /**
  *  uploadFileWithData
  *
@@ -111,8 +121,8 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  @param success  response success
  *  @param failure  response fail
  */
-- (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
-- (void)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic progress:(void (^)(CGFloat progress))progress Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+- (NSURLSessionDataTask*)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+- (NSURLSessionDataTask*)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic progress:(void (^)(CGFloat progress))progress Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 @end
 
 @protocol IMKitDelegate <NSObject>
