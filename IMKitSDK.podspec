@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   s.author        = { "Lova Shih" => "lova@funtek.co" }
   s.platform      = :ios, "8.0"
   s.source        = { :git => "https://github.com/FUNTEKco/IMKit-iOS.git", :tag => '0.0.29' }
-  s.source_files  = "IMKitSDK.framework/Headers/*.h","IMMain.storyboard"
+  s.source_files  = "IMKitSDK.framework/Headers/*.h"
+  s.resources     = "IMMain.storyboard"
   s.ios.vendored_frameworks = 'IMKitSDK.framework'
   s.framework     = 'UIKit'
 
@@ -15,6 +16,7 @@ Pod::Spec.new do |s|
   s.dependency 'JSONModel','~> 1.2.0'
   s.dependency 'GVUserDefaults','~> 1.0.2'
   s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.4'
+  s.dependency 'YYWebImage','~> 1.0'
 
   s.requires_arc  = true
 end
