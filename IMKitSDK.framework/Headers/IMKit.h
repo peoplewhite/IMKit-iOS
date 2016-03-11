@@ -93,6 +93,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  get file with name , will download file everytime called
  */
 - (void)getFileWithName:(NSString *)filename complete:(void (^)(NSError *err, NSData *data))complete DEPRECATED_MSG_ATTRIBUTE("plz use getFileWithName:progress:success:failure:");
+
 /**
  *  get file with name
  *  @param fromCache : Force download and override cache by "fromCache = NO" , Or check if exists in cache .
@@ -109,9 +110,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  */
 - (void)getFileWithName:(NSString *)filename fromCache:(BOOL)fromCache progress:(void (^)(CGFloat progress))progress success:(void (^)(NSData *data))success failure:(void (^)(NSError *err))failure;
 
-
-
-- (NSURLSessionDataTask*)uploadFileWithImage:(UIImage *)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+- (NSURLSessionDataTask *)uploadFileWithImage:(UIImage *)image Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 /**
  *  uploadFileWithData
  *
@@ -121,25 +120,24 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  @param success  response success
  *  @param failure  response fail
  */
-- (NSURLSessionDataTask*)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
-- (NSURLSessionDataTask*)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic progress:(void (^)(CGFloat progress))progress Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+- (NSURLSessionDataTask *)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+- (NSURLSessionDataTask *)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic progress:(void (^)(CGFloat progress))progress Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 @end
+
+//NSNotification
+UIKIT_EXTERN NSString *const kIMKitDidChatIn;
+UIKIT_EXTERN NSString *const kIMKitDidUpdateRoom;
+UIKIT_EXTERN NSString *const kIMKitDidUpdateRooms;
+UIKIT_EXTERN NSString *const kIMKitDidUpdateReadTimeWithRoom;
+UIKIT_EXTERN NSString *const kIMKitDidJoinedWithRoom;
+UIKIT_EXTERN NSString *const kIMKitDidReceiveMessage;
+UIKIT_EXTERN NSString *const kIMKitDidReceiveMessageFromOthers;
+UIKIT_EXTERN NSString *const kIMKitDidChangeMessageSendingType;
+UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
 
 @protocol IMKitDelegate <NSObject>
 
 @optional
-
-/*
- * NSNotifications
- *
- * IMKitDidChatIn
- * IMKitDidUpdateRooms
- * IMKitDidUpdateReadTimeWithRoom
- * IMKitDidJoinedWithRoom
- * IMKitDidReceiveMessage
- * IMKitDidChangeConnectStatus
- *
- */
 
 - (void)IMKitDidChatIn;
 

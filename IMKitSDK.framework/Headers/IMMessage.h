@@ -7,14 +7,15 @@
 //
 
 #import "IMObject.h"
+#import <UIKit/UIKit.h>
 
-#define kMessageTypeText @"text"
-#define kMessageTypeImage @"image"
-#define kMessageTypeAudio @"audio"
-#define kMessageTypeVideo @"video"
-#define kMessageTypeGeo @"GEO"
-#define kMessageTypeSticker @"sticker"
-#define kMessageTypeOther @"other"
+UIKIT_EXTERN NSString *const kMessageTypeText;
+UIKIT_EXTERN NSString *const kMessageTypeImage;
+UIKIT_EXTERN NSString *const kMessageTypeAudio;
+UIKIT_EXTERN NSString *const kMessageTypeVideo;
+UIKIT_EXTERN NSString *const kMessageTypeGeo;
+UIKIT_EXTERN NSString *const kMessageTypeSticker;
+UIKIT_EXTERN NSString *const kMessageTypeOther;
 
 typedef NS_ENUM (int, IMKitMessageType) {
     IMKitMessageTypeText,
@@ -80,12 +81,6 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 
 - (void)copyPropertiesFromMessage:(IMMessage *)message;
 @end
-
-
-
-
-
-
 
 @interface IMMessageOption : JSONModel
 

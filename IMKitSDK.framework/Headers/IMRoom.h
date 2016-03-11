@@ -16,10 +16,11 @@
 
 @property (strong, nonatomic) NSMutableArray <NSMutableDictionary *> *client;
 @property (strong, nonatomic) NSMutableArray <NSMutableDictionary *> *message;
+
 @property (strong, nonatomic) NSDictionary *readTime;
 @property (strong, nonatomic) NSString *lastMessageTime;
 @property (strong, nonatomic) IMClient *sender;
 @property (assign, nonatomic) int badge;
 
-@property (strong, nonatomic,readonly) IMClient *anyOtherClient;
+@property (strong, nonatomic, readonly) IMClient *anyOtherClient;
 @end
