@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license       = 'MIT'
   s.author        = { "Lova Shih" => "lova@funtek.co" }
   s.platform      = :ios, "8.0"
-  s.source        = { :git => "https://github.com/FUNTEKco/IMKit-iOS.git", :tag => '0.0.30' }
+  s.source        = { :git => "https://github.com/FUNTEKco/IMKit-iOS.git", :tag => s.version.to_s }
   s.source_files  = "IMKitSDK.framework/Headers/*.h"
   s.resources     = "IMMain.storyboard"
   s.ios.vendored_frameworks = 'IMKitSDK.framework'

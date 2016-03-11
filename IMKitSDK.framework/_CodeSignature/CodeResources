@@ -72,30 +72,6 @@
 		<data>
 		p0KiU/gcdFkz4dABs5NWQ+mmrEY=
 		</data>
-		<key>IMMain.storyboardc/IMChatViewController.nib</key>
-		<data>
-		efHF1G91aIZng5/Wug6+avSzyQ8=
-		</data>
-		<key>IMMain.storyboardc/IMRoomListViewController.nib</key>
-		<data>
-		OGq1DbxyAvfKKdp9Hc89L9O3LsE=
-		</data>
-		<key>IMMain.storyboardc/Info.plist</key>
-		<data>
-		E0WjbIUx58EO195rXGsIYQM8JLE=
-		</data>
-		<key>IMMain.storyboardc/Jmf-zE-odX-view-gxy-DY-gBh.nib</key>
-		<data>
-		oUxd2hgl98ZqVd3YPeDG5t/YUP0=
-		</data>
-		<key>IMMain.storyboardc/SwR-Qd-ljX-view-0yQ-7i-Vzp.nib</key>
-		<data>
-		djTZI2/mE2p91S5jUuS7zR1Z9dc=
-		</data>
-		<key>IMMain.storyboardc/nav.nib</key>
-		<data>
-		lWAjHfyMrLpihHaCO6nEgT8Ac7Y=
-		</data>
 		<key>Info.plist</key>
 		<data>
 		GfvJCs+IkcJtmyhqGq37nV7U84c=
@@ -174,30 +150,6 @@
 		<key>Headers/IMViewController.h</key>
 		<data>
 		p0KiU/gcdFkz4dABs5NWQ+mmrEY=
-		</data>
-		<key>IMMain.storyboardc/IMChatViewController.nib</key>
-		<data>
-		efHF1G91aIZng5/Wug6+avSzyQ8=
-		</data>
-		<key>IMMain.storyboardc/IMRoomListViewController.nib</key>
-		<data>
-		OGq1DbxyAvfKKdp9Hc89L9O3LsE=
-		</data>
-		<key>IMMain.storyboardc/Info.plist</key>
-		<data>
-		E0WjbIUx58EO195rXGsIYQM8JLE=
-		</data>
-		<key>IMMain.storyboardc/Jmf-zE-odX-view-gxy-DY-gBh.nib</key>
-		<data>
-		oUxd2hgl98ZqVd3YPeDG5t/YUP0=
-		</data>
-		<key>IMMain.storyboardc/SwR-Qd-ljX-view-0yQ-7i-Vzp.nib</key>
-		<data>
-		djTZI2/mE2p91S5jUuS7zR1Z9dc=
-		</data>
-		<key>IMMain.storyboardc/nav.nib</key>
-		<data>
-		lWAjHfyMrLpihHaCO6nEgT8Ac7Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
