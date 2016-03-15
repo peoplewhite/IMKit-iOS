@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "IMKit.h"
 
+#import "IMViewController.h"
+
 //! Project version number for IMKitSDK.
 FOUNDATION_EXPORT double IMKitSDKVersionNumber;
 

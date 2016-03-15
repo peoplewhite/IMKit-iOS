@@ -10,5 +10,5 @@
 
 @interface IMBadge : JSONModel
 @property (assign, nonatomic) int total;
-@property (strong, nonatomic) NSDictionary* badgeDict;
+@property (strong, nonatomic) NSDictionary *badgeDict;
 @end

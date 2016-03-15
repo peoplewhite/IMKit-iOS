@@ -10,7 +10,15 @@
 		</data>
 		<key>Headers/IMBadge.h</key>
 		<data>
-		m+Y4Jauii4lJ+TeOZzwqWz4zHpA=
+		GJy/96xDliP4rOcgXs2eNhHTzOQ=
+		</data>
+		<key>Headers/IMChatTableViewCell.h</key>
+		<data>
+		J6uVJGiORPJUhL1ryYr9I6FtVbs=
+		</data>
+		<key>Headers/IMChatViewController.h</key>
+		<data>
+		ajwPdK0gO881hgemt75fV3jnUuw=
 		</data>
 		<key>Headers/IMClient.h</key>
 		<data>
@@ -30,15 +38,15 @@
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		oMoBakFeFgzh+DxR5gzI7YZoyJM=
+		baYQJM8W2yusSYDAmixM1mK37ro=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
-		PW7b/qkP89UjS9PySC9datQWYXY=
+		lV8J0AoLO4vpipAo5YWZ72z6HbY=
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		MshIHgQgP+GWHFvji5ORuBi3oOs=
+		udW2wRIoOwNY0tIJtHXmE6+wasI=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
@@ -46,7 +54,23 @@
 		</data>
 		<key>Headers/IMRoom.h</key>
 		<data>
-		KJddtRF/IATIG7tH4pWKBJgd87c=
+		MqxK+snXfqD/EEbSvsIPHMtvBlU=
+		</data>
+		<key>Headers/IMRoomListViewController.h</key>
+		<data>
+		/PEMopDiNZbMnmG48Qnvq5C2TjI=
+		</data>
+		<key>Headers/IMRoomTableViewCell.h</key>
+		<data>
+		D+K0dGSOmP+hs75CuBZTJ73+j+I=
+		</data>
+		<key>Headers/IMTableViewCell.h</key>
+		<data>
+		UMPqT0rXnJ4CTCy98X8WTkvWBB0=
+		</data>
+		<key>Headers/IMViewController.h</key>
+		<data>
+		p0KiU/gcdFkz4dABs5NWQ+mmrEY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -65,7 +89,15 @@
 		</data>
 		<key>Headers/IMBadge.h</key>
 		<data>
-		m+Y4Jauii4lJ+TeOZzwqWz4zHpA=
+		GJy/96xDliP4rOcgXs2eNhHTzOQ=
+		</data>
+		<key>Headers/IMChatTableViewCell.h</key>
+		<data>
+		J6uVJGiORPJUhL1ryYr9I6FtVbs=
+		</data>
+		<key>Headers/IMChatViewController.h</key>
+		<data>
+		ajwPdK0gO881hgemt75fV3jnUuw=
 		</data>
 		<key>Headers/IMClient.h</key>
 		<data>
@@ -85,15 +117,15 @@
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		oMoBakFeFgzh+DxR5gzI7YZoyJM=
+		baYQJM8W2yusSYDAmixM1mK37ro=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
-		PW7b/qkP89UjS9PySC9datQWYXY=
+		lV8J0AoLO4vpipAo5YWZ72z6HbY=
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		MshIHgQgP+GWHFvji5ORuBi3oOs=
+		udW2wRIoOwNY0tIJtHXmE6+wasI=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
@@ -101,7 +133,23 @@
 		</data>
 		<key>Headers/IMRoom.h</key>
 		<data>
-		KJddtRF/IATIG7tH4pWKBJgd87c=
+		MqxK+snXfqD/EEbSvsIPHMtvBlU=
+		</data>
+		<key>Headers/IMRoomListViewController.h</key>
+		<data>
+		/PEMopDiNZbMnmG48Qnvq5C2TjI=
+		</data>
+		<key>Headers/IMRoomTableViewCell.h</key>
+		<data>
+		D+K0dGSOmP+hs75CuBZTJ73+j+I=
+		</data>
+		<key>Headers/IMTableViewCell.h</key>
+		<data>
+		UMPqT0rXnJ4CTCy98X8WTkvWBB0=
+		</data>
+		<key>Headers/IMViewController.h</key>
+		<data>
+		p0KiU/gcdFkz4dABs5NWQ+mmrEY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
