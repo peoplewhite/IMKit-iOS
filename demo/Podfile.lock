@@ -1,0 +1,48 @@
+PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - GVUserDefaults (1.0.2)
+  - IMKitSDK (0.0.30):
+    - GVUserDefaults (~> 1.0.2)
+    - JSONModel (~> 1.2.0)
+    - Socket.IO-Client-Swift (~> 5.4.1)
+    - UITableView+FDTemplateLayoutCell (~> 1.4)
+    - YYWebImage (~> 1.0)
+  - JSONModel (1.2.0)
+  - Socket.IO-Client-Swift (5.4.1)
+  - UITableView+FDTemplateLayoutCell (1.4)
+  - YYCache (1.0)
+  - YYImage (1.0):
+    - YYImage/Core (= 1.0)
+  - YYImage/Core (1.0)
+  - YYWebImage (1.0):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - ChameleonFramework (= 2.1.0)
+  - IMKitSDK (from `https://github.com/FUNTEKco/IMKit-iOS.git`, tag `0.0.30`)
+
+EXTERNAL SOURCES:
+  IMKitSDK:
+    :git: https://github.com/FUNTEKco/IMKit-iOS.git
+    :tag: 0.0.30
+
+CHECKOUT OPTIONS:
+  IMKitSDK:
+    :git: https://github.com/FUNTEKco/IMKit-iOS.git
+    :tag: 0.0.30
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  IMKitSDK: e0c835ed638f2b5f404629b3f0e2fbc44a9ad93f
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  Socket.IO-Client-Swift: ad65f1437dd97c4ac01e2e506386fafc3de2ece1
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  YYCache: 671da5662bbd0165f144bfab1c2ba9d9548200d3
+  YYImage: 11b1cad71b00a06c216c120e842c22f930449ee8
+  YYWebImage: 61497d881d103dd4ec36fdbbe019f952edbfcc4d
+
+COCOAPODS: 0.39.0

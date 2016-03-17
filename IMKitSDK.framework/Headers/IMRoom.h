@@ -16,6 +16,7 @@
 
 @property (strong, nonatomic) NSMutableArray <NSMutableDictionary *> *client;
 @property (strong, nonatomic) NSMutableArray <NSMutableDictionary *> *message;
+@property (strong, nonatomic) NSMutableArray <NSString *> *archivedBy;
 
 @property (strong, nonatomic) NSDictionary *readTime;
 @property (strong, nonatomic) NSString *lastMessageTime;

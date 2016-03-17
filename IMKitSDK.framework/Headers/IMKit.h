@@ -73,6 +73,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)roomWithRoomID:(NSString *)roomID Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 - (void)messageWithRoom:(IMRoom *)room offset:(NSUInteger)offset limit:(int)limit Success:(void (^)(NSMutableArray <IMMessage *> *messages))success failure:(void (^)(NSError *err))failure;
 - (void)roomListSuccess:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
+- (void)archiveRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
 #pragma mark - message
 /**
@@ -87,6 +88,10 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  @param echo : set NO to just update badge with room
  */
 - (void)updateReadTimeWithRoom:(IMRoom *)room echoToRoom:(BOOL)echo;
+
+
+- (void)updateMessage:(IMMessage*)message Success:(void (^)(IMMessage *message))success failure:(void (^)(NSError *err))failure;
+
 #pragma mark - file
 
 /**
@@ -132,6 +137,7 @@ UIKIT_EXTERN NSString *const kIMKitDidUpdateReadTimeWithRoom;
 UIKIT_EXTERN NSString *const kIMKitDidJoinedWithRoom;
 UIKIT_EXTERN NSString *const kIMKitDidReceiveMessage;
 UIKIT_EXTERN NSString *const kIMKitDidReceiveMessageFromOthers;
+UIKIT_EXTERN NSString *const kIMKitDidUpdateMessage;
 UIKIT_EXTERN NSString *const kIMKitDidChangeMessageSendingType;
 UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
 
@@ -153,6 +159,10 @@ UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
  */
 - (void)IMKitDidReceiveMessageFromOthers:(IMMessage *)message;
 
+/**
+ *  message updated by someone
+ */
+- (void)IMKitDidUpdateMessage:(IMMessage *)message;
 /**
  *  called when sending message changes type
  */
