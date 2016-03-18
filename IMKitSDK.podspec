@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.dependency 'GVUserDefaults','~> 1.0.2'
   s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.4'
   s.dependency 'YYWebImage','~> 1.0'
-  # s.dependency 'LOAlertController',:git => 'https://github.com/vivalalova/LOAlertController.git', :tag => '0.1.2'
+  s.dependency 'LOAlertController','~> 0.1.2'
   s.requires_arc  = true
 end
 
