@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "IMKit.h"
-#import "LOUIKit.h"
+#import <LOUIKit/LOUIKit.h>
 @interface IMTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet LOImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet LOLabel *titleLabel;
