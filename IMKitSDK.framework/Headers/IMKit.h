@@ -72,7 +72,17 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)createRoom:(IMRoom *)room WithClientID:(NSString *)ClientID duplicate:(BOOL)duplicate Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 - (void)roomWithRoomID:(NSString *)roomID Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 - (void)messageWithRoom:(IMRoom *)room offset:(NSUInteger)offset limit:(int)limit Success:(void (^)(NSMutableArray <IMMessage *> *messages))success failure:(void (^)(NSError *err))failure;
+- (void)messageWithRoom:(IMRoom *)room pinDate:(NSString *)pinDate limit:(int)limit success:(void (^)(NSMutableArray <IMMessage *> *messages))success failure:(void (^)(NSError *err))failure;
+
+/**
+ *  get room list
+ *
+ *  @param success success block
+ *  @param failure failure block
+ */
 - (void)roomListSuccess:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
+- (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
+
 - (void)archiveRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
 #pragma mark - message
@@ -91,6 +101,12 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 
 
 - (void)updateMessage:(IMMessage*)message Success:(void (^)(IMMessage *message))success failure:(void (^)(NSError *err))failure;
+
+- (void)unseenCountAfterLastSeenDate:(NSString *)lastSeenDate
+                   beforeMessageDate:(NSString *)messageDate
+                              inRoom:(IMRoom *)room
+                             success:(void (^)(int unseenCount))success
+                             failure:(void (^)(NSError *err))failure;
 
 #pragma mark - file
 

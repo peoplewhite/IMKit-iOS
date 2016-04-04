@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+
+//import for model to send messages
 #import "IMKit.h"
 
-//#import "IMViewController.h"
-#import "IMRoomListViewController.h"
-#import "IMChatViewController.h"
+//import for UI
 #import "IMKitUI.h"
+
 //! Project version number for IMKitSDK.
 FOUNDATION_EXPORT double IMKitSDKVersionNumber;
 

@@ -27,10 +27,16 @@
 @interface NSDate (to8601String)
 - (NSString *)toString8601;
 
+
 - (BOOL)isToday;
 - (BOOL)isThisWeek;
 - (BOOL)isThisMonth;
 - (BOOL)isThisYear;
 - (BOOL)isThisEra;
+- (NSInteger)daysAgo;
+- (NSInteger)hoursAgo;
+- (NSInteger)minutesAgo;
+
+//- (BOOL)isTheSameTodayWithDate:(NSDate*)date;
 
 @end

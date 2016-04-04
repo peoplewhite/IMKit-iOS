@@ -12,14 +12,6 @@
 		<data>
 		GJy/96xDliP4rOcgXs2eNhHTzOQ=
 		</data>
-		<key>Headers/IMChatTableViewCell.h</key>
-		<data>
-		J6uVJGiORPJUhL1ryYr9I6FtVbs=
-		</data>
-		<key>Headers/IMChatViewController.h</key>
-		<data>
-		ajwPdK0gO881hgemt75fV3jnUuw=
-		</data>
 		<key>Headers/IMClient.h</key>
 		<data>
 		/V6U5mlz6+rlDgWFihg9mOHIcRM=
@@ -38,39 +30,39 @@
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		u/V+J/4ejtq/HOg9nAns2WdyGZc=
+		FJLjsT9EkebMi6+5ZsNPkPiKTQU=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
-		1sAO4kd6jtN1KxsK+1KSxn9dXqM=
+		2BReSvim1K98aOongUs+HIIcr9k=
 		</data>
 		<key>Headers/IMKitUI.h</key>
 		<data>
-		3FbB0nQeSmXIwaOwdVaVIO09YW8=
+		krpfgx4A5Jcg7h8FOt/mHs0C77U=
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		eSCi7wdldeWiWUc2ty8GePWggUk=
+		/9k2lj4/MpxPCgmJXL78ibdza00=
+		</data>
+		<key>Headers/IMMessageViewController.h</key>
+		<data>
+		RpxPSySRHuroI3zkFNUiFs8Keqc=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
-		nsY9yHsP8mgFiQCJocAmxUNHbuk=
+		m8IieD7j9bcdWL0FiaUxP0cpPPo=
 		</data>
 		<key>Headers/IMRoom.h</key>
 		<data>
 		YApmw6QSsh9Lthu9zpQzYnr67xQ=
 		</data>
-		<key>Headers/IMRoomListViewController.h</key>
+		<key>Headers/IMRoomViewController.h</key>
 		<data>
-		/PEMopDiNZbMnmG48Qnvq5C2TjI=
-		</data>
-		<key>Headers/IMRoomTableViewCell.h</key>
-		<data>
-		D+K0dGSOmP+hs75CuBZTJ73+j+I=
+		QYbWwmchVteWDkJipUrcUpcZG7A=
 		</data>
 		<key>Headers/IMTableViewCell.h</key>
 		<data>
-		UMPqT0rXnJ4CTCy98X8WTkvWBB0=
+		1GkOtJCrwof8FV/tAUFmNPST1Cc=
 		</data>
 		<key>Headers/IMViewController.h</key>
 		<data>
@@ -78,7 +70,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GfvJCs+IkcJtmyhqGq37nV7U84c=
+		rmUkbwzn/I9Tzv7QCASNVNSFEpY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -88,81 +80,192 @@
 	<key>files2</key>
 	<dict>
 		<key>Headers/GVUserDefaults+defaults.h</key>
-		<data>
-		K3M31iqMxlVhfF6xXCN1+5KYwzA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			K3M31iqMxlVhfF6xXCN1+5KYwzA=
+			</data>
+			<key>hash2</key>
+			<data>
+			hBQjcNcVKw762qQkVgkcRfUshS5eJ/CwmtMcuL+gGk8=
+			</data>
+		</dict>
 		<key>Headers/IMBadge.h</key>
-		<data>
-		GJy/96xDliP4rOcgXs2eNhHTzOQ=
-		</data>
-		<key>Headers/IMChatTableViewCell.h</key>
-		<data>
-		J6uVJGiORPJUhL1ryYr9I6FtVbs=
-		</data>
-		<key>Headers/IMChatViewController.h</key>
-		<data>
-		ajwPdK0gO881hgemt75fV3jnUuw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			GJy/96xDliP4rOcgXs2eNhHTzOQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			UGx03QBphO6SpSJXnCAg5EdjTeCiPQ/G9ybRgTY7EIM=
+			</data>
+		</dict>
 		<key>Headers/IMClient.h</key>
-		<data>
-		/V6U5mlz6+rlDgWFihg9mOHIcRM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			/V6U5mlz6+rlDgWFihg9mOHIcRM=
+			</data>
+			<key>hash2</key>
+			<data>
+			l1Xl1UrI0ljWabXJspzdThMOLX7sKQeyxZmDY6MqR6M=
+			</data>
+		</dict>
 		<key>Headers/IMDataModels.h</key>
-		<data>
-		328SbH+uSLlXd5klAt+Tyw9qU/M=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			328SbH+uSLlXd5klAt+Tyw9qU/M=
+			</data>
+			<key>hash2</key>
+			<data>
+			+KuI1p9xOKJjtvHC/SjwaR7i0qVsqJYmc3vNyqmEBRY=
+			</data>
+		</dict>
 		<key>Headers/IMFile.h</key>
-		<data>
-		rY8pcuYdCADuf+cLIOpIcT6vrWM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			rY8pcuYdCADuf+cLIOpIcT6vrWM=
+			</data>
+			<key>hash2</key>
+			<data>
+			d+4t41A3djZunPU9uAA11P0t6xHkydbSk/JETQoA8Qw=
+			</data>
+		</dict>
 		<key>Headers/IMInstallation.h</key>
-		<data>
-		GW4g56wHni8/1PLJ6vqe0T256+o=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			GW4g56wHni8/1PLJ6vqe0T256+o=
+			</data>
+			<key>hash2</key>
+			<data>
+			Gk4hzJGvqUvToAqtD5S1bGAnQQ3WAolXI5iBVM/Sac0=
+			</data>
+		</dict>
 		<key>Headers/IMKit.h</key>
-		<data>
-		u/V+J/4ejtq/HOg9nAns2WdyGZc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			FJLjsT9EkebMi6+5ZsNPkPiKTQU=
+			</data>
+			<key>hash2</key>
+			<data>
+			1w56tkE1yA0ah9Xv2yGjv8CdMuGgmg0F6SzA1SJmCJs=
+			</data>
+		</dict>
 		<key>Headers/IMKitSDK.h</key>
-		<data>
-		1sAO4kd6jtN1KxsK+1KSxn9dXqM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			2BReSvim1K98aOongUs+HIIcr9k=
+			</data>
+			<key>hash2</key>
+			<data>
+			C5qaWTFH+dMaW5heH6zRukGsnCXr9ZAQUAG4Y5nRD98=
+			</data>
+		</dict>
 		<key>Headers/IMKitUI.h</key>
-		<data>
-		3FbB0nQeSmXIwaOwdVaVIO09YW8=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			krpfgx4A5Jcg7h8FOt/mHs0C77U=
+			</data>
+			<key>hash2</key>
+			<data>
+			/lb4WJQzUf5J7bDKdqSfwPDXLpQYUlF4/ceBLO/rKeg=
+			</data>
+		</dict>
 		<key>Headers/IMMessage.h</key>
-		<data>
-		eSCi7wdldeWiWUc2ty8GePWggUk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			/9k2lj4/MpxPCgmJXL78ibdza00=
+			</data>
+			<key>hash2</key>
+			<data>
+			MHO/KoTc+iWFXKpvdXvYR03lMLBgDa/tk4UB+7Db/hY=
+			</data>
+		</dict>
+		<key>Headers/IMMessageViewController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RpxPSySRHuroI3zkFNUiFs8Keqc=
+			</data>
+			<key>hash2</key>
+			<data>
+			M+vlaQQHeTyfd4YyltPBmggtJsiZpz3u8RvMR5571tg=
+			</data>
+		</dict>
 		<key>Headers/IMObject.h</key>
-		<data>
-		nsY9yHsP8mgFiQCJocAmxUNHbuk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			m8IieD7j9bcdWL0FiaUxP0cpPPo=
+			</data>
+			<key>hash2</key>
+			<data>
+			tuOGSICxNS9Q/ks53Ny6Vp5vSJOdun2OozN1DP0FD3c=
+			</data>
+		</dict>
 		<key>Headers/IMRoom.h</key>
-		<data>
-		YApmw6QSsh9Lthu9zpQzYnr67xQ=
-		</data>
-		<key>Headers/IMRoomListViewController.h</key>
-		<data>
-		/PEMopDiNZbMnmG48Qnvq5C2TjI=
-		</data>
-		<key>Headers/IMRoomTableViewCell.h</key>
-		<data>
-		D+K0dGSOmP+hs75CuBZTJ73+j+I=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			YApmw6QSsh9Lthu9zpQzYnr67xQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			HsUH0fqhNt+/q5X7TfZ5fP1e1MTifVHSTO7A7ly7TQ4=
+			</data>
+		</dict>
+		<key>Headers/IMRoomViewController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QYbWwmchVteWDkJipUrcUpcZG7A=
+			</data>
+			<key>hash2</key>
+			<data>
+			vMyK1YcpsPN7wy+52XBe9md3tkgXR26NV4u4U5ufy7I=
+			</data>
+		</dict>
 		<key>Headers/IMTableViewCell.h</key>
-		<data>
-		UMPqT0rXnJ4CTCy98X8WTkvWBB0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			1GkOtJCrwof8FV/tAUFmNPST1Cc=
+			</data>
+			<key>hash2</key>
+			<data>
+			y9/XAEoqs1Ql2EQtfCbvwNinmZLWbRBnGk80XUaNjuY=
+			</data>
+		</dict>
 		<key>Headers/IMViewController.h</key>
-		<data>
-		p0KiU/gcdFkz4dABs5NWQ+mmrEY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			p0KiU/gcdFkz4dABs5NWQ+mmrEY=
+			</data>
+			<key>hash2</key>
+			<data>
+			50u3Wex02W8GuAZ8PAgFAUChvb32EgpC+6XCa95jwx4=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		oD6lQM5KzGUz/NgHuTomSN4o0FI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			oD6lQM5KzGUz/NgHuTomSN4o0FI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Xs1JN91EYBdVfOrdGQjNuL51MVASdd9lwMcZW0kZsEA=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

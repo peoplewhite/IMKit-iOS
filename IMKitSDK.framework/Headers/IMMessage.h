@@ -82,6 +82,9 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 - (void)setMessageWithType:(IMKitMessageType)messageType;
 
 - (void)copyPropertiesFromMessage:(IMMessage *)message;
+
+//- (BOOL)didReadFromAnother;
+//- (NSUInteger)numberOfReadFromUsers;
 @end
 
 @interface IMMessageOption : JSONModel

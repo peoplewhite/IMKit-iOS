@@ -6,12 +6,7 @@
 //  Copyright © 2016年 funtek. All rights reserved.
 //
 
-#ifndef IMKitUI_h
-#define IMKitUI_h
-
 #import "IMViewController.h"
-#import "IMRoomListViewController.h"
-#import "IMChatViewController.h"
+#import "IMRoomViewController.h"
+#import "IMMessageViewController.h"
 
-
-#endif /* IMKitUI_h */
