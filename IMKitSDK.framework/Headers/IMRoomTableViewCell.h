@@ -9,7 +9,13 @@
 #import "IMTableViewCell.h"
 
 @interface IMRoomTableViewCell : IMTableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *subTitleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *badgeLabel;
+
+/**
+ *  room to show
+ */
+@property (strong,nonatomic) IMRoom* room;
+
+@property (weak, nonatomic) IBOutlet LOLabel *subTitleLabel;
+@property (weak, nonatomic) IBOutlet LOLabel *badgeLabel;
 
 @end

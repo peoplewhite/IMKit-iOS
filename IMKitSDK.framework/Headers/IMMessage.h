@@ -16,6 +16,7 @@ UIKIT_EXTERN NSString *const kMessageTypeVideo;
 UIKIT_EXTERN NSString *const kMessageTypeGeo;
 UIKIT_EXTERN NSString *const kMessageTypeSticker;
 UIKIT_EXTERN NSString *const kMessageTypeOther;
+UIKIT_EXTERN NSString *const kMessageTypeDelete;
 
 typedef NS_ENUM (int, IMKitMessageType) {
     IMKitMessageTypeText,
@@ -25,6 +26,7 @@ typedef NS_ENUM (int, IMKitMessageType) {
     IMKitMessageTypeGEO,
     IMKitMessageTypeSticker,
     IMKitMessageTypeOther,
+    IMKitMessageTypeDelete
 };
 
 typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
@@ -80,6 +82,9 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 - (void)setMessageWithType:(IMKitMessageType)messageType;
 
 - (void)copyPropertiesFromMessage:(IMMessage *)message;
+
+//- (BOOL)didReadFromAnother;
+//- (NSUInteger)numberOfReadFromUsers;
 @end
 
 @interface IMMessageOption : JSONModel
