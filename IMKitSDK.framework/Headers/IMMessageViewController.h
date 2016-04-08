@@ -9,16 +9,9 @@
 #import "IMViewController.h"
 #import "IMMessageTableViewCell.h"
 
-//typedef NS_ENUM(NSUInteger, IMInputingType) {
-//    IMInputingTypeNone,
-//    IMInputingTypeText,
-//    IMInputingTypeMore,
-//};
-
-
 @interface IMMessageViewController : IMViewController
 @property (strong, nonatomic) IMRoom *room;
-//@property (assign, nonatomic) IMInputingType inputingType;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *inputViewToBottomDistance;
 @property (weak, nonatomic) IBOutlet UIButton *sendMessageBtn;
 @property (weak, nonatomic) IBOutlet UITableView *tableview;

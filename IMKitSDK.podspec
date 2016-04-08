@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "IMKitSDK"
-  s.version       = '0.0.36'
+  s.version       = '0.0.37'
   s.summary       = "IMKitSDK" 
   s.homepage      = 'http://imkit.co/'
   s.license       = 'MIT'
@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.platform      = :ios, "8.0"
   s.source        = { :git => "https://github.com/FUNTEKco/IMKit-iOS.git", :tag => s.version.to_s }
   s.source_files  = "IMKitSDK.framework/Headers/*.h"
-  s.resources     = "IMMain.storyboard"
+  s.resources     = "IMMain.storyboard",
+                    "demo/demo/assets.xcassets/**/*.{jpg,png}"
   s.ios.vendored_frameworks = 'IMKitSDK.framework'
   s.framework     = 'UIKit'
 
@@ -19,7 +20,7 @@ Pod::Spec.new do |s|
   s.dependency 'YYWebImage','~> 1.0'
   s.dependency 'LOAlertController','~> 0.1.2'
   s.dependency 'LOUIKit','0.1.3'
-  s.dependency 'YapDatabase','2.8.3'
+  # s.dependency 'YapDatabase','2.8.3'
   
   s.requires_arc  = true
 end

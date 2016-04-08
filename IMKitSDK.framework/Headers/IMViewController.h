@@ -11,6 +11,7 @@
 
 
 @interface IMViewController : UIViewController
+- (void)setNavigationBarTitle:(NSString *)title;
 
 
 - (void)keyboardWillChangeToFrame:(CGRect)frame duration:(CGFloat)duration;

@@ -22,14 +22,14 @@
 -(NSString*)cellIDForRoom:(IMRoom*)room;
 -(UITableViewCell*)customCellWithIdentifier:(NSString*)cellID room:(IMRoom*)room cell:(IMRoomTableViewCell*)cell;
 
--(IMMessageViewController*)IMRoomListControllerToPushWithRoom:(IMRoom*)room;
+-(IMMessageViewController*)IMRoomControllerToPushWithRoom:(IMRoom*)room;
 @end
 
 
 @protocol IMRoomViewControllerDelegate <NSObject>
 @optional
 
--(void)IMRoomControllerDidPop;
+-(void)IMRoomViewControllerDidPop;
 
 
 @end

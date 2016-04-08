@@ -20,6 +20,9 @@
 @property (strong, nonatomic) NSMutableDictionary *currentIntallation;
 
 @property (strong, nonatomic) NSString *token;
+
+@property (strong, nonatomic) NSMutableDictionary* messageCache;
+
 - (void)write;
 
 @end

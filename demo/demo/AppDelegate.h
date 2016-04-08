@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <IMKitSDK/IMKitSDK.h>
-#import <IMKitSDK/IMRoomListViewController.h>
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
