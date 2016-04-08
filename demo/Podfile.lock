@@ -22,11 +22,17 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
-  - IMKitSDK (from `../`)
+  - IMKitSDK (from `https://github.com/FUNTEKco/IMKit-iOS.git`, tag `0.0.37`)
 
 EXTERNAL SOURCES:
   IMKitSDK:
-    :path: "../"
+    :git: https://github.com/FUNTEKco/IMKit-iOS.git
+    :tag: 0.0.37
+
+CHECKOUT OPTIONS:
+  IMKitSDK:
+    :git: https://github.com/FUNTEKco/IMKit-iOS.git
+    :tag: 0.0.37
 
 SPEC CHECKSUMS:
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
