@@ -1,0 +1,10 @@
+//
+//  PrefixHeader.pch
+//  demo
+//
+//  Created by Kuo-HsunShih on 2016/4/8.
+//  Copyright © 2016年 funtek. All rights reserved.
+//
+
+
+#import <IMKitSDK/IMKitSDK.h>

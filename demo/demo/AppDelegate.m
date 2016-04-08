@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <ChameleonFramework/Chameleon.h>
 
 @interface AppDelegate ()
 
@@ -17,10 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
-    [Chameleon setGlobalThemeUsingPrimaryColor:FlatOrange withContentStyle:UIContentStyleContrast];
-    
     IMKitInstance.apiKey = @"005398ef62b92519cc526469f92bf399b4ae6bfd";
     IMKitInstance.clientKey = @"5119f2d0b786758c084c09daa54ca605e70f2731";
     NSString *url = @"http://imkit.co:35967";

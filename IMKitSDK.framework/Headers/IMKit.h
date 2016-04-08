@@ -69,7 +69,16 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 
 - (void)createRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 - (void)joinRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
-- (void)createRoom:(IMRoom *)room WithClientID:(NSString *)ClientID duplicate:(BOOL)duplicate Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
+
+
+//create room with client, return old room if exists
+- (void)createRoom:(IMRoom *)room WithClientID:(NSString *)ClientID duplicate:(BOOL)duplicate Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure DEPRECATED_MSG_ATTRIBUTE("duplicate: DEPRECATED");
+- (void)createRoom:(IMRoom *)room WithClientID:(NSString *)clientID success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
+
+//create room with client
+- (void)forceCreateRoomWithClient:(NSString*)clientID success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
+
+
 - (void)roomWithRoomID:(NSString *)roomID Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 - (void)messageWithRoom:(IMRoom *)room offset:(NSUInteger)offset limit:(int)limit Success:(void (^)(NSMutableArray <IMMessage *> *messages))success failure:(void (^)(NSError *err))failure;
 - (void)messageWithRoom:(IMRoom *)room pinDate:(NSString *)pinDate limit:(int)limit success:(void (^)(NSMutableArray <IMMessage *> *messages))success failure:(void (^)(NSError *err))failure;
@@ -79,13 +88,20 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *
  *  @param success success block
  *  @param failure failure block
+ *  @param complete complete block
+ *  @response in callback with block, and IMKitDidUpdateRooms:
  */
+- (void)roomListInBackground;
 - (void)roomListSuccess:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
 - (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
+- (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSMutableArray <IMRoom *> *rooms))complete;
 
 - (void)archiveRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
 #pragma mark - message
+
+- (void)sendMessageInBackground:(IMMessage *)message;
+
 /**
  *  send message to room
  */
@@ -99,8 +115,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  */
 - (void)updateReadTimeWithRoom:(IMRoom *)room echoToRoom:(BOOL)echo;
 
-
-- (void)updateMessage:(IMMessage*)message Success:(void (^)(IMMessage *message))success failure:(void (^)(NSError *err))failure;
+- (void)updateMessage:(IMMessage *)message Success:(void (^)(IMMessage *message))success failure:(void (^)(NSError *err))failure;
 
 - (void)unseenCountAfterLastSeenDate:(NSString *)lastSeenDate
                    beforeMessageDate:(NSString *)messageDate

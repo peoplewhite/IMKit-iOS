@@ -37,6 +37,4 @@
 - (NSInteger)hoursAgo;
 - (NSInteger)minutesAgo;
 
-//- (BOOL)isTheSameTodayWithDate:(NSDate*)date;
-
 @end

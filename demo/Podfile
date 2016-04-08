@@ -1,14 +1,5 @@
 platform :ios, '8.0'
 use_frameworks!
 
-# pod 'Socket.IO-Client-Swift','5.4.1'
-# pod 'JSONModel','1.2.0'
-# pod 'GVUserDefaults','1.0.2'
-# pod 'YYWebImage'
-# pod 'UITableView+FDTemplateLayoutCell', '~> 1.4'
-
-pod 'IMKitSDK',:git => 'https://github.com/FUNTEKco/IMKit-iOS.git', :tag => '0.0.30'
-
-
-pod 'ChameleonFramework','2.1.0'
-
+pod 'IMKitSDK',:path => '../'
+#pod 'IMKitSDK', :git => 'https://github.com/FUNTEKco/IMKit-iOS.git' , :tag => '0.0.38'
