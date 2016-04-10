@@ -31,7 +31,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Oe-LT-mpO">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="gwM-TF-USj">
+                        <barButtonItem key="rightBarButtonItem" title="Enter" id="gwM-TF-USj">
                             <connections>
                                 <action selector="btn:" destination="BYZ-38-t0r" id="EdC-iw-Xqi"/>
                             </connections>
