@@ -1,16 +1,16 @@
 PODS:
   - GVUserDefaults (1.0.2)
-  - IMKitSDK (0.0.38):
+  - IMKitSDK (0.0.39):
     - GVUserDefaults (~> 1.0.2)
     - JSONModel (~> 1.2.0)
     - LOAlertController (~> 0.1.2)
-    - LOUIKit (= 0.1.3)
+    - LOUIKit (= 0.1.5)
     - Socket.IO-Client-Swift (~> 6.0.0)
     - UITableView+FDTemplateLayoutCell (~> 1.4)
     - YYWebImage (~> 1.0)
   - JSONModel (1.2.0)
   - LOAlertController (0.1.2)
-  - LOUIKit (0.1.3)
+  - LOUIKit (0.1.5)
   - Socket.IO-Client-Swift (6.0.0)
   - UITableView+FDTemplateLayoutCell (1.4)
   - YYCache (1.0.3)
@@ -26,14 +26,14 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   IMKitSDK:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  IMKitSDK: 8b8fa4e4400eb0d1045836cdfe2dd20f1b063f88
+  IMKitSDK: 1cf3c6caa6017e515c5a8e032179525276aa7a77
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   LOAlertController: 1f8cc624918376411717248e3d04490262c3380e
-  LOUIKit: 8071f9226f4739d76d584ecd83f4a7984e2dfa5f
+  LOUIKit: 5dc6459a9bcd3bca7cfaeb9f89b8efa0c2d42e45
   Socket.IO-Client-Swift: 014fe27dbb8d9d359d09b482309421fb4eccc16c
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
