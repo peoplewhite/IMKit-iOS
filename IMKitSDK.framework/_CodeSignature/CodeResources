@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/GVUserDefaults+defaults.h</key>
 		<data>
-		4R0k1MVOFDFuXLnor7sJm7RrUv4=
+		F8XcMOZx5J+CD1FnIP1BZhrxS98=
 		</data>
 		<key>Headers/IMBadge.h</key>
 		<data>
@@ -22,19 +22,15 @@
 		</data>
 		<key>Headers/IMDataModels.h</key>
 		<data>
-		hpxKOusy9QSlRRWnSvwpYZGA8yE=
+		TXICzPv4pReD7mB2Ih/PxwYjCt8=
 		</data>
 		<key>Headers/IMFile.h</key>
 		<data>
 		rY8pcuYdCADuf+cLIOpIcT6vrWM=
 		</data>
-		<key>Headers/IMInstallation.h</key>
-		<data>
-		GW4g56wHni8/1PLJ6vqe0T256+o=
-		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		r8zbrxZnnjiLSG5qqKmR05z6tYg=
+		sVfq7kbynhzRqd37foToaAKoJqU=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
@@ -99,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4R0k1MVOFDFuXLnor7sJm7RrUv4=
+			F8XcMOZx5J+CD1FnIP1BZhrxS98=
 			</data>
 			<key>hash2</key>
 			<data>
-			Koc/APuBenW5xHhOXdTerg9Y8inCsOfCII2F4dmh6Ic=
+			dOyw3EpckfCJ36neFN6Dscem60M896k6/ZRZ6lKVAhw=
 			</data>
 		</dict>
 		<key>Headers/IMBadge.h</key>
@@ -143,11 +139,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hpxKOusy9QSlRRWnSvwpYZGA8yE=
+			TXICzPv4pReD7mB2Ih/PxwYjCt8=
 			</data>
 			<key>hash2</key>
 			<data>
-			GUDtPeUQkhJlbKQhYgKryVhEgp9TgUqVwN3rN8V85iE=
+			q/Yuck91VvLKHK2lDwYnXPMTLZ2Y2TITaek5gB5HUw0=
 			</data>
 		</dict>
 		<key>Headers/IMFile.h</key>
@@ -161,26 +157,15 @@
 			d+4t41A3djZunPU9uAA11P0t6xHkydbSk/JETQoA8Qw=
 			</data>
 		</dict>
-		<key>Headers/IMInstallation.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GW4g56wHni8/1PLJ6vqe0T256+o=
-			</data>
-			<key>hash2</key>
-			<data>
-			Gk4hzJGvqUvToAqtD5S1bGAnQQ3WAolXI5iBVM/Sac0=
-			</data>
-		</dict>
 		<key>Headers/IMKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			r8zbrxZnnjiLSG5qqKmR05z6tYg=
+			sVfq7kbynhzRqd37foToaAKoJqU=
 			</data>
 			<key>hash2</key>
 			<data>
-			xE2d5V/85Qlu8ltFs3yxQ40SZyCJl3Wm+id+PVDy0yY=
+			+Q32VKjPItilfNAS0414Z6wYRnlK7spanGy+CA7n9eo=
 			</data>
 		</dict>
 		<key>Headers/IMKitSDK.h</key>

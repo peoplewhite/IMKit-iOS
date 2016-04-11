@@ -7,7 +7,6 @@
 //
 
 #import "IMObject.h"
-#import "IMInstallation.h"
 #import "IMClient.h"
 #import "IMRoom.h"
 #import "IMMessage.h"

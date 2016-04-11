@@ -17,7 +17,7 @@
 
 @property (assign, nonatomic) BOOL firstTimeLaunch;
 @property (strong, nonatomic) NSMutableDictionary *currentUser;
-@property (strong, nonatomic) NSMutableDictionary *currentIntallation;
+//@property (strong, nonatomic) NSMutableDictionary *currentIntallation;
 
 @property (strong, nonatomic) NSString *token;
 

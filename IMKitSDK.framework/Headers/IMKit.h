@@ -24,6 +24,9 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 @interface IMKit : JSONModel
 @property (assign, nonatomic) IMKitConnectStatus connectStatus;
 
+@property (strong, nonatomic, readonly) NSMutableArray <IMRoom *> *chatRooms;
+@property (strong, nonatomic) IMBadge* badge;
+
 @property (weak, nonatomic) id <IMKitDelegate> delegate;
 @property (strong, nonatomic, readonly) NSString *token;
 @property (strong, nonatomic) NSString *deviceToken;
@@ -64,7 +67,16 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)logout;
 
 #pragma mark - badge
-- (void)badgeSuccess:(void (^)(IMBadge *badge))success failure:(void (^)(NSError *err))failure;
+/**
+ *  get all badge of rooms , costs more backend resouce than badgeTotalSuccess:
+ */
+- (void)badgeSuccess:(void (^)(IMBadge* badge))success failure:(void (^)(NSError *err))failure;
+
+/**
+ *  get just total badge number
+ */
+- (void)badgeTotalSuccess:(void (^)(int total))success failure:(void (^)(NSError *err))failure;
+
 #pragma mark - room
 
 - (void)createRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
@@ -172,6 +184,8 @@ UIKIT_EXTERN NSString *const kIMKitDidUpdateMessage;
 UIKIT_EXTERN NSString *const kIMKitDidChangeMessageSendingType;
 UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
 
+
+#pragma mark - Delegate
 @protocol IMKitDelegate <NSObject>
 
 @optional
@@ -194,10 +208,18 @@ UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
  *  message updated by someone
  */
 - (void)IMKitDidUpdateMessage:(IMMessage *)message;
+
+/**
+ *  TODO
+ */
+//- (void)IMKitDidUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
+
 /**
  *  called when sending message changes type
  */
 - (void)IMKitDidChangeMessageSendingType:(IMMessage *)message;
+
+- (void)IMKitDidUpdateBadge:(IMBadge*)badge;
 
 /**
  *  called when other device update read time in room
@@ -209,11 +231,6 @@ UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
  */
 - (void)IMKitDidUpdateRooms:(NSMutableArray <IMRoom *> *)rooms;
 - (void)IMKitDidUpdateRoom:(IMRoom *)room;
-
-/**
- *  TODO
- */
-//- (void)IMKitDidUpdateMessages:(NSMutableArray <IMMessage *> *)messages;
 
 /**
  *  called when joined a room
