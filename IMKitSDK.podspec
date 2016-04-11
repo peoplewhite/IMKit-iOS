@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "IMKitSDK"
-  s.version       = '0.0.41'
+  s.version       = '0.0.42'
   s.summary       = "IMKitSDK" 
   s.homepage      = 'http://imkit.co/'
   s.license       = 'MIT'

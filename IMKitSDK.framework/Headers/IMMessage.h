@@ -87,6 +87,18 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 //- (NSUInteger)numberOfReadFromUsers;
 @end
 
+
+
+
+
+
+
+
+
+
+
+
+
 @interface IMMessageOption : JSONModel
 
 /**
@@ -98,6 +110,12 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
  *  default to YES
  */
 @property (assign, nonatomic) BOOL needToPush;
+
+/**
+ *  if increase room badge to self
+ */
+@property (assign, nonatomic) BOOL badgeIncrease;
+
 
 /**
  *  default to system sound
