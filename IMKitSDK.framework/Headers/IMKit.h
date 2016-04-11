@@ -88,7 +88,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)createRoom:(IMRoom *)room WithClientID:(NSString *)clientID success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
 //create room with client
-- (void)forceCreateRoomWithClient:(NSString*)clientID success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
+- (void)forceCreateRoom:(IMRoom *)room WithClient:(NSString *)clientID success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
 
 - (void)roomWithRoomID:(NSString *)roomID Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
@@ -101,12 +101,15 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  @param success success block
  *  @param failure failure block
  *  @param complete complete block
- *  @response in callback with block, and IMKitDidUpdateRooms:
+ *  @response in callback with block, and update all rooms in IMKitDidUpdateRooms:
  */
 - (void)roomListInBackground;
-- (void)roomListSuccess:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
-- (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
-- (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSMutableArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSMutableArray <IMRoom *> *rooms))complete;
+- (void)roomListSuccess:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
+- (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
+- (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
+
+- (void)roomListLastMessageTime:(NSDate*)lastMessageTime Offset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
+
 
 - (void)archiveRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 

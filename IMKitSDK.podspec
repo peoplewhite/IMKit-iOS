@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "IMKitSDK"
-  s.version       = '0.0.41'
+  s.version       = '0.0.43'
   s.summary       = "IMKitSDK" 
   s.homepage      = 'http://imkit.co/'
   s.license       = 'MIT'
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.dependency 'GVUserDefaults','~> 1.0.2'
   s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.4'
   s.dependency 'YYWebImage','~> 1.0'
-  s.dependency 'LOAlertController','~> 0.1.2'
+  s.dependency 'LOAlertController','~> 0.1.3'
   s.dependency 'LOUIKit','0.1.5'
   # s.dependency 'YapDatabase','2.8.3'
   

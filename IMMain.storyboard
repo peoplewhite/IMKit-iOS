@@ -186,7 +186,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tpk-5p-R7P" customClass="LOImageView">
-                                                    <rect key="frame" x="13" y="15" width="44" height="44"/>
+                                                    <rect key="frame" x="13" y="0.0" width="44" height="44"/>
                                                     <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="OYH-xl-tdf"/>
@@ -197,10 +197,10 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsb-rf-8AN" customClass="IMBubbleView">
-                                                    <rect key="frame" x="71" y="48" width="53" height="67"/>
+                                                    <rect key="frame" x="71" y="33" width="53" height="82"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="hi" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B6b-5K-3kd" customClass="LOTextView">
-                                                            <rect key="frame" x="15" y="0.0" width="23" height="67"/>
+                                                            <rect key="frame" x="15" y="0.0" width="23" height="82"/>
                                                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="5" id="SaC-mI-X55"/>
@@ -237,10 +237,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Er-gz-cke" customClass="LOLabel">
-                                                    <rect key="frame" x="265" y="0.0" width="70" height="15"/>
+                                                    <rect key="frame" x="265" y="0.0" width="70" height="0.0"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="JB2-fy-ehm"/>
+                                                        <constraint firstAttribute="height" id="JB2-fy-ehm"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="YLS-46-5ai"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -251,7 +251,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="David Lu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9p-Wk-B7S">
-                                                    <rect key="frame" x="76" y="15" width="516" height="30"/>
+                                                    <rect key="frame" x="76" y="0.0" width="516" height="30"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="Px0-Tj-hur"/>
@@ -359,19 +359,12 @@
                                                         <constraint firstAttribute="width" constant="20" id="qHh-QX-YMl"/>
                                                     </constraints>
                                                 </activityIndicatorView>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-wA-cb7" customClass="LOButton">
-                                                    <rect key="frame" x="483" y="40" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="2Tn-RR-4bR"/>
-                                                        <constraint firstAttribute="width" constant="44" id="dFN-Kx-y7b"/>
-                                                    </constraints>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQ6-d9-hf1" customClass="LOLabel">
-                                                    <rect key="frame" x="265" y="0.0" width="70" height="15"/>
+                                                    <rect key="frame" x="265" y="0.0" width="70" height="0.0"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="u9X-Vk-XbU"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="vcc-Ah-MZT"/>
+                                                        <constraint firstAttribute="height" id="vcc-Ah-MZT"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -380,6 +373,27 @@
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-wA-cb7" customClass="LOButton">
+                                                    <rect key="frame" x="483" y="40" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="2Tn-RR-4bR"/>
+                                                        <constraint firstAttribute="width" constant="44" id="dFN-Kx-y7b"/>
+                                                    </constraints>
+                                                    <state key="normal" title="!">
+                                                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="resendBtnPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="BPq-lm-Ku2"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="RQ6-d9-hf1" secondAttribute="trailing" id="0Kv-AW-jnd"/>
@@ -510,7 +524,7 @@
                                     <constraint firstAttribute="height" constant="200" id="Tt8-AW-tOk"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="M1i-vq-FlO" kind="embed" id="hq7-UV-y6C"/>
+                                    <segue destination="M1i-vq-FlO" kind="embed" identifier="IMMessageContainerViewController" id="hq7-UV-y6C"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -569,10 +583,10 @@
             </objects>
             <point key="canvasLocation" x="759" y="538"/>
         </scene>
-        <!--View Controller-->
+        <!--Message Container View Controller-->
         <scene sceneID="3Id-5r-je0">
             <objects>
-                <viewController id="M1i-vq-FlO" sceneMemberID="viewController">
+                <viewController id="M1i-vq-FlO" customClass="IMMessageContainerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9P2-O5-OOA"/>
                         <viewControllerLayoutGuide type="bottom" id="Bje-tm-Ndk"/>
