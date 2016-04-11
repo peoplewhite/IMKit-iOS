@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		SHkCbysfLLgSsoYsvJTasZ+62mQ=
+		yWft4UM5ce2N71JOmTuccUDvxUM=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
@@ -42,7 +42,11 @@
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		aZmJcozBBKnVoJxfuNihHJzN7jk=
+		295y/DjzGUbwDwJrnfLpiGE59M8=
+		</data>
+		<key>Headers/IMMessageContainerViewController.h</key>
+		<data>
+		lw6TSfR5MT+TW/IL2w2AUBG6mXY=
 		</data>
 		<key>Headers/IMMessageTableViewCell.h</key>
 		<data>
@@ -161,11 +165,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SHkCbysfLLgSsoYsvJTasZ+62mQ=
+			yWft4UM5ce2N71JOmTuccUDvxUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			JPt5znymIycr26ANIvwsvvYRX2XQgUnC+MEmUg6LNlc=
+			NaD+MSGAh8HWpDuv0L4LD1c8do3hsBUfxuJ6w/TaLwU=
 			</data>
 		</dict>
 		<key>Headers/IMKitSDK.h</key>
@@ -194,11 +198,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aZmJcozBBKnVoJxfuNihHJzN7jk=
+			295y/DjzGUbwDwJrnfLpiGE59M8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XAT9YOhOBLE3AA81/j3wS/XIy1IV+8jkNHNjavVNOjg=
+			0Ak12sroXc6/WVnxL/D6v4rRxmR78igfpQkWmhEHhPA=
+			</data>
+		</dict>
+		<key>Headers/IMMessageContainerViewController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lw6TSfR5MT+TW/IL2w2AUBG6mXY=
+			</data>
+			<key>hash2</key>
+			<data>
+			RYIIBslH4DrUHMANd+++J2w4h3IQHxIrawptvPf4LTg=
 			</data>
 		</dict>
 		<key>Headers/IMMessageTableViewCell.h</key>

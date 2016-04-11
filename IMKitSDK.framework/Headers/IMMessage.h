@@ -92,13 +92,6 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 
 
 
-
-
-
-
-
-
-
 @interface IMMessageOption : JSONModel
 
 /**
