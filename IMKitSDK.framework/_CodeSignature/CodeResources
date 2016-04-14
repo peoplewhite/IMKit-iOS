@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		295y/DjzGUbwDwJrnfLpiGE59M8=
+		Z0/MQUM3n/GsdZS5vdkphgtOIdM=
 		</data>
 		<key>Headers/IMMessageContainerViewController.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/IMMessageTableViewCell.h</key>
 		<data>
-		H2PFWKe4doznde0GztFeVbDM1uc=
+		rxZ6xmmBBmAwqWs80Ea4hPIDp3c=
 		</data>
 		<key>Headers/IMMessageViewController.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/IMViewController.h</key>
 		<data>
-		CAPuodUNGBHEnvf6h6R0tYRnpHk=
+		P+2c5LAw1a1sMt2nUAddvhSWh/4=
 		</data>
 		<key>Headers/UIBarButtonItem+Badge.h</key>
 		<data>
@@ -198,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			295y/DjzGUbwDwJrnfLpiGE59M8=
+			Z0/MQUM3n/GsdZS5vdkphgtOIdM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0Ak12sroXc6/WVnxL/D6v4rRxmR78igfpQkWmhEHhPA=
+			oi019ljyojlSDBkx7eA6PS2oz1l9+e7cL4xiaFTv4Tw=
 			</data>
 		</dict>
 		<key>Headers/IMMessageContainerViewController.h</key>
@@ -220,11 +220,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H2PFWKe4doznde0GztFeVbDM1uc=
+			rxZ6xmmBBmAwqWs80Ea4hPIDp3c=
 			</data>
 			<key>hash2</key>
 			<data>
-			l00uEuHiYkBYrdzD1YOX7E2FumNCB1VMSvI1NX0u528=
+			qHLeMYIdLfn1qKLcbqDSp6CenO9b8igm2S8MItKDkLw=
 			</data>
 		</dict>
 		<key>Headers/IMMessageViewController.h</key>
@@ -297,11 +297,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CAPuodUNGBHEnvf6h6R0tYRnpHk=
+			P+2c5LAw1a1sMt2nUAddvhSWh/4=
 			</data>
 			<key>hash2</key>
 			<data>
-			xCxjdt70Jp084gaTwvYFrb3H0lSVTb9q8pNPTcLyJxc=
+			9qBGoO565gi4hHexdZT36QJmjjEz1B7ncS7Qrwq3kG0=
 			</data>
 		</dict>
 		<key>Headers/UIBarButtonItem+Badge.h</key>

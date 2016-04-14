@@ -33,6 +33,7 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
     IMKitMessageSendingTypeNomal,
     IMKitMessageSendingTypeSending,
     IMKitMessageSendingTypeError,
+    IMKitMessageSendingTypeEditing,
 };
 
 @class IMRoom;
@@ -105,7 +106,7 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 @property (assign, nonatomic) BOOL needToPush;
 
 /**
- *  if increase room badge to self
+ *  if increase room badge to self , default to NO
  */
 @property (assign, nonatomic) BOOL badgeIncrease;
 
