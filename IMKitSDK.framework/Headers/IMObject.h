@@ -16,6 +16,10 @@
 
 @property (strong, nonatomic) NSString *createdAt;
 @property (strong, nonatomic) NSString *updatedAt;
+
+/**
+ *  userinfo
+ */
 @property (strong, nonatomic) NSMutableDictionary *data;
 @end
 

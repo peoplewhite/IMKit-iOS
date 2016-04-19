@@ -203,7 +203,7 @@ UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
  */
 - (void)IMKitDidReceiveMessage:(IMMessage *)message;
 /**
- *  called when receive message witch send from other device
+ *  called when receive message witch send from other device , and others client
  */
 - (void)IMKitDidReceiveMessageFromOthers:(IMMessage *)message;
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -577,7 +578,7 @@
                                             <outlet property="dateLabelHeight" destination="OEf-Ko-qTG" id="on0-yk-fQl"/>
                                             <outlet property="errorButton" destination="eIe-g8-qpR" id="2Ya-7J-omj"/>
                                             <outlet property="indicator" destination="EGs-Mb-fBT" id="avo-v2-O24"/>
-                                            <outlet property="photoImageView" destination="mFn-KS-g1D" id="hqU-EC-1md"/>
+                                            <outlet property="pictureImageView" destination="mFn-KS-g1D" id="G6s-Jq-1HR"/>
                                             <outlet property="readLabel" destination="1g6-7t-In5" id="fI2-l7-k0T"/>
                                             <outlet property="timeLabel" destination="TCi-D7-bIS" id="8mo-jA-m88"/>
                                         </connections>
@@ -706,7 +707,8 @@
                                         <connections>
                                             <outlet property="bubbleView" destination="21i-Wh-mvg" id="CDH-qt-Rh1"/>
                                             <outlet property="dateLabel" destination="Yrw-So-1Dg" id="ONK-gY-TQy"/>
-                                            <outlet property="photoImageView" destination="8rz-ZG-Yvt" id="SvU-iB-pmp"/>
+                                            <outlet property="photoImageView" destination="ZNq-5C-yhv" id="ysk-WN-SgF"/>
+                                            <outlet property="pictureImageView" destination="8rz-ZG-Yvt" id="W90-5j-F1K"/>
                                             <outlet property="timeLabel" destination="vn3-b0-abR" id="491-1c-Mxc"/>
                                             <outlet property="titleLabel" destination="MLM-E7-PXY" id="nv8-eF-ifD"/>
                                         </connections>
@@ -748,8 +750,11 @@
                                             <outlet property="delegate" destination="SwR-Qd-ljX" id="OGQ-Yn-Xfd"/>
                                         </connections>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chr-NI-9dY" userLabel="camera Button">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chr-NI-9dY" userLabel="camera Button">
                                         <rect key="frame" x="52" y="0.0" width="44" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="tfU-tu-78I"/>
+                                        </constraints>
                                         <state key="normal" image="camera"/>
                                         <connections>
                                             <action selector="cameraBtnPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="eS1-Wm-hNj"/>
@@ -765,8 +770,11 @@
                                             <action selector="cancelBtnPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="ERc-KQ-CuV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJk-Yj-Kz8" userLabel="more Button" customClass="LOButton">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJk-Yj-Kz8" userLabel="more Button" customClass="LOButton">
                                         <rect key="frame" x="8" y="0.0" width="44" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="woI-CO-kHN"/>
+                                        </constraints>
                                         <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="plus"/>
                                         <connections>
@@ -811,6 +819,11 @@
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IDY-tA-VFT"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4g-en-RKj">
                                 <rect key="frame" x="0.0" y="1000" width="600" height="200"/>
@@ -847,6 +860,9 @@
                     <navigationItem key="navigationItem" title="Title" id="Ohp-p3-U3A"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showMoreOptionBtn" value="NO"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="cancelBtn" destination="Tbs-CZ-MBo" id="yWh-xM-LnO"/>
                         <outlet property="cancelBtnLeadingDistance" destination="Z1Y-rH-nfG" id="sdT-9a-HSW"/>
@@ -855,6 +871,10 @@
                         <outlet property="inputTextViewHeight" destination="9Ic-Lh-oDy" id="BwP-ZE-Erb"/>
                         <outlet property="inputViewToBottomDistance" destination="bGC-4N-1vH" id="p5R-1p-sJN"/>
                         <outlet property="moreActionContenterView" destination="Z4g-en-RKj" id="052-zY-vif"/>
+                        <outlet property="moreOptionBtn" destination="KJk-Yj-Kz8" id="C9C-l5-iYQ"/>
+                        <outlet property="moreOptionBtnWidth" destination="woI-CO-kHN" id="vWD-gg-ZgD"/>
+                        <outlet property="pictureBtn" destination="chr-NI-9dY" id="tPX-MA-iDX"/>
+                        <outlet property="pictureBtnWidth" destination="tfU-tu-78I" id="cyy-xu-4tY"/>
                         <outlet property="placeholderLabel" destination="ogp-Qo-Pwc" id="KPx-PA-Nzi"/>
                         <outlet property="sendMessageBtn" destination="poe-hb-Khi" id="dqj-oA-bbq"/>
                         <outlet property="tableview" destination="yKZ-cd-KGt" id="yXa-1f-a5x"/>
@@ -902,7 +922,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera" width="32" height="32"/>
+        <image name="camera" width="33" height="33"/>
         <image name="plus" width="33" height="33"/>
     </resources>
 </document>

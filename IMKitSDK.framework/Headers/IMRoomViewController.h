@@ -18,6 +18,8 @@
 @property (weak,nonatomic) id<IMRoomViewControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 
+-(void)enterRoom:(IMRoom*)room animated:(BOOL)animated;
+
 //inherit override if need to custom cell
 -(NSString*)cellIDForRoom:(IMRoom*)room;
 -(UITableViewCell*)customCellWithIdentifier:(NSString*)cellID room:(IMRoom*)room cell:(IMRoomTableViewCell*)cell;
