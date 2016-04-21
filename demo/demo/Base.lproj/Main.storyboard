@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--IMKit Demo App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -17,35 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx5-5K-I3d">
-                                <rect key="frame" x="194" y="138" width="118" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please Input a Nickname" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TWP-HZ-qf8">
+                                <rect key="frame" x="8" y="84" width="304" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="118" id="gSP-g1-e1r"/>
-                                    <constraint firstAttribute="height" constant="30" id="qK8-gd-lh1"/>
+                                    <constraint firstAttribute="height" constant="40" id="1f1-Pp-IN9"/>
                                 </constraints>
-                                <state key="normal" title="sign">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx5-5K-I3d">
+                                <rect key="frame" x="8" y="132" width="304" height="40"/>
+                                <color key="backgroundColor" red="0.59607843140000005" green="0.76078431369999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="gSP-g1-e1r"/>
+                                    <constraint firstAttribute="height" constant="40" id="qK8-gd-lh1"/>
+                                </constraints>
+                                <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gSP-g1-e1r"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GyW-Mj-dF7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TWP-HZ-qf8">
-                                <rect key="frame" x="8" y="84" width="304" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TWP-HZ-qf8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="JYR-vN-j6X"/>
-                            <constraint firstItem="Zx5-5K-I3d" firstAttribute="top" secondItem="TWP-HZ-qf8" secondAttribute="bottom" constant="24" id="PrE-ia-hX2"/>
+                            <constraint firstItem="Zx5-5K-I3d" firstAttribute="top" secondItem="TWP-HZ-qf8" secondAttribute="bottom" constant="8" id="PrE-ia-hX2"/>
                             <constraint firstItem="TWP-HZ-qf8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="gcc-5X-YrW"/>
                             <constraint firstAttribute="trailing" secondItem="Zx5-5K-I3d" secondAttribute="trailing" constant="8" id="h5n-rh-HhO"/>
                             <constraint firstAttribute="trailing" secondItem="TWP-HZ-qf8" secondAttribute="trailing" constant="8" id="kSW-HJ-QEV"/>
+                            <constraint firstAttribute="trailing" secondItem="Zx5-5K-I3d" secondAttribute="trailing" constant="8" id="mx1-DZ-yuB"/>
+                            <constraint firstItem="Zx5-5K-I3d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="qdA-3R-zjO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="h5n-rh-HhO"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="0Oe-LT-mpO"/>
+                    <navigationItem key="navigationItem" title="IMKit Demo App" id="0Oe-LT-mpO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="textField" destination="TWP-HZ-qf8" id="sxO-FQ-HQI"/>
@@ -76,7 +92,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gde-dv-BF1" id="wfj-Ml-Fp0">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
