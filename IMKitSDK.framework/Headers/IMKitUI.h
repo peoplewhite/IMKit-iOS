@@ -10,5 +10,9 @@
 #import "IMRoomViewController.h"
 #import "IMMessageViewController.h"
 
+#import "IMChatButton.h"
+#import "IMMessageContainerViewController.h"
+
+
 
 #import "UIBarButtonItem+Badge.h"

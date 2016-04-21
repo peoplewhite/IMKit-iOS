@@ -10,6 +10,8 @@
 #import "IMKit.h"
 #import "IMBubbleView.h"
 
+@protocol IMMessageTableViewCellDelegate;
+
 @interface IMMessageTableViewCell : IMTableViewCell
 
 @property (assign,nonatomic) BOOL showDate;
@@ -26,5 +28,13 @@
 @property (weak, nonatomic) IBOutlet IMBubbleView *bubbleView;
 
 @property (weak, nonatomic) IBOutlet LOLabel *dateLabel;
+
+@property (weak, nonatomic) id<IMMessageTableViewCellDelegate> delegate;
+@end
+
+
+@protocol IMMessageTableViewCellDelegate <NSObject>
+
+-(void)IMMessageTableViewCellImageViewDidPressed:(IMMessageTableViewCell*)cell;
 
 @end

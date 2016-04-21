@@ -78,11 +78,21 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 
 @property (strong, nonatomic) IMMessageOption *option;
 
+
+
 - (instancetype)initWithRoom:(IMRoom *)room;
 
 - (void)setMessageWithType:(IMKitMessageType)messageType;
 
 - (void)copyPropertiesFromMessage:(IMMessage *)message;
+
+/**
+ *  the same as [IMKitInstance sendMessageInBackground:message];
+ */
+-(void)send;
+
+-(void)update;
+
 
 //- (BOOL)didReadFromAnother;
 //- (NSUInteger)numberOfReadFromUsers;

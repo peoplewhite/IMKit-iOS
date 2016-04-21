@@ -27,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nBQ-YZ-fBC" id="2aP-cM-feL">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omS-UD-9GU" customClass="LOLabel">
@@ -163,7 +163,7 @@
             </objects>
             <point key="canvasLocation" x="1489" y="538"/>
         </scene>
-        <!--Title-->
+        <!--Message-->
         <scene sceneID="Bla-gM-t6w">
             <objects>
                 <viewController storyboardIdentifier="IMMessageViewController" automaticallyAdjustsScrollViewInsets="NO" id="SwR-Qd-ljX" customClass="IMMessageViewController" sceneMemberID="viewController">
@@ -450,7 +450,7 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已讀" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1g6-7t-In5" customClass="LOLabel">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="read" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1g6-7t-In5" customClass="LOLabel">
                                                     <rect key="frame" x="60" y="176" width="40" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="PAb-ab-MKJ"/>
@@ -463,7 +463,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-Yk-4s6" customClass="IMBubbleView">
                                                     <rect key="frame" x="108" y="8" width="476" height="204"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mFn-KS-g1D" customClass="LOImageView">
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mFn-KS-g1D" customClass="LOImageView">
                                                             <rect key="frame" x="5" y="5" width="466" height="194"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="194" id="59V-oJ-FVI"/>
@@ -638,7 +638,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21i-Wh-mvg" customClass="IMBubbleView">
                                                     <rect key="frame" x="71" y="33" width="421" height="179"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8rz-ZG-Yvt" customClass="LOImageView">
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8rz-ZG-Yvt" customClass="LOImageView">
                                                             <rect key="frame" x="5" y="5" width="411" height="169"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="169" id="TvB-jy-hC0"/>
@@ -732,12 +732,6 @@
                                             <action selector="sendMessageBtnPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="oZN-BL-mmq"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Messages here..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogp-Qo-Pwc" customClass="LOLabel">
-                                        <rect key="frame" x="104" y="8" width="436" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gh3-kI-p2C" customClass="LOTextView">
                                         <rect key="frame" x="104" y="8" width="436" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -746,20 +740,48 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value=" Messages here..."/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="delegate" destination="SwR-Qd-ljX" id="OGQ-Yn-Xfd"/>
                                         </connections>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chr-NI-9dY" userLabel="camera Button">
-                                        <rect key="frame" x="52" y="0.0" width="44" height="46"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="812-cd-K46">
+                                        <rect key="frame" x="8" y="0.0" width="88" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJk-Yj-Kz8" userLabel="more Button" customClass="LOButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="woI-CO-kHN"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="plus"/>
+                                                <connections>
+                                                    <action selector="moreButtonDidPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="O2n-s0-shs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chr-NI-9dY" userLabel="camera Button">
+                                                <rect key="frame" x="44" y="0.0" width="44" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="tfU-tu-78I"/>
+                                                </constraints>
+                                                <state key="normal" image="camera"/>
+                                                <connections>
+                                                    <action selector="cameraBtnPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="eS1-Wm-hNj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="tfU-tu-78I"/>
+                                            <constraint firstAttribute="trailing" secondItem="chr-NI-9dY" secondAttribute="trailing" id="1FT-3G-xP9"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="531-Tm-bUe"/>
+                                            <constraint firstItem="KJk-Yj-Kz8" firstAttribute="top" secondItem="812-cd-K46" secondAttribute="top" id="C79-E7-YEW"/>
+                                            <constraint firstItem="chr-NI-9dY" firstAttribute="top" secondItem="812-cd-K46" secondAttribute="top" id="GAd-30-ekN"/>
+                                            <constraint firstAttribute="bottom" secondItem="chr-NI-9dY" secondAttribute="bottom" id="UcQ-BX-qqg"/>
+                                            <constraint firstItem="chr-NI-9dY" firstAttribute="leading" secondItem="KJk-Yj-Kz8" secondAttribute="trailing" id="gff-XR-hAt"/>
+                                            <constraint firstAttribute="bottom" secondItem="KJk-Yj-Kz8" secondAttribute="bottom" id="oRC-en-dtV"/>
                                         </constraints>
-                                        <state key="normal" image="camera"/>
-                                        <connections>
-                                            <action selector="cameraBtnPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="eS1-Wm-hNj"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbs-CZ-MBo" userLabel="cancel Button">
                                         <rect key="frame" x="96" y="8" width="0.0" height="30"/>
                                         <constraints>
@@ -770,42 +792,23 @@
                                             <action selector="cancelBtnPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="ERc-KQ-CuV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJk-Yj-Kz8" userLabel="more Button" customClass="LOButton">
-                                        <rect key="frame" x="8" y="0.0" width="44" height="46"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="woI-CO-kHN"/>
-                                        </constraints>
-                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="plus"/>
-                                        <connections>
-                                            <action selector="moreButtonDidPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="O2n-s0-shs"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Tbs-CZ-MBo" firstAttribute="top" secondItem="1X1-Ow-Xqg" secondAttribute="top" constant="8" id="0i0-Pm-FjK"/>
+                                    <constraint firstItem="Tbs-CZ-MBo" firstAttribute="leading" secondItem="812-cd-K46" secondAttribute="trailing" id="348-H6-Yvn"/>
                                     <constraint firstItem="gh3-kI-p2C" firstAttribute="leading" secondItem="Tbs-CZ-MBo" secondAttribute="trailing" constant="8" id="3ji-lE-i8m"/>
                                     <constraint firstItem="gh3-kI-p2C" firstAttribute="top" secondItem="1X1-Ow-Xqg" secondAttribute="top" constant="8" id="3kD-tM-3nx"/>
                                     <constraint firstAttribute="bottom" secondItem="poe-hb-Khi" secondAttribute="bottom" constant="8" id="CY3-CK-vUp"/>
-                                    <constraint firstItem="chr-NI-9dY" firstAttribute="width" secondItem="KJk-Yj-Kz8" secondAttribute="width" id="IDY-tA-VFT"/>
-                                    <constraint firstItem="ogp-Qo-Pwc" firstAttribute="centerY" secondItem="gh3-kI-p2C" secondAttribute="centerY" id="JBA-xh-qZJ"/>
-                                    <constraint firstItem="ogp-Qo-Pwc" firstAttribute="width" secondItem="gh3-kI-p2C" secondAttribute="width" id="JbZ-T9-cgo"/>
-                                    <constraint firstItem="KJk-Yj-Kz8" firstAttribute="leading" secondItem="1X1-Ow-Xqg" secondAttribute="leading" constant="8" id="Tak-6j-XKj"/>
-                                    <constraint firstItem="ogp-Qo-Pwc" firstAttribute="centerX" secondItem="gh3-kI-p2C" secondAttribute="centerX" id="YIe-rk-Ff3"/>
+                                    <constraint firstItem="812-cd-K46" firstAttribute="leading" secondItem="1X1-Ow-Xqg" secondAttribute="leading" constant="8" id="HWf-bh-UPg"/>
+                                    <constraint firstAttribute="bottom" secondItem="812-cd-K46" secondAttribute="bottom" id="LlQ-Zs-pmH"/>
                                     <constraint firstItem="Tbs-CZ-MBo" firstAttribute="leading" relation="lessThanOrEqual" secondItem="1X1-Ow-Xqg" secondAttribute="leading" constant="96" id="Z1Y-rH-nfG"/>
                                     <constraint firstAttribute="bottom" secondItem="Tbs-CZ-MBo" secondAttribute="bottom" constant="8" id="cNr-B9-bJ9"/>
                                     <constraint firstAttribute="trailing" secondItem="poe-hb-Khi" secondAttribute="trailing" constant="8" id="f5r-Dd-6f8"/>
+                                    <constraint firstItem="812-cd-K46" firstAttribute="top" secondItem="1X1-Ow-Xqg" secondAttribute="top" id="g38-6c-X4a"/>
                                     <constraint firstItem="gh3-kI-p2C" firstAttribute="leading" secondItem="1X1-Ow-Xqg" secondAttribute="leading" constant="104" id="l3W-FH-iGY"/>
-                                    <constraint firstItem="chr-NI-9dY" firstAttribute="leading" secondItem="KJk-Yj-Kz8" secondAttribute="trailing" id="lbA-1k-v5b"/>
-                                    <constraint firstItem="chr-NI-9dY" firstAttribute="top" secondItem="1X1-Ow-Xqg" secondAttribute="top" id="mIo-Bq-tmn"/>
-                                    <constraint firstItem="KJk-Yj-Kz8" firstAttribute="top" secondItem="1X1-Ow-Xqg" secondAttribute="top" id="oNZ-SD-r89"/>
-                                    <constraint firstAttribute="bottom" secondItem="KJk-Yj-Kz8" secondAttribute="bottom" id="pib-bN-okW"/>
                                     <constraint firstItem="poe-hb-Khi" firstAttribute="leading" secondItem="gh3-kI-p2C" secondAttribute="trailing" constant="8" id="t8Y-zT-sne"/>
                                     <constraint firstItem="poe-hb-Khi" firstAttribute="top" secondItem="1X1-Ow-Xqg" secondAttribute="top" constant="8" id="tSp-hB-4KJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="chr-NI-9dY" secondAttribute="bottom" id="uic-y9-633"/>
-                                    <constraint firstItem="Tbs-CZ-MBo" firstAttribute="leading" secondItem="chr-NI-9dY" secondAttribute="trailing" id="wAq-lc-bRF"/>
-                                    <constraint firstItem="ogp-Qo-Pwc" firstAttribute="height" secondItem="gh3-kI-p2C" secondAttribute="height" id="wq6-BV-adg"/>
                                     <constraint firstAttribute="bottom" secondItem="gh3-kI-p2C" secondAttribute="bottom" constant="8" id="zN6-UR-l1G"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -819,11 +822,6 @@
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="IDY-tA-VFT"/>
-                                    </mask>
-                                </variation>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4g-en-RKj">
                                 <rect key="frame" x="0.0" y="1000" width="600" height="200"/>
@@ -857,7 +855,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Ohp-p3-U3A"/>
+                    <navigationItem key="navigationItem" title="Message" id="Ohp-p3-U3A"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
                     <userDefinedRuntimeAttributes>
@@ -869,13 +867,13 @@
                         <outlet property="cancelBtnWidth" destination="UGr-Sa-bbT" id="kp3-Of-Ngc"/>
                         <outlet property="inputTextView" destination="gh3-kI-p2C" id="oO4-3s-XaI"/>
                         <outlet property="inputTextViewHeight" destination="9Ic-Lh-oDy" id="BwP-ZE-Erb"/>
+                        <outlet property="inputTextViewLeadingDistance" destination="l3W-FH-iGY" id="2lV-mc-E2G"/>
                         <outlet property="inputViewToBottomDistance" destination="bGC-4N-1vH" id="p5R-1p-sJN"/>
                         <outlet property="moreActionContenterView" destination="Z4g-en-RKj" id="052-zY-vif"/>
                         <outlet property="moreOptionBtn" destination="KJk-Yj-Kz8" id="C9C-l5-iYQ"/>
-                        <outlet property="moreOptionBtnWidth" destination="woI-CO-kHN" id="vWD-gg-ZgD"/>
+                        <outlet property="optionViewWidth" destination="531-Tm-bUe" id="szP-tN-XwB"/>
                         <outlet property="pictureBtn" destination="chr-NI-9dY" id="tPX-MA-iDX"/>
                         <outlet property="pictureBtnWidth" destination="tfU-tu-78I" id="cyy-xu-4tY"/>
-                        <outlet property="placeholderLabel" destination="ogp-Qo-Pwc" id="KPx-PA-Nzi"/>
                         <outlet property="sendMessageBtn" destination="poe-hb-Khi" id="dqj-oA-bbq"/>
                         <outlet property="tableview" destination="yKZ-cd-KGt" id="yXa-1f-a5x"/>
                     </connections>

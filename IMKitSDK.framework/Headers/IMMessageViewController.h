@@ -21,11 +21,14 @@ IB_DESIGNABLE
 @property (weak, nonatomic) IBOutlet LOTextView *inputTextView;
 
 @property (assign, nonatomic) IBInspectable BOOL showMoreOptionBtn;
+@property (assign, nonatomic) IBInspectable BOOL disableTintColor;
 //inherit override if need to custom cell
 - (NSString *)cellIDForMessage:(IMMessage *)message;
 - (UITableViewCell *)customCellWithIdentifier:(NSString *)cellID message:(IMMessage *)message cell:(IMMessageTableViewCell *)cell;
 
 - (IBAction)moreButtonDidPressed:(UIButton*)sender;
+
++(BOOL)handleRemoteNotificationAppdelegateWindow:(UIWindow *)window launchOptions:(NSDictionary *)launchOptions;
 
 @end
 
