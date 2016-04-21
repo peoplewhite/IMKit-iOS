@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 
-@interface ViewController ()<IMRoomViewControllerDelegate>
+@interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
@@ -20,11 +20,17 @@
     [super viewDidLoad];
     
     if ([IMClient currentClient].clientID) {
-        [self nextWithAnimation:NO];
+        [self goClientList];
     }
+    
+    self.navigationItem.leftBarButtonItem = nil;
 }
 
 - (IBAction)btn:(id)sender {
+    if (!self.textField.text.length) {
+        return;
+    }
+    
     IMClient *client = [[IMClient alloc] init];
     client.clientID = self.textField.text;
     client.password = @"123123123";
@@ -34,7 +40,7 @@
     [IMKitInstance signWithClient:client Success:^(IMClient *client) {
         //login
         [IMKitInstance chatinSuccess:^(IMClient *client) {
-            [self nextWithAnimation:YES];
+            [self goClientList];
         } failure:^(NSError *err) {
             //
         }];
@@ -43,16 +49,8 @@
     }];
 }
 
-- (void)nextWithAnimation:(BOOL)animation {
-    IMRoomViewController *controller = [[UIStoryboard storyboardWithName:@"IMMain" bundle:nil] instantiateViewControllerWithIdentifier:@"IMRoomViewController"];
-    controller.delegate = self;
-    [self.navigationController pushViewController:controller animated:animation];
-}
-
-#pragma mark - IMRoomListViewControllerDelegate
-
--(void)IMRoomViewControllerDidPop{
-    [IMKitInstance logout];
+-(void)goClientList{
+    [self performSegueWithIdentifier:@"goClientList" sender:nil];
 }
 
 

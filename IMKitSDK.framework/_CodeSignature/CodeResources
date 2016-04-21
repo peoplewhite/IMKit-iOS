@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/IMChatButton.h</key>
 		<data>
-		kbeiekqJvWkAn0yzxXz4aY1QJd8=
+		0eJihF9QE2hop3iVJB2wMtWkicg=
 		</data>
 		<key>Headers/IMClient.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/IMKitUI.h</key>
 		<data>
-		dvbrO4yuncYeaKi6lFg780trTb0=
+		RJ2sxNTfd8Mk6wRRoto6OPhHtE4=
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
@@ -59,6 +59,10 @@
 		<key>Headers/IMMessageViewController.h</key>
 		<data>
 		LttVWnLo1jR1hYx9PBFfdzOsfFQ=
+		</data>
+		<key>Headers/IMNavigationController.h</key>
+		<data>
+		VaO8F02uYZyrpOoj/1TOgCH4M9U=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
@@ -136,11 +140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kbeiekqJvWkAn0yzxXz4aY1QJd8=
+			0eJihF9QE2hop3iVJB2wMtWkicg=
 			</data>
 			<key>hash2</key>
 			<data>
-			PVRGX3vmskBxarmJikN3KdYwsRCCqBABdJHGyiX/uO0=
+			6pEc/6oTy1ahV55/36CeOnsQFY/+uEZqnIVWqn43K68=
 			</data>
 		</dict>
 		<key>Headers/IMClient.h</key>
@@ -202,11 +206,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dvbrO4yuncYeaKi6lFg780trTb0=
+			RJ2sxNTfd8Mk6wRRoto6OPhHtE4=
 			</data>
 			<key>hash2</key>
 			<data>
-			XP6Klp6pRJcn/QGJteaMYOHf1KbH0Wq9eUhGH2NiAoc=
+			ce2nJFXfu1kSwhFqNhq+Ptk+E25lHzvYYrWLuZxfn0w=
 			</data>
 		</dict>
 		<key>Headers/IMMessage.h</key>
@@ -251,6 +255,17 @@
 			<key>hash2</key>
 			<data>
 			gqXR04hGvM4vcjr0Gl/DMkO5Fv5N/iAij2dqwEsLseI=
+			</data>
+		</dict>
+		<key>Headers/IMNavigationController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VaO8F02uYZyrpOoj/1TOgCH4M9U=
+			</data>
+			<key>hash2</key>
+			<data>
+			ON4NYAxYH+O+gK6M2SdWaEICmyhVe9Vbe67JcKy7VUU=
 			</data>
 		</dict>
 		<key>Headers/IMObject.h</key>

@@ -40,11 +40,90 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="textField" destination="TWP-HZ-qf8" id="sxO-FQ-HQI"/>
+                        <segue destination="NK8-dD-Dot" kind="show" identifier="goClientList" id="Pcg-zU-aK0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1206" y="415"/>
+        </scene>
+        <!--Clients-->
+        <scene sceneID="iN9-QU-RAV">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="NK8-dD-Dot" customClass="ClientListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vaI-ua-3k0"/>
+                        <viewControllerLayoutGuide type="bottom" id="KSP-7F-75i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a4g-eB-B6r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-aC-lFH">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Gde-dv-BF1">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gde-dv-BF1" id="wfj-Ml-Fp0">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NK8-dD-Dot" id="Xme-dH-CgR"/>
+                                    <outlet property="delegate" destination="NK8-dD-Dot" id="fLI-0r-Ni7"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJV-cZ-dEc" customClass="IMChatButton">
+                                <rect key="frame" x="244" y="492" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.29411764709999999" green="0.77647058820000003" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="UVY-9I-Qc2"/>
+                                    <constraint firstAttribute="height" constant="60" id="ZxH-UZ-hBc"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="chat"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="stausBarLight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="primaryColor">
+                                        <color key="value" red="0.29411764709999999" green="0.77647058820000003" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3R4-aC-lFH" firstAttribute="leading" secondItem="a4g-eB-B6r" secondAttribute="leading" id="2vR-Lj-Ggb"/>
+                            <constraint firstItem="3R4-aC-lFH" firstAttribute="top" secondItem="vaI-ua-3k0" secondAttribute="bottom" constant="-64" id="BBo-Sb-hfE"/>
+                            <constraint firstItem="3R4-aC-lFH" firstAttribute="top" secondItem="vaI-ua-3k0" secondAttribute="bottom" id="Ghv-4k-GBH"/>
+                            <constraint firstItem="KSP-7F-75i" firstAttribute="top" secondItem="3R4-aC-lFH" secondAttribute="bottom" id="ME4-1r-HYJ"/>
+                            <constraint firstAttribute="trailing" secondItem="3R4-aC-lFH" secondAttribute="trailing" id="MHp-9C-Mj0"/>
+                            <constraint firstAttribute="trailing" secondItem="ZJV-cZ-dEc" secondAttribute="trailing" constant="16" id="hkW-qE-s5I"/>
+                            <constraint firstItem="3R4-aC-lFH" firstAttribute="top" secondItem="a4g-eB-B6r" secondAttribute="top" id="rYW-gH-9nc"/>
+                            <constraint firstItem="KSP-7F-75i" firstAttribute="top" secondItem="ZJV-cZ-dEc" secondAttribute="bottom" constant="16" id="xyn-wr-x07"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BBo-Sb-hfE"/>
+                                <exclude reference="rYW-gH-9nc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Clients" id="3FZ-oU-HmV"/>
+                    <connections>
+                        <outlet property="tableview" destination="3R4-aC-lFH" id="rzR-yN-VFU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PK1-OA-eKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613" y="415"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VbW-vE-cwr">
@@ -66,4 +145,7 @@
             <point key="canvasLocation" x="758" y="415"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chat" width="34" height="34"/>
+    </resources>
 </document>

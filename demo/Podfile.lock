@@ -3,7 +3,7 @@ PODS:
   - IMKitSDK (0.0.48):
     - GVUserDefaults (~> 1.0.2)
     - JSONModel (~> 1.2.0)
-    - LOAlertController (~> 0.1.4)
+    - LOAlertController (~> 0.1.3)
     - LOUIKit (= 0.1.16)
     - Socket.IO-Client-Swift (~> 6.0.0)
     - UITableView+FDTemplateLayoutCell (~> 1.4)
@@ -22,15 +22,15 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
-  - IMKitSDK (from `../`)
+  - IMKitSDK (from `../../imkit-engine/IMKitSDk`)
 
 EXTERNAL SOURCES:
   IMKitSDK:
-    :path: ../
+    :path: ../../imkit-engine/IMKitSDk
 
 SPEC CHECKSUMS:
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  IMKitSDK: 8222c8e46900fc609522114e76b3d7edeb491e74
+  IMKitSDK: 872103865d34ca943d3e00e2f41714373501296c
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   LOAlertController: a3e30183d2bb1e0191c856c6061c7f7666f649ad
   LOUIKit: 964221af4b6adc0e39e4ef74b6cb43f0aee5368f
