@@ -48,8 +48,8 @@
 #pragma mark - IMKit
 
 -(void)connectIMKit{
-    IMKitInstance.apiKey = @"005398ef62b92519cc526469f92bf399b4ae6bfd";
-    IMKitInstance.clientKey = @"5119f2d0b786758c084c09daa54ca605e70f2731";
+    IMKitInstance.apiKey = @"af1a66e8ed65dd86673bc66ef207b9026bc04a0b";
+    IMKitInstance.clientKey = @"18f87d684e858a6171e950a8a777ffb0c583c998";
     NSString *url = @"http://imkit.co:35967";
     
     NSDictionary *options = @{ @"reconnectWait" : @1, @"forceWebsockets" : @YES, };

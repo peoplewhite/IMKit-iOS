@@ -78,12 +78,9 @@
 		9E5494C51C954BB1002E5DB4 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				9EE618851CC8F81E00DC6F75 /* controller */,
 				9E5494C91C954BB1002E5DB4 /* AppDelegate.h */,
 				9E5494CA1C954BB1002E5DB4 /* AppDelegate.m */,
-				9E5494CC1C954BB1002E5DB4 /* ViewController.h */,
-				9E5494CD1C954BB1002E5DB4 /* ViewController.m */,
-				9EE6185F1CC8D78600DC6F75 /* ClientListViewController.h */,
-				9EE618601CC8D78600DC6F75 /* ClientListViewController.m */,
 				9E5494CF1C954BB1002E5DB4 /* Main.storyboard */,
 				9E5494D21C954BB1002E5DB4 /* Assets.xcassets */,
 				9E5494D41C954BB1002E5DB4 /* LaunchScreen.storyboard */,
@@ -100,6 +97,17 @@
 				9E0443091CB7C66A00EC22F0 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EE618851CC8F81E00DC6F75 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E5494CC1C954BB1002E5DB4 /* ViewController.h */,
+				9E5494CD1C954BB1002E5DB4 /* ViewController.m */,
+				9EE6185F1CC8D78600DC6F75 /* ClientListViewController.h */,
+				9EE618601CC8D78600DC6F75 /* ClientListViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 		A468EB076C4192F572BCF3BE /* Frameworks */ = {

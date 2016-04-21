@@ -8,7 +8,7 @@
 
 #import "ClientListViewController.h"
 
-@interface ClientListViewController ()
+@interface ClientListViewController ()<IMKitDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @property (strong,nonatomic) NSArray <IMClient*>* clients;
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
@@ -22,12 +22,21 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    self.navigationItem.leftBarButtonItem = nil;
+    self.title = [IMClient currentClient].username;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    IMKitInstance.delegate = self;
     
+    if (IMKitInstance.connectStatus == IMKitConnectStatusConnected) {
+        [self IMKitDidChatIn];
+    }
+    
+    self.tableview.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+}
+
+-(void)IMKitDidChatIn{
     [IMKitInstance clientsListWithOffset:0 Success:^(NSArray<IMClient *> *clients) {
         self.clients = clients;
         [self.tableview reloadData];
@@ -50,6 +59,9 @@
     
     cell.textLabel.text = client.username ? client.username : client.clientID;
     
+    
+    
+    
     return cell;
 }
 
@@ -59,6 +71,7 @@
     
     IMRoom* room = [[IMRoom alloc]init];
     room.name = @"cool";
+    room.thumbnail = [IMClient currentClient].photo;
     
     IMClient *client = self.clients[indexPath.row];
     
@@ -69,6 +82,13 @@
     } failure:^(NSError *err) {
         
     }];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([self.clients[indexPath.row].clientID isEqualToString:[IMClient currentClient].clientID]) {
+        return 0;
+    }
+    return 60;
 }
 
 - (NSArray <IMClient*>*)clients {

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+#define passwd @"123123123"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
@@ -16,14 +17,14 @@
 
 @implementation ViewController
 
--(void)viewDidLoad{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     if ([IMClient currentClient].clientID) {
         [self goClientList];
     }
     
-    self.navigationItem.leftBarButtonItem = nil;
+    self.navigationItem.backBarButtonItem = nil;
 }
 
 - (IBAction)btn:(id)sender {
@@ -33,9 +34,9 @@
     
     IMClient *client = [[IMClient alloc] init];
     client.clientID = self.textField.text;
-    client.password = @"123123123";
+    client.password = passwd;
     client.username = self.textField.text;
-
+    
     //註冊 & get token
     [IMKitInstance signWithClient:client Success:^(IMClient *client) {
         //login
@@ -49,9 +50,7 @@
     }];
 }
 
--(void)goClientList{
+- (void)goClientList {
     [self performSegueWithIdentifier:@"goClientList" sender:nil];
 }
-
-
 @end
