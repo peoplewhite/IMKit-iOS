@@ -7,5 +7,5 @@ An easy-to-use toolkit enables your app/web running with Instant Messaging.
 
 ##### CocoaPods
 ```
-pod 'IMKitSDK',:git => 'https://github.com/FUNTEKco/IMKit-iOS.git', :tag => '0.0.1'
+pod 'IMKitSDK'
 ```
