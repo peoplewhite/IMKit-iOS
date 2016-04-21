@@ -184,6 +184,7 @@ UIKIT_EXTERN NSString *const kIMKitDidJoinedWithRoom;
 UIKIT_EXTERN NSString *const kIMKitDidReceiveMessage;
 UIKIT_EXTERN NSString *const kIMKitDidReceiveMessageFromOthers;
 UIKIT_EXTERN NSString *const kIMKitDidUpdateMessage;
+UIKIT_EXTERN NSString *const kIMKitDidUpdateBadge;
 UIKIT_EXTERN NSString *const kIMKitDidChangeMessageSendingType;
 UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
 
@@ -203,7 +204,7 @@ UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
  */
 - (void)IMKitDidReceiveMessage:(IMMessage *)message;
 /**
- *  called when receive message witch send from other device
+ *  called when receive message witch send from other device , and others client
  */
 - (void)IMKitDidReceiveMessageFromOthers:(IMMessage *)message;
 

@@ -1,5 +1,6 @@
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'IMKitSDK',:path => '../'
-#pod 'IMKitSDK', :git => 'https://github.com/FUNTEKco/IMKit-iOS.git' , :tag => '0.0.38'
+#pod 'IMKitSDK'
+pod 'IMKitSDK' , :path => '../'
+#pod 'IMKitSDK' , :path => '../../imkit-engine/IMKitSDk'

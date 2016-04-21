@@ -24,4 +24,5 @@
 @property (assign, nonatomic) int badge;
 
 @property (strong, nonatomic, readonly) IMClient *anyOtherClient;
+
 @end

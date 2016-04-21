@@ -20,6 +20,7 @@
 
 @property (strong, nonatomic) NSString *chatinAt;
 @property (strong, nonatomic) NSArray *room;
+@property (assign, nonatomic) NSUInteger totalBadge;
 
 + (IMClient *)currentClient;
 @end

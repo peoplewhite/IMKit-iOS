@@ -8,33 +8,40 @@
 
 #import "ViewController.h"
 
+#define passwd @"123123123"
 
-@interface ViewController ()<IMRoomViewControllerDelegate>
+@interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
 @implementation ViewController
 
--(void)viewDidLoad{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     if ([IMClient currentClient].clientID) {
-        [self nextWithAnimation:NO];
+        [self goClientList];
     }
+    
+    self.navigationItem.backBarButtonItem = nil;
 }
 
 - (IBAction)btn:(id)sender {
+    if (!self.textField.text.length) {
+        return;
+    }
+    
     IMClient *client = [[IMClient alloc] init];
     client.clientID = self.textField.text;
-    client.password = @"123123123";
+    client.password = passwd;
     client.username = self.textField.text;
-
+    
     //註冊 & get token
     [IMKitInstance signWithClient:client Success:^(IMClient *client) {
         //login
         [IMKitInstance chatinSuccess:^(IMClient *client) {
-            [self nextWithAnimation:YES];
+            [self goClientList];
         } failure:^(NSError *err) {
             //
         }];
@@ -43,17 +50,7 @@
     }];
 }
 
-- (void)nextWithAnimation:(BOOL)animation {
-    IMRoomViewController *controller = [[UIStoryboard storyboardWithName:@"IMMain" bundle:nil] instantiateViewControllerWithIdentifier:@"IMRoomViewController"];
-    controller.delegate = self;
-    [self.navigationController pushViewController:controller animated:animation];
+- (void)goClientList {
+    [self performSegueWithIdentifier:@"goClientList" sender:nil];
 }
-
-#pragma mark - IMRoomListViewControllerDelegate
-
--(void)IMRoomViewControllerDidPop{
-    [IMKitInstance logout];
-}
-
-
 @end
