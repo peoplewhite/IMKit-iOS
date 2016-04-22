@@ -12,7 +12,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-
+@property (strong,nonatomic) UITapGestureRecognizer* tap;
 @end
 
 @implementation ViewController
@@ -24,7 +24,7 @@
         [self goClientList];
     }
     
-    self.navigationItem.backBarButtonItem = nil;
+    [self.view addGestureRecognizer:self.tap];
 }
 
 - (IBAction)btn:(id)sender {
@@ -53,4 +53,16 @@
 - (void)goClientList {
     [self performSegueWithIdentifier:@"goClientList" sender:nil];
 }
+
+- (UITapGestureRecognizer *)tap {
+	if (!_tap) {
+        _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    }
+	return _tap;
+}
+
+-(void)hideKeyboard{
+    [self.view endEditing:YES];
+}
+
 @end
