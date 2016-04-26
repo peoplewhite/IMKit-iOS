@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.dependency 'YYWebImage','~> 1.0.3'
   s.dependency 'LOAlertController','~> 0.1.4'
   s.dependency 'LOUIKit','0.1.16'
-  s.dependency 'YapDatabase','2.8.3'
+  s.dependency 'YapDatabase','2.9'
   
   s.requires_arc  = true
 end
