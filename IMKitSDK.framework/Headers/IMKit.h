@@ -7,6 +7,7 @@
 #import <UIKit/UIKit.h>
 #import <JSONModel/JSONModel.h>
 #import "IMDataModels.h"
+#import "IMDB.h"
 
 typedef NS_ENUM (int, IMKitConnectStatus) {
     IMKitConnectStatusConnected,
@@ -24,8 +25,10 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 @interface IMKit : JSONModel
 @property (assign, nonatomic) IMKitConnectStatus connectStatus;
 
-@property (strong, nonatomic, readonly) NSMutableArray <IMRoom *> *chatRooms;
-@property (strong, nonatomic) IMBadge* badge;
+@property (strong, nonatomic) NSMutableArray <IMRoom *> *chatRooms;
+@property (strong, nonatomic) NSMutableArray <IMMessage *> *messages;
+
+@property (strong, nonatomic) IMBadge *badge;
 
 @property (weak, nonatomic) id <IMKitDelegate> delegate;
 @property (strong, nonatomic, readonly) NSString *token;
@@ -70,7 +73,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 /**
  *  get all badge of rooms , costs more backend resouce than badgeTotalSuccess:
  */
-- (void)badgeSuccess:(void (^)(IMBadge* badge))success failure:(void (^)(NSError *err))failure;
+- (void)badgeSuccess:(void (^)(IMBadge *badge))success failure:(void (^)(NSError *err))failure;
 
 /**
  *  get just total badge number
@@ -82,14 +85,13 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)createRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 - (void)joinRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
-
 //create room with client, return old room if exists
 - (void)createRoom:(IMRoom *)room WithClientID:(NSString *)ClientID duplicate:(BOOL)duplicate Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure DEPRECATED_MSG_ATTRIBUTE("duplicate: DEPRECATED");
+
 - (void)createRoom:(IMRoom *)room WithClientID:(NSString *)clientID success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
 //create room with client
 - (void)forceCreateRoom:(IMRoom *)room WithClient:(NSString *)clientID success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
-
 
 - (void)roomWithRoomID:(NSString *)roomID Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 - (void)messageWithRoom:(IMRoom *)room offset:(NSUInteger)offset limit:(int)limit Success:(void (^)(NSMutableArray <IMMessage *> *messages))success failure:(void (^)(NSError *err))failure;
@@ -108,13 +110,17 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
 - (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
 
-- (void)roomListLastMessageTime:(NSDate*)lastMessageTime Offset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
-
+//
+- (void)roomListKeepUpdateingToNewestComplete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
+- (void)roomListLastMessageTime:(NSDate *)lastMessageTime Offset:(NSUInteger)offset limit:(NSUInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
 
 - (void)archiveRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
 #pragma mark - message
 
+/**
+ *  send message to room
+ */
 - (void)sendMessageInBackground:(IMMessage *)message;
 
 /**
@@ -188,7 +194,6 @@ UIKIT_EXTERN NSString *const kIMKitDidUpdateBadge;
 UIKIT_EXTERN NSString *const kIMKitDidChangeMessageSendingType;
 UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
 
-
 #pragma mark - Delegate
 @protocol IMKitDelegate <NSObject>
 
@@ -223,7 +228,7 @@ UIKIT_EXTERN NSString *const kIMKitDidChangeConnectStatus;
  */
 - (void)IMKitDidChangeMessageSendingType:(IMMessage *)message;
 
-- (void)IMKitDidUpdateBadge:(IMBadge*)badge;
+- (void)IMKitDidUpdateBadge:(IMBadge *)badge;
 
 /**
  *  called when other device update read time in room
