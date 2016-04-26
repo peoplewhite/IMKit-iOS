@@ -1,18 +1,78 @@
 PODS:
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
   - GVUserDefaults (1.0.2)
-  - IMKitSDK (0.0.49):
+  - IMKitSDK (0.0.52):
     - GVUserDefaults (~> 1.0.2)
     - JSONModel (~> 1.2.0)
     - LOAlertController (~> 0.1.4)
     - LOUIKit (= 0.1.16)
     - Socket.IO-Client-Swift (~> 6.0.0)
     - UITableView+FDTemplateLayoutCell (~> 1.4)
-    - YYWebImage (~> 1.0)
+    - YapDatabase (= 2.9)
+    - YYWebImage (~> 1.0.3)
   - JSONModel (1.2.0)
   - LOAlertController (0.1.4)
   - LOUIKit (0.1.16)
+  - Reachability (3.2)
   - Socket.IO-Client-Swift (6.0.0)
   - UITableView+FDTemplateLayoutCell (1.4)
+  - YapDatabase (2.9):
+    - YapDatabase/Standard (= 2.9)
+  - YapDatabase/Standard (2.9):
+    - YapDatabase/Standard/Core (= 2.9)
+    - YapDatabase/Standard/Extensions (= 2.9)
+  - YapDatabase/Standard/Core (2.9):
+    - CocoaLumberjack (~> 2)
+  - YapDatabase/Standard/Extensions (2.9):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/ActionManager (= 2.9)
+    - YapDatabase/Standard/Extensions/CloudKit (= 2.9)
+    - YapDatabase/Standard/Extensions/ConnectionProxy (= 2.9)
+    - YapDatabase/Standard/Extensions/CrossProcessNotification (= 2.9)
+    - YapDatabase/Standard/Extensions/FilteredViews (= 2.9)
+    - YapDatabase/Standard/Extensions/FullTextSearch (= 2.9)
+    - YapDatabase/Standard/Extensions/Hooks (= 2.9)
+    - YapDatabase/Standard/Extensions/Relationships (= 2.9)
+    - YapDatabase/Standard/Extensions/RTreeIndex (= 2.9)
+    - YapDatabase/Standard/Extensions/SearchResults (= 2.9)
+    - YapDatabase/Standard/Extensions/SecondaryIndex (= 2.9)
+    - YapDatabase/Standard/Extensions/Views (= 2.9)
+  - YapDatabase/Standard/Extensions/ActionManager (2.9):
+    - Reachability (~> 3)
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/Views
+  - YapDatabase/Standard/Extensions/CloudKit (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/ConnectionProxy (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/CrossProcessNotification (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/FilteredViews (2.9):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/Views
+  - YapDatabase/Standard/Extensions/FullTextSearch (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Hooks (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Relationships (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/RTreeIndex (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/SearchResults (2.9):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/FullTextSearch
+    - YapDatabase/Standard/Extensions/Views
+  - YapDatabase/Standard/Extensions/SecondaryIndex (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Views (2.9):
+    - YapDatabase/Standard/Core
   - YYCache (1.0.3)
   - YYImage (1.0.1):
     - YYImage/Core (= 1.0.1)
@@ -29,13 +89,16 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  IMKitSDK: 981075428ca07f7e36bf80a34fbfe193ce9b601a
+  IMKitSDK: 35a74de5cc2988f7c10441d50a75411d4ba86e3f
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   LOAlertController: a3e30183d2bb1e0191c856c6061c7f7666f649ad
   LOUIKit: 964221af4b6adc0e39e4ef74b6cb43f0aee5368f
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Socket.IO-Client-Swift: 014fe27dbb8d9d359d09b482309421fb4eccc16c
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  YapDatabase: c00f4197bba2fea17bdbd82c8e8e3f7104b6fa67
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
   YYImage: b41b45bc5f32bfcdf67bdfb9c09da9e9832357c0
   YYWebImage: 8da75a611fd0d2e0f58a273f9ca0bc731614cb0d
