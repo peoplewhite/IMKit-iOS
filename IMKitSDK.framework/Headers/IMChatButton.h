@@ -14,6 +14,7 @@ IB_DESIGNABLE
 @property (assign,nonatomic) IBInspectable BOOL stausBarLight;
 @property (strong,nonatomic) IBInspectable UIColor* primaryColor;
 @property (strong,nonatomic) IBInspectable UIColor* secondColor;
+@property (assign,nonatomic) IBInspectable BOOL disableWhenDisconnect;
 
 @property (assign,nonatomic) NSUInteger badgeNumber;
 

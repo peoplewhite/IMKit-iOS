@@ -79,7 +79,7 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 @property (strong, nonatomic) IMMessageOption *option;
 
 
-
+//*****for send message******
 - (instancetype)initWithRoom:(IMRoom *)room;
 
 - (void)setMessageWithType:(IMKitMessageType)messageType;

@@ -787,6 +787,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" id="UGr-Sa-bbT"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="Cancel"/>
                                         <connections>
                                             <action selector="cancelBtnPressed:" destination="SwR-Qd-ljX" eventType="touchUpInside" id="ERc-KQ-CuV"/>

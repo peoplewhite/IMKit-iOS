@@ -54,7 +54,7 @@
     [IMKitInstance clientsListWithOffset:0 Success:^(NSArray<IMClient *> *clients) {
         self.clients = clients;
         [self.tableview reloadData];
-        NSLog(@"%d",(int)self.clients.count);
+        NSLog(@"%d clients here",(int)self.clients.count -1 );
     } failure:^(NSError *err) {
         
     }];
