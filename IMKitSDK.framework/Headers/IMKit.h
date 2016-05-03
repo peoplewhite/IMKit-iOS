@@ -43,9 +43,13 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 @property (strong, nonatomic) NSString *apiKey;
 @property (strong, nonatomic) NSString *clientKey;
 
+@property (assign, nonatomic) BOOL log;
+
 + (instancetype)shareInstance;
 
 - (void)connectWithURL:(NSString *)url options:(NSDictionary *)option onConnect:(void (^)(void))onConnect;
+
+- (void)logDictionaryIfNeeded:(id)obj;
 
 #pragma mark - query
 

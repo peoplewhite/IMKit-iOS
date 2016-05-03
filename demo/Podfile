@@ -1,6 +1,6 @@
 platform :ios, '8.0'
 use_frameworks!
 
-#pod 'IMKitSDK'
+pod 'IMKitSDK','0.0.54'
 #pod 'IMKitSDK' , :path => '../'
-pod 'IMKitSDK' , :path => '../../imkit-engine/IMKitSDk'
+#pod 'IMKitSDK' , :path => '../../imkit-engine/IMKitSDk'

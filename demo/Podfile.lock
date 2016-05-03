@@ -1,69 +1,77 @@
 PODS:
-  - CocoaLumberjack (2.2.0):
-    - CocoaLumberjack/Default (= 2.2.0)
-    - CocoaLumberjack/Extensions (= 2.2.0)
-  - CocoaLumberjack/Core (2.2.0)
-  - CocoaLumberjack/Default (2.2.0):
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.2.0):
+  - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
   - GVUserDefaults (1.0.2)
-  - IMKitSDK (0.0.48):
+  - IMKitSDK (0.0.54):
     - GVUserDefaults (~> 1.0.2)
     - JSONModel (~> 1.2.0)
-    - LOAlertController (~> 0.1.3)
+    - LOAlertController (~> 0.1.4)
     - LOUIKit (= 0.1.16)
     - Socket.IO-Client-Swift (~> 6.0.0)
     - UITableView+FDTemplateLayoutCell (~> 1.4)
-    - YapDatabase (= 2.8.3)
-    - YYWebImage (~> 1.0)
+    - YapDatabase (= 2.9)
+    - YYWebImage (~> 1.0.3)
   - JSONModel (1.2.0)
   - LOAlertController (0.1.4)
   - LOUIKit (0.1.16)
+  - Reachability (3.2)
   - Socket.IO-Client-Swift (6.0.0)
   - UITableView+FDTemplateLayoutCell (1.4)
-  - YapDatabase (2.8.3):
-    - YapDatabase/Standard (= 2.8.3)
-  - YapDatabase/Standard (2.8.3):
-    - YapDatabase/Standard/Core (= 2.8.3)
-    - YapDatabase/Standard/Extensions (= 2.8.3)
-  - YapDatabase/Standard/Core (2.8.3):
+  - YapDatabase (2.9):
+    - YapDatabase/Standard (= 2.9)
+  - YapDatabase/Standard (2.9):
+    - YapDatabase/Standard/Core (= 2.9)
+    - YapDatabase/Standard/Extensions (= 2.9)
+  - YapDatabase/Standard/Core (2.9):
     - CocoaLumberjack (~> 2)
-  - YapDatabase/Standard/Extensions (2.8.3):
+  - YapDatabase/Standard/Extensions (2.9):
     - YapDatabase/Standard/Core
-    - YapDatabase/Standard/Extensions/CloudKit (= 2.8.3)
-    - YapDatabase/Standard/Extensions/ConnectionProxy (= 2.8.3)
-    - YapDatabase/Standard/Extensions/FilteredViews (= 2.8.3)
-    - YapDatabase/Standard/Extensions/FullTextSearch (= 2.8.3)
-    - YapDatabase/Standard/Extensions/Hooks (= 2.8.3)
-    - YapDatabase/Standard/Extensions/Relationships (= 2.8.3)
-    - YapDatabase/Standard/Extensions/RTreeIndex (= 2.8.3)
-    - YapDatabase/Standard/Extensions/SearchResults (= 2.8.3)
-    - YapDatabase/Standard/Extensions/SecondaryIndex (= 2.8.3)
-    - YapDatabase/Standard/Extensions/SecondaryIndex (= 2.8.3)
-    - YapDatabase/Standard/Extensions/Views (= 2.8.3)
-  - YapDatabase/Standard/Extensions/CloudKit (2.8.3):
-    - YapDatabase/Standard/Core
-  - YapDatabase/Standard/Extensions/ConnectionProxy (2.8.3):
-    - YapDatabase/Standard/Core
-  - YapDatabase/Standard/Extensions/FilteredViews (2.8.3):
+    - YapDatabase/Standard/Extensions/ActionManager (= 2.9)
+    - YapDatabase/Standard/Extensions/CloudKit (= 2.9)
+    - YapDatabase/Standard/Extensions/ConnectionProxy (= 2.9)
+    - YapDatabase/Standard/Extensions/CrossProcessNotification (= 2.9)
+    - YapDatabase/Standard/Extensions/FilteredViews (= 2.9)
+    - YapDatabase/Standard/Extensions/FullTextSearch (= 2.9)
+    - YapDatabase/Standard/Extensions/Hooks (= 2.9)
+    - YapDatabase/Standard/Extensions/Relationships (= 2.9)
+    - YapDatabase/Standard/Extensions/RTreeIndex (= 2.9)
+    - YapDatabase/Standard/Extensions/SearchResults (= 2.9)
+    - YapDatabase/Standard/Extensions/SecondaryIndex (= 2.9)
+    - YapDatabase/Standard/Extensions/Views (= 2.9)
+  - YapDatabase/Standard/Extensions/ActionManager (2.9):
+    - Reachability (~> 3)
     - YapDatabase/Standard/Core
     - YapDatabase/Standard/Extensions/Views
-  - YapDatabase/Standard/Extensions/FullTextSearch (2.8.3):
+  - YapDatabase/Standard/Extensions/CloudKit (2.9):
     - YapDatabase/Standard/Core
-  - YapDatabase/Standard/Extensions/Hooks (2.8.3):
+  - YapDatabase/Standard/Extensions/ConnectionProxy (2.9):
     - YapDatabase/Standard/Core
-  - YapDatabase/Standard/Extensions/Relationships (2.8.3):
+  - YapDatabase/Standard/Extensions/CrossProcessNotification (2.9):
     - YapDatabase/Standard/Core
-  - YapDatabase/Standard/Extensions/RTreeIndex (2.8.3):
+  - YapDatabase/Standard/Extensions/FilteredViews (2.9):
     - YapDatabase/Standard/Core
-  - YapDatabase/Standard/Extensions/SearchResults (2.8.3):
+    - YapDatabase/Standard/Extensions/Views
+  - YapDatabase/Standard/Extensions/FullTextSearch (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Hooks (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Relationships (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/RTreeIndex (2.9):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/SearchResults (2.9):
     - YapDatabase/Standard/Core
     - YapDatabase/Standard/Extensions/FullTextSearch
     - YapDatabase/Standard/Extensions/Views
-  - YapDatabase/Standard/Extensions/SecondaryIndex (2.8.3):
+  - YapDatabase/Standard/Extensions/SecondaryIndex (2.9):
     - YapDatabase/Standard/Core
-  - YapDatabase/Standard/Extensions/Views (2.8.3):
+  - YapDatabase/Standard/Extensions/Views (2.9):
     - YapDatabase/Standard/Core
   - YYCache (1.0.3)
   - YYImage (1.0.1):
@@ -74,22 +82,19 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
-  - IMKitSDK (from `../../imkit-engine/IMKitSDk`)
-
-EXTERNAL SOURCES:
-  IMKitSDK:
-    :path: ../../imkit-engine/IMKitSDk
+  - IMKitSDK (= 0.0.54)
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  IMKitSDK: 700ba3b63768ba245e324fd01700aa9b00de5332
+  IMKitSDK: 2005b0fb02f2f19535098be8a7f644f9e2bc36ca
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   LOAlertController: a3e30183d2bb1e0191c856c6061c7f7666f649ad
   LOUIKit: 964221af4b6adc0e39e4ef74b6cb43f0aee5368f
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Socket.IO-Client-Swift: 014fe27dbb8d9d359d09b482309421fb4eccc16c
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
-  YapDatabase: 15b6867a07ff30eac3af28794cd2262b4d0ca4ca
+  YapDatabase: c00f4197bba2fea17bdbd82c8e8e3f7104b6fa67
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
   YYImage: b41b45bc5f32bfcdf67bdfb9c09da9e9832357c0
   YYWebImage: 8da75a611fd0d2e0f58a273f9ca0bc731614cb0d
