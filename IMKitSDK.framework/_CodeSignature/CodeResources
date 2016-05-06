@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		rnqF7NwFAtIE+HiwiuoY+zr15Bo=
+		HTf8L6Qnrhgju5pXCKifcRsuWzw=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/IMNavigationController.h</key>
 		<data>
-		VaO8F02uYZyrpOoj/1TOgCH4M9U=
+		CQzsNVzahe/SrW1Xuhf0xwoHMsI=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rmUkbwzn/I9Tzv7QCASNVNSFEpY=
+		UPnvE518Y4Hvf9Wt6Q+8k0hV/Z4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -199,11 +199,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rnqF7NwFAtIE+HiwiuoY+zr15Bo=
+			HTf8L6Qnrhgju5pXCKifcRsuWzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xrxi4mrZVMF5hC7xx028UOZYhjxvpKVNXbVsvRtbWx4=
+			Tnu2UfJnG8O5R/yBIXFNzvdgJLmWis456LhmBo90FZo=
 			</data>
 		</dict>
 		<key>Headers/IMKitSDK.h</key>
@@ -276,11 +276,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VaO8F02uYZyrpOoj/1TOgCH4M9U=
+			CQzsNVzahe/SrW1Xuhf0xwoHMsI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ON4NYAxYH+O+gK6M2SdWaEICmyhVe9Vbe67JcKy7VUU=
+			tDeaJP1VYDXNBfw1Xq6Mm20L7f1dGYE6xDb/s/l/oiU=
 			</data>
 		</dict>
 		<key>Headers/IMObject.h</key>

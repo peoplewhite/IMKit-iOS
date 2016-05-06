@@ -44,6 +44,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 @property (strong, nonatomic) NSString *clientKey;
 
 @property (assign, nonatomic) BOOL log;
+@property (assign, nonatomic) BOOL printLog;
 
 + (instancetype)shareInstance;
 
