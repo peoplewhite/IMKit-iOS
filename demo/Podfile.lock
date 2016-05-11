@@ -7,8 +7,11 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - GVUserDefaults (1.0.2)
-  - IMKitSDK (0.0.54):
+  - IMKitSDK (0.0.57):
     - GVUserDefaults (~> 1.0.2)
     - JSONModel (~> 1.2.0)
     - LOAlertController (~> 0.1.4)
@@ -82,12 +85,20 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
-  - IMKitSDK (= 0.0.54)
+  - Crashlytics
+  - Fabric
+  - IMKitSDK (from `../`)
+
+EXTERNAL SOURCES:
+  IMKitSDK:
+    :path: "../"
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  IMKitSDK: 2005b0fb02f2f19535098be8a7f644f9e2bc36ca
+  IMKitSDK: a90615f9ae6138770bf3af650da7018535e3e610
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   LOAlertController: a3e30183d2bb1e0191c856c6061c7f7666f649ad
   LOUIKit: 964221af4b6adc0e39e4ef74b6cb43f0aee5368f
@@ -99,4 +110,6 @@ SPEC CHECKSUMS:
   YYImage: b41b45bc5f32bfcdf67bdfb9c09da9e9832357c0
   YYWebImage: 8da75a611fd0d2e0f58a273f9ca0bc731614cb0d
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 377f1e76a66bb965da537c099745d01aacd9d326
+
+COCOAPODS: 1.0.0

@@ -17,6 +17,7 @@
 @property (assign,nonatomic) BOOL showDate;
 
 @property (strong ,nonatomic) IMMessage* message;
+@property (strong ,nonatomic) IMRoom* room;
 
 @property (assign, nonatomic) IMKitMessageSendingType cellType;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;

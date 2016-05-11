@@ -92,6 +92,15 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 
 - (void)update;
 
+/**
+ *  to detect if in the same day
+ *
+ *  @param message another message
+ *
+ *  @return if different
+ */
+-(BOOL)isDifferentDateWithMessage:(IMMessage*)message;
+
 //- (BOOL)didReadFromAnother;
 //- (NSUInteger)numberOfReadFromUsers;
 @end
