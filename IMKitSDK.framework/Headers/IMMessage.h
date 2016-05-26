@@ -99,7 +99,7 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
  *
  *  @return if different
  */
--(BOOL)isDifferentDateWithMessage:(IMMessage*)message;
+- (BOOL)isDifferentDateWithMessage:(IMMessage *)message;
 
 //- (BOOL)didReadFromAnother;
 //- (NSUInteger)numberOfReadFromUsers;

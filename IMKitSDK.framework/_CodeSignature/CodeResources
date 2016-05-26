@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/IMBubbleView.h</key>
 		<data>
-		k0dFW1YCc+iawYyYmfsScrrVvTg=
+		3fLs3HGYEg87PALeaQqpi/CXhH8=
 		</data>
 		<key>Headers/IMChatButton.h</key>
 		<data>
-		niKDu04UqbDmeJDdMYHs61xYhSQ=
+		+LLjaNOCzdz2R7Crm4WGzehrZRM=
 		</data>
 		<key>Headers/IMClient.h</key>
 		<data>
@@ -36,9 +36,13 @@
 		<data>
 		rY8pcuYdCADuf+cLIOpIcT6vrWM=
 		</data>
+		<key>Headers/IMInviteClient.h</key>
+		<data>
+		xtjthPAJz11LvdlIC+fJC39sy7E=
+		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		HTf8L6Qnrhgju5pXCKifcRsuWzw=
+		B7AX8wYZeit5ph1fT5cel8fe/Mk=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
@@ -46,27 +50,27 @@
 		</data>
 		<key>Headers/IMKitUI.h</key>
 		<data>
-		RJ2sxNTfd8Mk6wRRoto6OPhHtE4=
+		s7SY7J+UZ0H4jKjT4CT7KKwhYlo=
 		</data>
 		<key>Headers/IMMessage.h</key>
 		<data>
-		d6X9Gah44lXdyhkEtqtp+LBvzoE=
+		M9c1JNbnviHIMld8qEPjSF/JBaA=
 		</data>
 		<key>Headers/IMMessageContainerViewController.h</key>
 		<data>
-		lw6TSfR5MT+TW/IL2w2AUBG6mXY=
+		k+YwoGdBBIb8vFeq9McRGQ7dhXs=
 		</data>
 		<key>Headers/IMMessageTableViewCell.h</key>
 		<data>
-		ytfWCm8HHuIf3za4s423+MN6bo8=
+		jzh+LklQMloieEsTWh23P07JWyk=
 		</data>
 		<key>Headers/IMMessageViewController.h</key>
 		<data>
-		T//e2kJaIAaZlc7kttxisiWzTlc=
+		TTiYruOrS8OX6SgZu7Hi8EP8Ihs=
 		</data>
 		<key>Headers/IMNavigationController.h</key>
 		<data>
-		CQzsNVzahe/SrW1Xuhf0xwoHMsI=
+		vHM2q0h3DqzMlms3H6JqK1Ft70w=
 		</data>
 		<key>Headers/IMObject.h</key>
 		<data>
@@ -76,13 +80,25 @@
 		<data>
 		sNFlE45ckI9uCTmg1M+iG1rYp94=
 		</data>
+		<key>Headers/IMRoomCreateViewController.h</key>
+		<data>
+		hSLE2b9lOtopEN8RwlmghnuISbI=
+		</data>
+		<key>Headers/IMRoomInviteTableViewCell.h</key>
+		<data>
+		J5oytkfF/KXqNpmklR8Pic6XZs4=
+		</data>
+		<key>Headers/IMRoomInviteViewController.h</key>
+		<data>
+		UxTyIXnK9L1O2r+ZCgwaTnOIzwM=
+		</data>
 		<key>Headers/IMRoomTableViewCell.h</key>
 		<data>
-		X1qFo0Lb6Zk2kLZqx5o3AYWjTDI=
+		WnuVLXyNnmbhxqnu/Yg6hEr5oU0=
 		</data>
 		<key>Headers/IMRoomViewController.h</key>
 		<data>
-		YTATuD+ju1ZoWfNOd2WHgF08c4Y=
+		GhealxxAAEBhf2PUsvgLqQEAzBM=
 		</data>
 		<key>Headers/IMTableViewCell.h</key>
 		<data>
@@ -90,7 +106,7 @@
 		</data>
 		<key>Headers/IMViewController.h</key>
 		<data>
-		P+2c5LAw1a1sMt2nUAddvhSWh/4=
+		5MMyztIKdKmPpY1wwhrbX/j4UWA=
 		</data>
 		<key>Headers/UIBarButtonItem+Badge.h</key>
 		<data>
@@ -98,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UPnvE518Y4Hvf9Wt6Q+8k0hV/Z4=
+		It9pY+VDx6CIGSL6LBMnYnlsteE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -133,22 +149,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k0dFW1YCc+iawYyYmfsScrrVvTg=
+			3fLs3HGYEg87PALeaQqpi/CXhH8=
 			</data>
 			<key>hash2</key>
 			<data>
-			2QY9oaqkqSghb7JDXPXDnj9qEJFbJgG9fCBl9vlB0S0=
+			SNejOk0Q+MLf/DMFuZHjmD1T0mtQpNBdLE8+yvZm7II=
 			</data>
 		</dict>
 		<key>Headers/IMChatButton.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			niKDu04UqbDmeJDdMYHs61xYhSQ=
+			+LLjaNOCzdz2R7Crm4WGzehrZRM=
 			</data>
 			<key>hash2</key>
 			<data>
-			/YSWyIR8YPESn57nMIoUiEzIckl/g+vJQ2Fy7iJsP+8=
+			L4kH/6z81z54JRB6JDKpcX7qqlQy06bs/J7ni8KRBUQ=
 			</data>
 		</dict>
 		<key>Headers/IMClient.h</key>
@@ -195,15 +211,26 @@
 			d+4t41A3djZunPU9uAA11P0t6xHkydbSk/JETQoA8Qw=
 			</data>
 		</dict>
+		<key>Headers/IMInviteClient.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xtjthPAJz11LvdlIC+fJC39sy7E=
+			</data>
+			<key>hash2</key>
+			<data>
+			KFMTq7kCGTNyWTJbPv5J5Vr/uf+d67KmyhwerOOk2Z0=
+			</data>
+		</dict>
 		<key>Headers/IMKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HTf8L6Qnrhgju5pXCKifcRsuWzw=
+			B7AX8wYZeit5ph1fT5cel8fe/Mk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Tnu2UfJnG8O5R/yBIXFNzvdgJLmWis456LhmBo90FZo=
+			aLT2+eMp3bRJqnBY047zGsTlyn5Vvikj6GMmukYSCzM=
 			</data>
 		</dict>
 		<key>Headers/IMKitSDK.h</key>
@@ -221,66 +248,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RJ2sxNTfd8Mk6wRRoto6OPhHtE4=
+			s7SY7J+UZ0H4jKjT4CT7KKwhYlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ce2nJFXfu1kSwhFqNhq+Ptk+E25lHzvYYrWLuZxfn0w=
+			oSb99ITU2yrAgFdu62HeOMsLtvP4p7+BOlOPzf2pFQE=
 			</data>
 		</dict>
 		<key>Headers/IMMessage.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d6X9Gah44lXdyhkEtqtp+LBvzoE=
+			M9c1JNbnviHIMld8qEPjSF/JBaA=
 			</data>
 			<key>hash2</key>
 			<data>
-			1jvIxq1rZ9pz1tafEpGnJBCna2cz/m55REO5DPPmjAs=
+			kY6q87SfgJyC+GL4u88QEg5/2u22qbEVqTR7UuWr3po=
 			</data>
 		</dict>
 		<key>Headers/IMMessageContainerViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lw6TSfR5MT+TW/IL2w2AUBG6mXY=
+			k+YwoGdBBIb8vFeq9McRGQ7dhXs=
 			</data>
 			<key>hash2</key>
 			<data>
-			RYIIBslH4DrUHMANd+++J2w4h3IQHxIrawptvPf4LTg=
+			NcMUKXZFbp13y0U5uvH0LwL8SQy664CV+iLUvL2giIg=
 			</data>
 		</dict>
 		<key>Headers/IMMessageTableViewCell.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ytfWCm8HHuIf3za4s423+MN6bo8=
+			jzh+LklQMloieEsTWh23P07JWyk=
 			</data>
 			<key>hash2</key>
 			<data>
-			jn1RuGX4h/bmzGh1GMDFhDYl/lzbxJujkNgk84VbMv0=
+			3TzLs4l0R/if36/4nJ4c9r2IddlFNE5vm7B+8hwIwoU=
 			</data>
 		</dict>
 		<key>Headers/IMMessageViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			T//e2kJaIAaZlc7kttxisiWzTlc=
+			TTiYruOrS8OX6SgZu7Hi8EP8Ihs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bbj8NLQXqA0yuA2uxBcj1SlHU6M35JDQwO+oNLYAd3g=
+			cX/agVgv2XkQ8Pkm74NKdAszyWDhp+Pn9VP2Glp8ZBs=
 			</data>
 		</dict>
 		<key>Headers/IMNavigationController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CQzsNVzahe/SrW1Xuhf0xwoHMsI=
+			vHM2q0h3DqzMlms3H6JqK1Ft70w=
 			</data>
 			<key>hash2</key>
 			<data>
-			tDeaJP1VYDXNBfw1Xq6Mm20L7f1dGYE6xDb/s/l/oiU=
+			M2P+Pj32a5oGAoPAwQw5f5hIUpjLUrKCtEms1ZbClL8=
 			</data>
 		</dict>
 		<key>Headers/IMObject.h</key>
@@ -305,26 +332,59 @@
 			68ER6m7vYojCTKzjH4IbaZE4HaaR3KlJHS09KN1+nH0=
 			</data>
 		</dict>
+		<key>Headers/IMRoomCreateViewController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hSLE2b9lOtopEN8RwlmghnuISbI=
+			</data>
+			<key>hash2</key>
+			<data>
+			xqbS5CkB1lwdlWXGoRmmxrn+Ce+YECbid+9YMhV5IaU=
+			</data>
+		</dict>
+		<key>Headers/IMRoomInviteTableViewCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J5oytkfF/KXqNpmklR8Pic6XZs4=
+			</data>
+			<key>hash2</key>
+			<data>
+			4ik02fb7BdKtw8nP43UdfsWfc2Xxy3oQP7sN3Xsjy94=
+			</data>
+		</dict>
+		<key>Headers/IMRoomInviteViewController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UxTyIXnK9L1O2r+ZCgwaTnOIzwM=
+			</data>
+			<key>hash2</key>
+			<data>
+			iUhOTyLQ2nBLt7oOPuijweMg3kmJ4/h8mHI5tIjqdcE=
+			</data>
+		</dict>
 		<key>Headers/IMRoomTableViewCell.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X1qFo0Lb6Zk2kLZqx5o3AYWjTDI=
+			WnuVLXyNnmbhxqnu/Yg6hEr5oU0=
 			</data>
 			<key>hash2</key>
 			<data>
-			dSPk96kthuXxX7PfCMnpfQvqz+NbF9zs2Tx7smjZ/Jw=
+			XM2vcQFJDNoei2yyNR7WgVjXmY4QueKL1YdyxqB3uFM=
 			</data>
 		</dict>
 		<key>Headers/IMRoomViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YTATuD+ju1ZoWfNOd2WHgF08c4Y=
+			GhealxxAAEBhf2PUsvgLqQEAzBM=
 			</data>
 			<key>hash2</key>
 			<data>
-			twXygZB8nC1joIRABWxT9YWovomJ+AcArd0jVNrUFKU=
+			Dy8+s/pR5yebx0prUBHzkUQ6m23jPoItBDEs9c5r4ug=
 			</data>
 		</dict>
 		<key>Headers/IMTableViewCell.h</key>
@@ -342,11 +402,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P+2c5LAw1a1sMt2nUAddvhSWh/4=
+			5MMyztIKdKmPpY1wwhrbX/j4UWA=
 			</data>
 			<key>hash2</key>
 			<data>
-			9qBGoO565gi4hHexdZT36QJmjjEz1B7ncS7Qrwq3kG0=
+			B4n/BgXVJ3bm34LIWuS+ALG9YRs7579kgD3A4LWWTCY=
 			</data>
 		</dict>
 		<key>Headers/UIBarButtonItem+Badge.h</key>

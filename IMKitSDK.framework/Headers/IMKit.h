@@ -87,6 +87,8 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 
 #pragma mark - room
 
+- (void)joinRoomWithID:(NSString *)roomID;
+
 - (void)createRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 - (void)joinRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
@@ -184,6 +186,15 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  */
 - (NSURLSessionDataTask *)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
 - (NSURLSessionDataTask *)uploadFileWithData:(NSData *)data type:(NSString *)type Room:(IMRoom *)room isPublic:(BOOL)isPublic progress:(void (^)(CGFloat progress))progress Success:(void (^)(IMFile *file))success failure:(void (^)(NSError *err))failure;
+
+#pragma mark - url scheme
+
+- (NSString *)urlType;
+- (NSString *)urlStringForScheme;
+- (NSString *)appIDOnStore;
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
+
 @end
 
 //NSNotification

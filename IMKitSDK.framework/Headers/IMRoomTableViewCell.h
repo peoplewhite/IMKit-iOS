@@ -13,7 +13,7 @@
 /**
  *  room to show
  */
-@property (strong,nonatomic) IMRoom* room;
+@property (strong, nonatomic) IMRoom *room;
 
 @property (weak, nonatomic) IBOutlet LOLabel *subTitleLabel;
 @property (weak, nonatomic) IBOutlet LOLabel *badgeLabel;

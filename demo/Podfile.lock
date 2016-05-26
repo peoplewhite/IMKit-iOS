@@ -15,16 +15,16 @@ PODS:
     - GVUserDefaults (~> 1.0.2)
     - JSONModel (~> 1.2.0)
     - LOAlertController (~> 0.1.4)
-    - LOUIKit (= 0.1.16)
-    - Socket.IO-Client-Swift (~> 6.0.0)
+    - LOUIKit (= 0.1.17)
+    - Socket.IO-Client-Swift (~> 6.1.1)
     - UITableView+FDTemplateLayoutCell (~> 1.4)
     - YapDatabase (= 2.9)
     - YYWebImage (~> 1.0.3)
   - JSONModel (1.2.0)
   - LOAlertController (0.1.4)
-  - LOUIKit (0.1.16)
+  - LOUIKit (0.1.17)
   - Reachability (3.2)
-  - Socket.IO-Client-Swift (6.0.0)
+  - Socket.IO-Client-Swift (6.1.2)
   - UITableView+FDTemplateLayoutCell (1.4)
   - YapDatabase (2.9):
     - YapDatabase/Standard (= 2.9)
@@ -77,9 +77,9 @@ PODS:
   - YapDatabase/Standard/Extensions/Views (2.9):
     - YapDatabase/Standard/Core
   - YYCache (1.0.3)
-  - YYImage (1.0.1):
-    - YYImage/Core (= 1.0.1)
-  - YYImage/Core (1.0.1)
+  - YYImage (1.0.2):
+    - YYImage/Core (= 1.0.2)
+  - YYImage/Core (1.0.2)
   - YYWebImage (1.0.3):
     - YYCache
     - YYImage
@@ -98,18 +98,16 @@ SPEC CHECKSUMS:
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  IMKitSDK: a90615f9ae6138770bf3af650da7018535e3e610
+  IMKitSDK: 2e4ef001968ffc562a2286e990d1b16fe3034095
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   LOAlertController: a3e30183d2bb1e0191c856c6061c7f7666f649ad
-  LOUIKit: 964221af4b6adc0e39e4ef74b6cb43f0aee5368f
+  LOUIKit: ad661f267bf60da43ad2712b380389a7f342404b
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  Socket.IO-Client-Swift: 014fe27dbb8d9d359d09b482309421fb4eccc16c
+  Socket.IO-Client-Swift: 60a60e8bfd7b16bc57c90ff6329e9f536b5eacdd
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   YapDatabase: c00f4197bba2fea17bdbd82c8e8e3f7104b6fa67
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
-  YYImage: b41b45bc5f32bfcdf67bdfb9c09da9e9832357c0
+  YYImage: 2cc79ed49b9549b71c6715cefe7b0f5ab3d33abf
   YYWebImage: 8da75a611fd0d2e0f58a273f9ca0bc731614cb0d
 
-PODFILE CHECKSUM: 377f1e76a66bb965da537c099745d01aacd9d326
-
-COCOAPODS: 1.0.0
+COCOAPODS: 0.39.0

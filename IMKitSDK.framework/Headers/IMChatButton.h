@@ -11,11 +11,11 @@
 IB_DESIGNABLE
 @interface IMChatButton : LOButton
 
-@property (assign,nonatomic) IBInspectable BOOL stausBarLight;
-@property (strong,nonatomic) IBInspectable UIColor* primaryColor;
-@property (strong,nonatomic) IBInspectable UIColor* secondColor;
-@property (assign,nonatomic) IBInspectable BOOL disableWhenDisconnect;
+@property (assign, nonatomic) IBInspectable BOOL stausBarLight;
+@property (strong, nonatomic) IBInspectable UIColor *primaryColor;
+@property (strong, nonatomic) IBInspectable UIColor *secondColor;
+@property (assign, nonatomic) IBInspectable BOOL disableWhenDisconnect;
 
-@property (assign,nonatomic) NSUInteger badgeNumber;
+@property (assign, nonatomic) NSUInteger badgeNumber;
 
 @end

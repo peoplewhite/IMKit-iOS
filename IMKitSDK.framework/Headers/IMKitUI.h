@@ -14,6 +14,4 @@
 #import "IMChatButton.h"
 #import "IMMessageContainerViewController.h"
 
-
-
 #import "UIBarButtonItem+Badge.h"

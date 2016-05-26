@@ -11,8 +11,8 @@
 IB_DESIGNABLE
 @interface IMNavigationController : UINavigationController
 
-@property (assign,nonatomic) IBInspectable BOOL UIStatusBarStyleLight;
-@property (assign,nonatomic) IBInspectable UIColor* barTintColor;
-@property (assign,nonatomic) IBInspectable UIColor* tintColor;
+@property (assign, nonatomic) IBInspectable BOOL UIStatusBarStyleLight;
+@property (assign, nonatomic) IBInspectable UIColor *barTintColor;
+@property (assign, nonatomic) IBInspectable UIColor *tintColor;
 
 @end

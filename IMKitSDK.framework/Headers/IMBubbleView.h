@@ -11,6 +11,6 @@
 IB_DESIGNABLE
 @interface IMBubbleView : UIView
 
-@property (assign,nonatomic) IBInspectable BOOL positionLeft;
-@property (strong,nonatomic) IBInspectable UIColor* bubbleColor;
+@property (assign, nonatomic) IBInspectable BOOL positionLeft;
+@property (strong, nonatomic) IBInspectable UIColor *bubbleColor;
 @end
