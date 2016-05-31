@@ -8,6 +8,7 @@
 
 #import "IMInviteClient.h"
 #import "IMViewController.h"
+#import "IMRoomInviteTableViewCell.h"
 
 @protocol IMRoomInviteDelegate;
 

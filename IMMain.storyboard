@@ -782,9 +782,9 @@
                                                 <mask key="constraints">
                                                     <exclude reference="5Fz-4Y-5az"/>
                                                     <exclude reference="DcY-az-MQ8"/>
+                                                    <exclude reference="H4N-Z2-IgA"/>
                                                     <exclude reference="MVX-pI-9Zj"/>
                                                     <exclude reference="fVM-b8-ffu"/>
-                                                    <exclude reference="H4N-Z2-IgA"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>

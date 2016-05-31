@@ -11,18 +11,18 @@ PODS:
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
   - GVUserDefaults (1.0.2)
-  - IMKitSDK (0.0.57):
+  - IMKitSDK (0.0.59):
     - GVUserDefaults (~> 1.0.2)
     - JSONModel (~> 1.2.0)
     - LOAlertController (~> 0.1.4)
-    - LOUIKit (= 0.1.17)
+    - LOUIKit (= 0.1.18)
     - Socket.IO-Client-Swift (~> 6.1.1)
     - UITableView+FDTemplateLayoutCell (~> 1.4)
     - YapDatabase (= 2.9)
     - YYWebImage (~> 1.0.3)
   - JSONModel (1.2.0)
   - LOAlertController (0.1.4)
-  - LOUIKit (0.1.17)
+  - LOUIKit (0.1.18)
   - Reachability (3.2)
   - Socket.IO-Client-Swift (6.1.2)
   - UITableView+FDTemplateLayoutCell (1.4)
@@ -98,10 +98,10 @@ SPEC CHECKSUMS:
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  IMKitSDK: 2e4ef001968ffc562a2286e990d1b16fe3034095
+  IMKitSDK: dac49bf29b215a38f58078a3847d47b97f938a7d
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   LOAlertController: a3e30183d2bb1e0191c856c6061c7f7666f649ad
-  LOUIKit: ad661f267bf60da43ad2712b380389a7f342404b
+  LOUIKit: 45fdf63204941b76c145e59e57dd3830986d406c
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Socket.IO-Client-Swift: 60a60e8bfd7b16bc57c90ff6329e9f536b5eacdd
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
