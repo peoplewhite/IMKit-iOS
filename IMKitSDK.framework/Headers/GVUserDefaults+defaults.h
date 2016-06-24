@@ -21,7 +21,9 @@
 
 @property (strong, nonatomic) NSString *token;
 
-@property (strong, nonatomic) NSMutableDictionary* messageCache;
+@property (strong, nonatomic) NSMutableDictionary *messageCache;
+
+@property (strong, nonatomic) NSArray *log;
 
 - (void)write;
 

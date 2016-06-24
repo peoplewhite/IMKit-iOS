@@ -6,10 +6,10 @@
 //
 //
 
-#import <UIKit/UIKit.h>
 #import "IMKit.h"
+#import <UIKit/UIKit.h>
 @interface IMMessageContainerViewController : UIViewController
 
-@property (weak,nonatomic) IMRoom* room;
+@property (weak, nonatomic) IMRoom *room;
 
 @end

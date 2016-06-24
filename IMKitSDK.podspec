@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "IMKitSDK"
-  s.version       = '0.0.49'
+  s.version       = '0.0.60'
   s.summary       = "IMKitSDK" 
   s.homepage      = 'http://imkit.co/'
   s.license       = 'MIT'
@@ -13,15 +13,16 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'IMKitSDK.framework'
   s.framework     = 'UIKit'
 
-  s.dependency 'Socket.IO-Client-Swift','~> 6.0.0'
+  s.dependency 'Socket.IO-Client-Swift','~> 6.1.1'
   s.dependency 'JSONModel','~> 1.2.0'
   s.dependency 'GVUserDefaults','~> 1.0.2'
   s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.4'
-  s.dependency 'YYWebImage','~> 1.0'
+  s.dependency 'YYWebImage','~> 1.0.3'
   s.dependency 'LOAlertController','~> 0.1.4'
-  s.dependency 'LOUIKit','0.1.16'
-  # s.dependency 'YapDatabase','2.8.3'
-  
+  s.dependency 'LOUIKit','0.1.18'
+  s.dependency 'YapDatabase','2.9'
+  # s.dependency 'UICollectionView-ARDynamicHeightLayoutCell' ,'1.0.2'
+
   s.requires_arc  = true
 end
 

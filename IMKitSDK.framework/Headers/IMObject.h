@@ -31,7 +31,6 @@
 @interface NSDate (to8601String)
 - (NSString *)toString8601;
 
-
 - (BOOL)isToday;
 - (BOOL)isThisWeek;
 - (BOOL)isThisMonth;

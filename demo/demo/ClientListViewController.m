@@ -7,6 +7,7 @@
 //
 
 #import "ClientListViewController.h"
+#import "UIAlertController+LOAlertController.h"
 
 @interface ClientListViewController ()<IMKitDelegate,UITableViewDelegate,UITableViewDataSource>
 
@@ -36,11 +37,24 @@
     self.tableview.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
 }
 
+#pragma mark - IBAction
+
+- (IBAction)logout:(id)sender {
+    [UIAlertController showWithController:self cancelTitle:@"cancel" type:UIAlertControllerStyleActionSheet title:nil message:@"Logout" buttons:@[@"YES"] complete:^(NSInteger buttonIndex) {
+        if (buttonIndex > -1 ) {
+            [IMKitInstance logout];
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }];
+}
+
+#pragma mark - IMKitDelegate
+
 -(void)IMKitDidChatIn{
     [IMKitInstance clientsListWithOffset:0 Success:^(NSArray<IMClient *> *clients) {
         self.clients = clients;
         [self.tableview reloadData];
-        NSLog(@"%d",(int)self.clients.count);
+        NSLog(@"%d clients here",(int)self.clients.count -1 );
     } failure:^(NSError *err) {
         
     }];
@@ -59,9 +73,7 @@
     
     cell.textLabel.text = client.username ? client.username : client.clientID;
     
-    
-    
-    
+
     return cell;
 }
 

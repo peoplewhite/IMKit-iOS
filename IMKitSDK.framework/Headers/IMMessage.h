@@ -78,8 +78,7 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 
 @property (strong, nonatomic) IMMessageOption *option;
 
-
-
+//*****for send message******
 - (instancetype)initWithRoom:(IMRoom *)room;
 
 - (void)setMessageWithType:(IMKitMessageType)messageType;
@@ -89,19 +88,22 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
 /**
  *  the same as [IMKitInstance sendMessageInBackground:message];
  */
--(void)send;
+- (void)send;
 
--(void)update;
+- (void)update;
 
+/**
+ *  to detect if in the same day
+ *
+ *  @param message another message
+ *
+ *  @return if different
+ */
+- (BOOL)isDifferentDateWithMessage:(IMMessage *)message;
 
 //- (BOOL)didReadFromAnother;
 //- (NSUInteger)numberOfReadFromUsers;
 @end
-
-
-
-
-
 
 @interface IMMessageOption : JSONModel
 
@@ -119,7 +121,6 @@ typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {
  *  if increase room badge to self , default to NO
  */
 @property (assign, nonatomic) BOOL badgeIncrease;
-
 
 /**
  *  default to system sound

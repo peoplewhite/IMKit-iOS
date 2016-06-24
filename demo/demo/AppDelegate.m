@@ -48,9 +48,14 @@
 #pragma mark - IMKit
 
 -(void)connectIMKit{
-    IMKitInstance.apiKey = @"af1a66e8ed65dd86673bc66ef207b9026bc04a0b";
-    IMKitInstance.clientKey = @"18f87d684e858a6171e950a8a777ffb0c583c998";
-    NSString *url = @"http://imkit.co:35967";
+//    IMKitInstance.apiKey = @"24138f798c35e3a3019bd7a3dfa4bda1ce97139f";
+//    IMKitInstance.clientKey = @"0e0c671fada0c586485cf59fd5769d4f905c9b85";
+//    NSString *url = @"http://ec2-54-249-117-19.ap-northeast-1.compute.amazonaws.com:35968";
+
+    //行政
+    IMKitInstance.apiKey = @"cb6185b563a5d041691baad1756bd92a9477b3ff";
+    IMKitInstance.clientKey = @"d9e66a01a8dd63ef44c284af5862329e8cea6e09";
+    NSString *url = @"http://ec2-54-249-117-19.ap-northeast-1.compute.amazonaws.com:35967";
     
     NSDictionary *options = @{ @"reconnectWait" : @1, @"forceWebsockets" : @YES, };
     

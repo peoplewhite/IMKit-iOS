@@ -14,5 +14,5 @@
 @property (assign, nonatomic) int total;
 
 //TODO:
-@property (strong, nonatomic) NSDictionary *badgeDict;
+//@property (strong, nonatomic) NSDictionary *badgeDict;
 @end
