@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name          = "IMKitSDK"
-  s.version       = '0.0.60'
-  s.summary       = "IMKitSDK" 
+  s.version       = '0.0.61'
+  s.summary       = "IMKitSDK"
   s.homepage      = 'http://imkit.co/'
   s.license       = 'MIT'
   s.author        = { "Lova Shih" => "lova@funtek.co" }
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.4'
   s.dependency 'YYWebImage','~> 1.0.3'
   s.dependency 'LOAlertController','~> 0.1.4'
-  s.dependency 'LOUIKit','0.1.18'
+  s.dependency 'LOUIKit','0.1.19'
   s.dependency 'YapDatabase','2.9'
   # s.dependency 'UICollectionView-ARDynamicHeightLayoutCell' ,'1.0.2'
 
