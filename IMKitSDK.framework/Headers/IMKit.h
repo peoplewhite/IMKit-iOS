@@ -23,6 +23,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 
 @protocol IMKitDelegate;
 @interface IMKit : JSONModel
+@property (assign, nonatomic) BOOL isPausedLoadingRoomData;
 @property (assign, nonatomic) IMKitConnectStatus connectStatus;
 
 @property (strong, nonatomic) NSMutableArray <IMRoom *> *chatRooms;
@@ -35,6 +36,8 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 @property (strong, nonatomic) NSString *deviceToken;
 @property (weak, nonatomic, readonly) NSString *clientID;
 @property (assign, nonatomic, readonly) BOOL firstTimeLaunch;
+
+@property (assign, nonatomic) int roomCountLimit;
 
 //request timeout , default to 5 second
 @property (assign, nonatomic) NSInteger timeout;
