@@ -13,6 +13,7 @@ IB_DESIGNABLE
 @interface IMMessageViewController : IMViewController
 
 @property (assign, nonatomic) IBInspectable BOOL echoReadToRoom;
+@property (strong, nonatomic) NSMutableArray <IMMessage *> *dataSource;
 
 @property (strong, nonatomic) IMRoom *room;
 
@@ -41,6 +42,11 @@ IB_DESIGNABLE
 
 + (BOOL)handleRemoteNotificationAppdelegateWindow:(UIWindow *)window launchOptions:(NSDictionary *)launchOptions;
 
+- (void)scrollToBottomWithAnimate:(BOOL)animated;
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (void)IMKitDidReceiveMessage:(IMMessage *)message;
 @end
 
 @interface UIColor (CompareColor)
