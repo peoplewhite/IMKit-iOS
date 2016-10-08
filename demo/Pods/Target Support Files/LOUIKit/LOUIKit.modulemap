@@ -1,6 +1,0 @@
-framework module LOUIKit {
-  umbrella header "LOUIKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
