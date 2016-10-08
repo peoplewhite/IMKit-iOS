@@ -119,6 +119,10 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)roomListSuccess:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
 - (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
 - (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
+- (void)roomListForUbeeAgentWithSuccess:(void (^)(NSArray <IMRoom *> *rooms))success
+                                failure:(void (^)(NSError *err))failure
+                               complete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
+
 
 //
 - (void)roomListKeepUpdateingToNewestComplete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;

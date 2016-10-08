@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/IMKit.h</key>
 		<data>
-		zGbRiywdLYJmVYl7JWxab3tawHU=
+		dJovve6cEi3Nu/aqR0IibcqAPxc=
 		</data>
 		<key>Headers/IMKitSDK.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/IMRoom.h</key>
 		<data>
-		502yayoly76Oowl07/bl5lzmJ7w=
+		sNFlE45ckI9uCTmg1M+iG1rYp94=
 		</data>
 		<key>Headers/IMRoomCreateViewController.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		It9pY+VDx6CIGSL6LBMnYnlsteE=
+		ckXYerAbB4l4ita/1BY+F5grOeA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -226,11 +226,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zGbRiywdLYJmVYl7JWxab3tawHU=
+			dJovve6cEi3Nu/aqR0IibcqAPxc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Tzwi36fNQqU+OEcEElzF5KuU78JaenKzCxrd5x5ovW4=
+			SjjTnw6V2dZ8j0SM/ZbLCGmHiRVz51sQR4MVVjqabPQ=
 			</data>
 		</dict>
 		<key>Headers/IMKitSDK.h</key>
@@ -325,11 +325,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			502yayoly76Oowl07/bl5lzmJ7w=
+			sNFlE45ckI9uCTmg1M+iG1rYp94=
 			</data>
 			<key>hash2</key>
 			<data>
-			XJDvY77tMtLJekO+xWYNnhFNwqBKeuMs+IZMNn3Lu30=
+			68ER6m7vYojCTKzjH4IbaZE4HaaR3KlJHS09KN1+nH0=
 			</data>
 		</dict>
 		<key>Headers/IMRoomCreateViewController.h</key>
