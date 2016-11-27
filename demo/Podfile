@@ -2,11 +2,10 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'demo' do
-#    pod 'IMKitSDK','0.0.57'
-#    pod 'IMKitSDK' , :path => '../'
-    pod 'IMKitSDK' , :path => '../../imkit-engine/IMKitSDk'
-    pod 'Fabric'
-    pod 'Crashlytics'
+   #pod 'IMKitSDK' , :path => '../'
+   pod 'IMKitSDK' , :path => '../../imkit-engine/IMKitSDk'
+   pod 'Fabric'
+   pod 'Crashlytics'
 end
 
 

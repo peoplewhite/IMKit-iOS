@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "37F31E4227F7633A74D586B5E62F8A7D4F493286",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7B3ADC4BAB28232036EA1A45F879305CF1015101" : 0,
+    "37F31E4227F7633A74D586B5E62F8A7D4F493286" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FBB7BE63-4AF5-431A-88A4-A922738A680D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7B3ADC4BAB28232036EA1A45F879305CF1015101" : "imkit-engine\/",
+    "37F31E4227F7633A74D586B5E62F8A7D4F493286" : "IMKit-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "demo\/demo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:FUNTEKco\/IMKit-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "37F31E4227F7633A74D586B5E62F8A7D4F493286"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:peoplewhite\/imkit-engine.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B3ADC4BAB28232036EA1A45F879305CF1015101"
+    }
+  ]
+}
