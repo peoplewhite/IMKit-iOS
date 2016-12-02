@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'IMKitSDK.framework'
   s.framework     = 'UIKit'
 
-  s.dependency 'Socket.IO-Client-Swift','~> 6.1.1'
+  s.dependency 'SocketRocket','~> 0.5.1'
   s.dependency 'JSONModel','~> 1.2.0'
   s.dependency 'GVUserDefaults','~> 1.0.2'
   s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.4'
