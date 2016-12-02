@@ -116,6 +116,10 @@
 		<data>
 		ckXYerAbB4l4ita/1BY+F5grOeA=
 		</data>
+		<key>LOAlertController.bundle/Info.plist</key>
+		<data>
+		phOiBm9VrS4+b5Di1qBtwJ/l6Fo=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		oD6lQM5KzGUz/NgHuTomSN4o0FI=
@@ -418,6 +422,17 @@
 			<key>hash2</key>
 			<data>
 			bkgkGMFJMzq0RkrrX7zOUpf6CTwGHGdfs8Vey8r8jGY=
+			</data>
+		</dict>
+		<key>LOAlertController.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			phOiBm9VrS4+b5Di1qBtwJ/l6Fo=
+			</data>
+			<key>hash2</key>
+			<data>
+			9xtr1+jC3lERoWb/kT/voOK4UNw7841Vadhdqsf5dqI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
