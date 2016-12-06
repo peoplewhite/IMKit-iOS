@@ -40,12 +40,16 @@
     //註冊 & get token
     [IMKitInstance signWithClient:client Success:^(IMClient *client) {
         //login
+        NSLog(@"signin success"); //kimuranow
         [IMKitInstance chatinSuccess:^(IMClient *client) {
+            NSLog(@"chatin success"); //kimuranow
             [self goClientList];
         } failure:^(NSError *err) {
+            NSLog(@"chatin fail error = %@", err.description); //kimuranow
             //
         }];
     } failure:^(NSError *err) {
+        NSLog(@"signin fail error = %@", err.description); //kimuranow
         //
     }];
 }
