@@ -1,7 +1,7 @@
 platform :ios, '8.0'
-use_frameworks!
 
 target 'demo' do
+   use_frameworks!
    pod 'IMKitSDK' , :path => '../'
    pod 'Fabric'
    pod 'Crashlytics'
