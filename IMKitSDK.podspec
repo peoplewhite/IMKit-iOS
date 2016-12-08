@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'IMKitSDK.framework'
   s.framework     = 'UIKit'
 
-  s.dependency 'SocketRocket','~> 0.5.1'
+  s.dependency 'Socket.IO-Client-Swift','8.1.2'
   s.dependency 'JSONModel','~> 1.2.0'
   s.dependency 'GVUserDefaults','~> 1.0.2'
   s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.4'
@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
   s.dependency 'LOAlertController','~> 0.1.4'
   s.dependency 'LOUIKit','0.1.19'
   s.dependency 'YapDatabase','2.9'
-  # s.dependency 'UICollectionView-ARDynamicHeightLayoutCell' ,'1.0.2'
 
   s.requires_arc  = true
 end
