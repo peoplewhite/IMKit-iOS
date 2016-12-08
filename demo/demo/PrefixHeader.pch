@@ -6,5 +6,7 @@
 //  Copyright © 2016年 funtek. All rights reserved.
 //
 
-
+#ifdef __OBJC__
 #import <IMKitSDK/IMKitSDK.h>
+#endif
+

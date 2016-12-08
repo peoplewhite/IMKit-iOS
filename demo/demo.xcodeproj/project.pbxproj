@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82F7CBAB77B817F8C6085FC6 /* libPods-demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B9289B7256A21A386A508D /* libPods-demo.a */; };
+		28FF083952AE268BF8BD1129 /* Pods_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA19EE420736EE197DF4BF3 /* Pods_demo.framework */; };
 		9E5494C81C954BB1002E5DB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5494C71C954BB1002E5DB4 /* main.m */; };
 		9E5494CB1C954BB1002E5DB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5494CA1C954BB1002E5DB4 /* AppDelegate.m */; };
 		9E5494CE1C954BB1002E5DB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5494CD1C954BB1002E5DB4 /* ViewController.m */; };
@@ -19,8 +19,8 @@
 
 /* Begin PBXFileReference section */
 		30210400742378E0945B78A7 /* Pods-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo/Pods-demo.debug.xcconfig"; sourceTree = "<group>"; };
-		63B9289B7256A21A386A508D /* libPods-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7586B43B1BA5E5881CC57906 /* Pods-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo/Pods-demo.release.xcconfig"; sourceTree = "<group>"; };
+		9DA19EE420736EE197DF4BF3 /* Pods_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0443091CB7C66A00EC22F0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9E5494C31C954BB1002E5DB4 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E5494C71C954BB1002E5DB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82F7CBAB77B817F8C6085FC6 /* libPods-demo.a in Frameworks */,
+				28FF083952AE268BF8BD1129 /* Pods_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				A6D0AC892DCC226EA3273FC6 /* Pods.framework */,
-				63B9289B7256A21A386A508D /* libPods-demo.a */,
+				9DA19EE420736EE197DF4BF3 /* Pods_demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -368,7 +368,7 @@
 					"$(inherited)",
 					"${PODS_ROOT}/**",
 				);
-				GCC_PREFIX_HEADER = demo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/demo/PrefixHeader.pch";
 				INFOPLIST_FILE = demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -390,7 +390,7 @@
 					"$(inherited)",
 					"${PODS_ROOT}/**",
 				);
-				GCC_PREFIX_HEADER = demo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/demo/PrefixHeader.pch";
 				INFOPLIST_FILE = demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
