@@ -30,7 +30,6 @@ IB_DESIGNABLE
 @property (assign, nonatomic) IBInspectable BOOL showMoreOptionBtn;
 @property (assign, nonatomic) IBInspectable BOOL disableTintColor;
 
-// property for ubee app
 // if this value set true, it won't auto-set any title in this scene
 @property (assign, nonatomic) BOOL isCustomizedChatroomTitle;
 
