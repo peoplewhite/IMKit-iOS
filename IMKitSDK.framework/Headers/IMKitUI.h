@@ -2,7 +2,7 @@
 //  IMKitUI.h
 //  RichSDKDemo
 //
-//  Created by Kuo-HsunShih on 2016/3/15.
+//  Created by FUNTEK Inc. on 2016/3/15.
 //  Copyright © 2016年 funtek. All rights reserved.
 //
 

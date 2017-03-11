@@ -2,7 +2,7 @@
 //  IMKitSDK.h
 //  IMKitSDK
 //
-//  Created by Kuo-HsunShih on 2015/10/27.
+//  Created by FUNTEK Inc. on 2015/10/27.
 //  Copyright © 2015年 Funtek. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  IMNavigationController.h
 //  Pods
 //
-//  Created by Kuo-HsunShih on 2016/4/21.
+//  Created by FUNTEK Inc. on 2016/4/21.
 //
 //
 

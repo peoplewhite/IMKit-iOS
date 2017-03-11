@@ -2,16 +2,18 @@
 //  ChatRoomViewController.h
 //  IMKitSDK
 //
-//  Created by Kuo-HsunShih on 2016/3/7.
+//  Created by FUNTEK Inc. on 2016/3/7.
 //  Copyright © 2016年 Funtek. All rights reserved.
 //
 
 #import "IMMessageTableViewCell.h"
 #import "IMViewController.h"
+#import "IMMessageContainerViewController.h"
 
 IB_DESIGNABLE
 @interface IMMessageViewController : IMViewController
 
+@property (weak, nonatomic) IMMessageContainerViewController *container;
 @property (assign, nonatomic) IBInspectable BOOL echoReadToRoom;
 @property (strong, nonatomic) NSMutableArray <IMMessage *> *dataSource;
 
@@ -28,7 +30,6 @@ IB_DESIGNABLE
 @property (assign, nonatomic) IBInspectable BOOL showMoreOptionBtn;
 @property (assign, nonatomic) IBInspectable BOOL disableTintColor;
 
-
 // property for ubee app
 // if this value set true, it won't auto-set any title in this scene
 @property (assign, nonatomic) BOOL isCustomizedChatroomTitle;
@@ -36,6 +37,10 @@ IB_DESIGNABLE
 //inherit override if need to custom cell
 - (NSString *)cellIDForMessage:(IMMessage *)message;
 - (IMMessageTableViewCell *)customCellWithIdentifier:(NSString *)cellID message:(IMMessage *)message cell:(IMMessageTableViewCell *)cell indexPath:(NSIndexPath *)indexPath;
+
+
+- (void)usingCameraToSendPhoto;
+- (void)usingAlbumToSendPhoto;
 
 - (IBAction)sendMessageBtnPressed:(UIButton *)sender;
 - (IBAction)resendBtnPressed:(UIButton *)sender;
