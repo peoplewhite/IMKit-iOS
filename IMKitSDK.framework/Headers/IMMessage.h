@@ -1,8 +1,7 @@
 //
 //  FTMessage.h
-//  GiishChat
 //
-//  Created by Kuo-HsunShih on 2015/9/24.
+//  Created by FUNTEK Inc. on 2015/9/24.
 //  Copyright © 2015年 Funtek. All rights reserved.
 //
 
@@ -17,6 +16,7 @@ UIKIT_EXTERN NSString *const kMessageTypeGeo;
 UIKIT_EXTERN NSString *const kMessageTypeSticker;
 UIKIT_EXTERN NSString *const kMessageTypeOther;
 UIKIT_EXTERN NSString *const kMessageTypeDelete;
+UIKIT_EXTERN NSString *const kMessageTypeDate;
 
 typedef NS_ENUM (int, IMKitMessageType) {
     IMKitMessageTypeText,
@@ -26,7 +26,8 @@ typedef NS_ENUM (int, IMKitMessageType) {
     IMKitMessageTypeGEO,
     IMKitMessageTypeSticker,
     IMKitMessageTypeOther,
-    IMKitMessageTypeDelete
+    IMKitMessageTypeDelete,
+    IMKitMessageTypeDate
 };
 
 typedef NS_ENUM (NSUInteger, IMKitMessageSendingType) {

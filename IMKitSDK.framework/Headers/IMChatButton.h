@@ -2,7 +2,7 @@
 //  IMChatButton.h
 //  Pods
 //
-//  Created by Kuo-HsunShih on 2016/4/19.
+//  Created by FUNTEK Inc. on 2016/4/19.
 //
 //
 

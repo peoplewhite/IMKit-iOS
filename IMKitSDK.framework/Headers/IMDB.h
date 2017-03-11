@@ -2,7 +2,7 @@
 //  IMDB.h
 //  Pods
 //
-//  Created by Kuo-HsunShih on 2016/4/26.
+//  Created by FUNTEK Inc. on 2016/4/26.
 //
 //
 

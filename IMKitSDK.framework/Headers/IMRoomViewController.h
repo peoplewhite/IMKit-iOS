@@ -2,7 +2,7 @@
 //  ChatRoomListViewController.h
 //  IMKitSDK
 //
-//  Created by Kuo-HsunShih on 2016/3/7.
+//  Created by FUNTEK Inc. on 2016/3/7.
 //  Copyright © 2016年 Funtek. All rights reserved.
 //
 
@@ -19,8 +19,11 @@
 @property (weak, nonatomic) id <IMRoomViewControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 
+@property (assign, nonatomic) BOOL isNeedSwipeLeftFunction;
+
 - (void)enterRoom:(IMRoom *)room animated:(BOOL)animated;
 - (void)doActionAfterUpdateRoomDoneWithTotalBadgeNumber:(int)totalBadgeNumber;
+- (IMRoom *)getRoomByID: (NSString *)roomID;
 
 - (IBAction)createRoomItemPressed:(UIBarButtonItem *)sender;
 
@@ -30,6 +33,7 @@
 
 //return nil for default behavier , or cutom
 - (id)IMRoomControllerToPushWithRoom:(IMRoom *)room;
+
 @end
 
 @protocol IMRoomViewControllerDelegate <NSObject>
