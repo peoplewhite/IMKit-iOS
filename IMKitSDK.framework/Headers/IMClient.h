@@ -1,8 +1,7 @@
 //
 //  FTClient.h
-//  GiishChat
 //
-//  Created by Kuo-HsunShih on 2015/9/24.
+//  Created by FUNTEK Inc. on 2015/9/24.
 //  Copyright © 2015年 Funtek. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  IMMessageContainerViewController.h
 //  Pods
 //
-//  Created by Kuo-HsunShih on 2016/4/11.
+//  Created by FUNTEK Inc. on 2016/4/11.
 //
 //
 

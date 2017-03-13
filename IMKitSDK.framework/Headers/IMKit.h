@@ -1,7 +1,7 @@
 //
 //  IMKit.h
 //
-//  Created by Kuo-HsunShih on 2015/9/24.
+//  Created by FUNTEK Inc. on 2015/9/24.
 //  Copyright © 2015年 Funtek. All rights reserved.
 //
 #import <UIKit/UIKit.h>
@@ -74,7 +74,7 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
  *  update token if possiable, or auto update at signup instead
  */
 - (void)updateDeviceTokenIfPossiable:(NSData *)deviceToken;
-
+- (void)updateUserData:(NSData *)deviceToken andAppName:(NSString *)appName andAppID: (NSString *)appID andAppVersion: (NSString*)appVersion;
 - (void)logout;
 
 #pragma mark - badge
@@ -94,8 +94,6 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)createRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 - (void)joinRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
-- (void)ubeeAgentJoinRoomWithID:(NSString *)roomID;
-- (void)ubeeAgentJoinRoom:(IMRoom *)room Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure;
 
 //create room with client, return old room if exists
 - (void)createRoom:(IMRoom *)room WithClientID:(NSString *)ClientID duplicate:(BOOL)duplicate Success:(void (^)(IMRoom *room))success failure:(void (^)(NSError *err))failure DEPRECATED_MSG_ATTRIBUTE("duplicate: DEPRECATED");
@@ -121,18 +119,6 @@ typedef NS_ENUM (int, IMKitConnectStatus) {
 - (void)roomListSuccess:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
 - (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure;
 - (void)roomListWithOffset:(NSInteger)offset limit:(NSInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
-
-- (void)needAgentListForUbeeAgentWithParames: (NSDictionary *)params
-                                     success: (void (^)(NSArray <IMRoom *> *rooms))success
-                                     failure: (void (^)(NSError *err))failure
-                                    complete: (void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
-
-- (void)roomListForUbeeAgentWithParams: (NSDictionary *)params
-                               success: (void (^)(NSArray <IMRoom *> *rooms))success
-                               failure: (void (^)(NSError *err))failure
-                              complete: (void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
-
-//
 - (void)roomListKeepUpdateingToNewestComplete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
 - (void)roomListLastMessageTime:(NSDate *)lastMessageTime Offset:(NSUInteger)offset limit:(NSUInteger)limit Success:(void (^)(NSArray <IMRoom *> *rooms))success failure:(void (^)(NSError *err))failure complete:(void (^)(NSError *err, NSArray <IMRoom *> *rooms))complete;
 

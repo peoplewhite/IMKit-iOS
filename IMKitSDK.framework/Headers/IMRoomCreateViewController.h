@@ -2,7 +2,7 @@
 //  IMRoomCreateViewController.h
 //  Pods
 //
-//  Created by Kuo-HsunShih on 2016/5/16.
+//  Created by FUNTEK Inc. on 2016/5/16.
 //
 //
 

@@ -2,7 +2,7 @@
 //  IMBubbleView.h
 //  RichSDKDemo
 //
-//  Created by Kuo-HsunShih on 2016/3/24.
+//  Created by FUNTEK Inc. on 2016/3/24.
 //  Copyright © 2016年 funtek. All rights reserved.
 //
 

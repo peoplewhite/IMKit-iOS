@@ -2,7 +2,7 @@
 //  IMFile.h
 //  demoapp
 //
-//  Created by Kuo-HsunShih on 2015/11/11.
+//  Created by FUNTEK Inc. on 2015/11/11.
 //  Copyright © 2015年 Funtek. All rights reserved.
 //
 
